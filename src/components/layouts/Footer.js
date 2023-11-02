@@ -10,47 +10,28 @@ function Footer() {
       <Row>
         <Col xs={24} md={24} lg={12} className={styles.copyrightCol}>
           <p className={styles.copyrightText}>
-            {year}{" "}
+            Powered by{" "}
             <a
-              href="https://solution.omega.ac"
-              className="font-weight-bold"
+              href="https://digit-tech-innov.com/"
+              className="font-weight-bold btn-primary"
               target="_blank"
               rel="noreferrer"
             >
-              Omega Solution
-            </a>{" "}
-            One stop solution.
+              <b color="">DIGIT-TECH-INNOV SARL</b>
+            </a>©{year}
           </p>
         </Col>
         <Col xs={24} md={24} lg={12}>
           <div className={styles.footerMenu}>
             <ul className={styles.footerList}>
               <li className="nav-item">
-                <a
-                  href="https://omega.ac"
-                  className="nav-link text-muted"
-                  target="/"
-                >
-                  Omega
-                </a>
-              </li>
-              <li className="nav-item">
-                <a href="/admin" className="nav-link text-muted" target="/">
-                  About Us
+                <a href="/doc" className="nav-link text-muted" target="_blank">
+                  Documentation
                 </a>
               </li>
               <li className="nav-item">
                 <a
-                  href="/admin"
-                  className="nav-link text-muted"
-                  target="_blank"
-                >
-                  Blog
-                </a>
-              </li>
-              <li className="nav-item">
-                <a
-                  href="/admin"
+                  href="/"
                   className="nav-link pe-0 text-muted"
                   target="_blank"
                 >

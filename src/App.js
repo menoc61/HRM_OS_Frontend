@@ -100,7 +100,8 @@ function App() {
 				{/* <TestComp/> */}
 				<Main>
 					<Routes>
-						<Route path='/' element={<WelcomePage />} />
+						{/* <Route path='/' element={<WelcomePage />} /> */}
+						<Route path='/' element={<Login />} />
 						<Route path='/admin/dashboard' element={<Dashboard />}></Route>
 						<Route path='/admin' element={<Dashboard />} />
 						<Route path='*' element={<Page404 />} />
