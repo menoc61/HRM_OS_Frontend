@@ -1,24 +1,21 @@
 import { Button, Card, Popover, Table } from "antd";
 import { Fragment, useEffect, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { Navigate, useNavigate, useParams } from "react-router-dom";
 import { toast } from "react-toastify";
 
-import Loader from "../loader/loader";
-import PageTitle from "../page-header/PageHeader";
-import BtnDeleteSvg from "../UI/Button/btnDeleteSvg";
-import ColVisibilityDropdown from "../Shared/ColVisibilityDropdown";
-import { CsvLinkBtn } from "../UI/CsvLinkBtn";
+import Loader from "../../../loader/loader";
+import PageTitle from "../../../page-header/PageHeader";
+
+import BtnDeleteSvg from "../../../UI/Button/btnDeleteSvg";
+import { loadSingleDepartment } from "./departmentApis";
+
+import ColVisibilityDropdown from "../../../Shared/ColVisibilityDropdown";
+import { CsvLinkBtn } from "../../../UI/CsvLinkBtn";
 import { CSVLink } from "react-csv";
-import ViewBtn from "../Buttons/ViewBtn";
-import dayjs from "dayjs";
-import DepartmentEditPopup from "../UI/PopUp/DepartmentEditPopup";
-import ShifDelete from "./EmploymentStatusDelete";
-import ShiftEditPopup from "../UI/PopUp/ShiftEditPopup";
-import { loadSingelEmploymentStatus } from "../../redux/rtk/features/employemntStatus/employmentStatusSlice";
-import EmploymentStatusEditPopup from "../UI/PopUp/EmploymentStatusEditPopup";
-import UserPrivateComponent from "../PrivateRoutes/UserPrivateComponent";
-import EmploymentStatusDelete from "./EmploymentStatusDelete";
+import ViewBtn from "../../../Buttons/ViewBtn";
+import DepartmentEditPopup from "../../../UI/PopUp/DepartmentEditPopup";
+import UserPrivateComponent from "../../../PrivateRoutes/UserPrivateComponent";
 
 //PopUp
 
@@ -46,20 +43,24 @@ const CustomTable = ({ list }) => {
 			dataIndex: "userName",
 			key: "userName",
 		},
+
 		{
-			id: 7,
-			title: "Start Time",
-			dataIndex: "startTime",
-			key: "startTime",
-			render: (startTime) => dayjs(startTime).format("hh:mm A"),
+			id: 5,
+			title: "Role",
+			dataIndex: "role",
+			key: "role",
+			render: (role) => role?.name,
 		},
+
 		{
-			id: 8,
-			title: "End Time",
-			dataIndex: "endTime",
-			key: "endTime",
-			render: (endTime) => dayjs(endTime).format("hh:mm A"),
+			id: 6,
+			title: "Designation",
+			dataIndex: "designationHistory",
+			key: "designationHistory",
+			render: (designationHistory) =>
+				designationHistory[0]?.designation?.name || "N/A",
 		},
+
 		{
 			id: 4,
 			title: "Action",
@@ -120,19 +121,33 @@ const CustomTable = ({ list }) => {
 	);
 };
 
-const DetailEmploymentStatus = () => {
+const DetailDepartment = () => {
 	const { id } = useParams();
+	let navigate = useNavigate();
 
 	//dispatch
 	const dispatch = useDispatch();
-	const employmentStatus = useSelector(
-		(state) => state.employmentStatus.employmentStatus
-	);
+	const [department, setDepartment] = useState(null);
 	//Delete Supplier
+	const onDelete = () => {
+		try {
+			setVisible(false);
+			toast.warning(`department Name : ${department.rolename} is removed `);
+			return navigate("/admin/dashboard");
+		} catch (error) {
+			console.log(error.message);
+		}
+	};
+	// Delete Supplier PopUp
+	const [visible, setVisible] = useState(false);
+
+	const handleVisibleChange = (newVisible) => {
+		setVisible(newVisible);
+	};
 
 	useEffect(() => {
-		dispatch(loadSingelEmploymentStatus(id));
-	}, []);
+		loadSingleDepartment(id).then((d) => setDepartment(d.data));
+	}, [id]);
 
 	const isLogged = Boolean(localStorage.getItem("isLogged"));
 
@@ -143,28 +158,40 @@ const DetailEmploymentStatus = () => {
 	return (
 		<div>
 			<PageTitle title=' Back  ' />
-			<UserPrivateComponent permission={"readSingle-employmentStatus"}>
+
+			<UserPrivateComponent permission={"readSingle-department"}>
 				<Card className='mr-top mt-5'>
-					{employmentStatus ? (
-						<Fragment key={employmentStatus.id}>
+					{department ? (
+						<Fragment key={department.id}>
 							<div>
 								<div className='flex justify-between '>
 									<h3 className={"text-xl"}>
-										ID : {employmentStatus.id} | {employmentStatus.name}
+										ID : {department.id} | {department.name}
 									</h3>
-									<div className='flex justify-end'>
-										<UserPrivateComponent
-											permission={"update-employmentStatus"}>
-											<EmploymentStatusEditPopup data={employmentStatus} />
-										</UserPrivateComponent>
-
-										<UserPrivateComponent
-											permission={"delete-employmentStatus"}>
-											<EmploymentStatusDelete id={id} />
-										</UserPrivateComponent>
-									</div>
+									<UserPrivateComponent permission={"update-department"}>
+										<div className='flex justify-end'>
+											<DepartmentEditPopup data={department} />
+											<Popover
+												className='m-2'
+												content={
+													<a onClick={onDelete}>
+														<Button disabled={true} type='primary' danger>
+														Oui s'il vous plait !
+														</Button>
+													</a>
+												}
+												title='Are you sure you want to delete ?'
+												trigger='click'
+												visible={visible}
+												onVisibleChange={handleVisibleChange}>
+												<button disabled={true}>
+													<BtnDeleteSvg size={30} />
+												</button>
+											</Popover>
+										</div>
+									</UserPrivateComponent>
 								</div>
-								<CustomTable list={employmentStatus.user} />
+								<CustomTable list={department.user} />
 							</div>
 						</Fragment>
 					) : (
@@ -176,4 +203,4 @@ const DetailEmploymentStatus = () => {
 	);
 };
 
-export default DetailEmploymentStatus;
+export default DetailDepartment;

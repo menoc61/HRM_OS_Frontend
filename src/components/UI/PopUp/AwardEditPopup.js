@@ -113,7 +113,7 @@ const AwardEditPopup = ({ data }) => {
 								htmlType='submit'
 								block
 								loading={loader}>
-								Update Award
+								Mise a jour du Prix
 							</Button>
 						</Form.Item>
 					</div>

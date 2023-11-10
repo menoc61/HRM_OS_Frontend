@@ -104,7 +104,7 @@ const AttendancePopup = () => {
 						type='primary'
 						className='btn-clock-in'
 						onClick={() => clockInClick()}>
-						<span className='btn-clock-in-text'>Clock In</span>
+						<span className='btn-clock-in-text'>Pointage</span>
 					</Button>
 				) : (
 					<Button
@@ -112,7 +112,7 @@ const AttendancePopup = () => {
 						type='danger'
 						className='btn-clock-in'
 						onClick={() => clockInClick()}>
-						<span className='btn-clock-in-text'>Clock Out {inTime}</span>
+						<span className='btn-clock-in-text'>pointer l'heure de fin {inTime}</span>
 					</Button>
 				))}
 			<Modal
@@ -124,9 +124,9 @@ const AttendancePopup = () => {
 					<Col span={12}>
 						<p className='text-base font-semibold text-color-2'>{`Clock ${inOut} date & time:`}</p>
 						{/* show current time */}
-						<h1>Today {date}</h1>
+						<h1>Aujourd'hui {date}</h1>
 						{/* show current date */}
-						<h1>Time {time}</h1>
+						<h1>Temps{time}</h1>
 					</Col>
 					<Col
 						span={24}
@@ -137,7 +137,7 @@ const AttendancePopup = () => {
 							marginTop: "5%",
 						}}>
 						<p className='font-semibold'>
-							Your IP: <span style={{ color: "#595959" }}>{ipv4}</span>
+						Ton ip: <span style={{ color: "#595959" }}>{ipv4}</span>
 						</p>
 					</Col>
 					{/* show a text area */}

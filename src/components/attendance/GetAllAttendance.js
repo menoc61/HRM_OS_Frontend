@@ -158,7 +158,7 @@ function CustomTable({ list, total, status, setStatus, loading }) {
 				<div className='text-center my-2 flex justify-end'>
 					<CsvLinkBtn>
 						<CSVLink data={CSVlist} filename='purchase'>
-							Download CSV
+						Télécharger CSV
 						</CSVLink>
 					</CsvLinkBtn>
 
@@ -274,7 +274,7 @@ const GetAllAttendance = (props) => {
 			<Card className='card card-custom mt-3 '>
 				<div className='card-body'>
 					<div className='flex justify-between'>
-						<TableHeraderh2>Attendance List</TableHeraderh2>
+						<TableHeraderh2>Liste de présence</TableHeraderh2>
 						<div className='flex justify-end'>
 							<RangePicker
 								onCalendarChange={onCalendarChange}

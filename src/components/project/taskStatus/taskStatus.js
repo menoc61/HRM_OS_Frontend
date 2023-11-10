@@ -87,7 +87,7 @@ const TaskStatus = ({ isFixed }) => {
 				<Card className='mb-4'>
 					<h1 className='text-xl mb-4'>
 						{" "}
-						Task Column List :{" "}
+						Liste des colonnes de tâches :{" "}
 						<span className='font-semibold'>
 							{list ? list[0]?.project?.name : "No Task"}
 						</span>{" "}

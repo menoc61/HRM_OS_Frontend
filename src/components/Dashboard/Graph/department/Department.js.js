@@ -1,8 +1,8 @@
 import { Navigate } from "react-router-dom";
 import PageTitle from "../page-header/PageHeader";
-import AddUser from "./addUser";
+import AddDepartment from "./AddDepartment";
 
-const UserList = (props) => {
+const Department = (props) => {
 	const isLogged = Boolean(localStorage.getItem("isLogged"));
 
 	if (!isLogged) {
@@ -11,13 +11,9 @@ const UserList = (props) => {
 	return (
 		<div>
 			<PageTitle title='Back' />
-
-			<h1 className='m-2 text-center text-2xl font-semibold mt-5 txt-color'>
-			Ajouter un nouvel employé
-			</h1>
-			<AddUser />
+			<AddDepartment />
 		</div>
 	);
 };
 
-export default UserList;
+export default Department;

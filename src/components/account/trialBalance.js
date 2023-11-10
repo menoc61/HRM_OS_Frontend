@@ -25,7 +25,7 @@ const TrialBalance = () => {
 						<div className='card-title  flex  justify-between'>
 							<h5 className='text-xl mb-3'>
 								<span className=' ml-2 report-section-card-title'>
-									Trail Balance
+								Balance de vérification
 								</span>
 							</h5>
 						</div>
@@ -36,7 +36,7 @@ const TrialBalance = () => {
 										<th
 											scope='col'
 											className='text-white border-gray border-b-2 border-t-2 border-gray-200 py-3 px-3 bg-gray-900 text-left text-xs font-semibold uppercase tracking-wider'>
-											Account
+											Compte
 										</th>
 										<th
 											scope='col'

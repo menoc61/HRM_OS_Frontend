@@ -93,7 +93,7 @@ const Milestone = ({ isFixed }) => {
 			<AddMilestone isFixed={isFixed} />
 			{isFixed && (
 				<Card>
-					<h1 className='text-xl mb-5'> Milestones in Project </h1>
+					<h1 className='text-xl mb-5'> Jalons du projet </h1>
 					<Table
 						scroll={{ x: true }}
 						loading={loading}

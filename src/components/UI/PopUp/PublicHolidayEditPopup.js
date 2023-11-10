@@ -111,7 +111,7 @@ const PublicHolidayEdit = ({ data }) => {
 								htmlType='submit'
 								block
 								loading={loader}>
-								Update Public Holiday
+								Mettre à jour les jours fériés
 							</Button>
 						</Form.Item>
 					</div>

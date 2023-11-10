@@ -76,7 +76,7 @@ const TaskStatus = (props) => {
 			<PageTitle title='Back' />
 			<AddTaskPriority list={list} loading={loading} />
 			<Card className='mb-4'>
-				<h1 className='text-xl mb-4'> Task Priority Column List </h1>
+				<h1 className='text-xl mb-4'> Liste des colonnes de priorité des tâches </h1>
 				<Table
 					scroll={{ x: true }}
 					loading={loading}

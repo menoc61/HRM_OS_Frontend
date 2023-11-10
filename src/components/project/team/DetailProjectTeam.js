@@ -75,11 +75,11 @@ const DetailProjectTeam = () => {
 							</h1>
 							<h1 className='text-lg'>
 								{" "}
-								<span className='font-semibold'>Team : </span>
+								<span className='font-semibold'>Équipe: </span>
 								{ProjectTeam.projectTeamName}
 							</h1>
 							<h1 className='text-lg '>
-								<span className='font-semibold'>Project Manager : </span>
+								<span className='font-semibold'>Chef de projet : </span>
 								{(
 									ProjectTeam.project.projectManager.firstName +
 									" " +

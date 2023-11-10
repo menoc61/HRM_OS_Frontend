@@ -68,7 +68,7 @@ const AddTaskStatus = ({ isFixed, projectId }) => {
 					xl={22}
 					className='column-design border rounded card-custom'>
 					<Title level={4} className='m-2 mt-5 mb-5 text-center'>
-						Add Task Status Column
+					Ajouter une colonne d'état de la tâche
 					</Title>
 					<Form
 						form={form}
@@ -153,7 +153,7 @@ const AddTaskStatus = ({ isFixed, projectId }) => {
 									htmlType='submit'
 									block
 									loading={loader}>
-									Submit
+									Soumettre
 								</Button>
 							</Form.Item>
 						</div>

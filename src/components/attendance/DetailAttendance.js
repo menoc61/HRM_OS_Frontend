@@ -36,14 +36,14 @@ const DetailAttendance = () => {
 				<div className='text-center mb-4'>
 					{" "}
 					<h2 className='text-2xl font-semibold text-gray-600'>
-						Attendance Status #{attendance?.id}{" "}
+					Statut de présence#{attendance?.id}{" "}
 					</h2>
 				</div>
 				{attendance ? (
 					<div className='flex justify-center '>
 						<ul className='list-inside list-none border-2 border-inherit rounded px-5 py-5 '>
 							<ListItem>
-								Name :{" "}
+							Nom :{" "}
 								<TextInside>
 									{(
 										attendance?.user.firstName +
@@ -54,22 +54,22 @@ const DetailAttendance = () => {
 							</ListItem>
 
 							<ListItem>
-								IP Address : <TextInside>{attendance?.ip} </TextInside>
+							Adresse IP : <TextInside>{attendance?.ip} </TextInside>
 							</ListItem>
 							<ListItem>
-								In Time :{" "}
+							À l'heure :{" "}
 								<TextInside>
 									{dayjs(attendance.inTime).format("DD-MM-YYYY, h:mm A")}
 								</TextInside>
 							</ListItem>
 							<ListItem>
-								Out Time :{" "}
+							Temps d'arrêt :{" "}
 								<TextInside>
 									{dayjs(attendance.outTime).format("DD-MM-YYYY, h:mm A")}
 								</TextInside>
 							</ListItem>
 							<ListItem>
-								In Time Status :{" "}
+							Dans le statut temporel:{" "}
 								<TextInside>
 									{attendance.inTimeStatus === "Late" ? (
 										<span className='text-red-500'>
@@ -87,7 +87,7 @@ const DetailAttendance = () => {
 								</TextInside>
 							</ListItem>
 							<ListItem>
-								Out Time Status :{" "}
+							Statut du temps d'absence :{" "}
 								<TextInside>
 									{attendance.outTimeStatus === "Late" ? (
 										<span className='text-red-500'>
@@ -105,14 +105,14 @@ const DetailAttendance = () => {
 								</TextInside>
 							</ListItem>
 							<ListItem>
-								Punch By :{" "}
+								entreprise :{" "}
 								<TextInside className='text-green-500'>
 									{attendance.punchBy || "ON REVIEW"}
 								</TextInside>
 							</ListItem>
 
 							<ListItem>
-								Comment :{" "}
+								Commentaire :{" "}
 								<TextInside>{attendance.comment || "No comment"}</TextInside>
 							</ListItem>
 						</ul>

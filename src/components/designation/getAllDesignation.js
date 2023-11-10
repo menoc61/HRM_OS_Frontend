@@ -61,7 +61,7 @@ function CustomTable({ list, loading }) {
 	return (
 		<div className='mt-4'>
 			<div className='text-center my-2 flex justify-between'>
-				<h5 className='text-xl ml-4'>Designation List</h5>
+				<h5 className='text-xl ml-4'> Liste des Designations </h5>
 				{list && (
 					<div>
 						<CsvLinkBtn>
@@ -69,7 +69,7 @@ function CustomTable({ list, loading }) {
 								data={list}
 								className='btn btn-dark btn-sm mb-1'
 								filename='designation'>
-								Download CSV
+								Télécharger CSV
 							</CSVLink>
 						</CsvLinkBtn>
 					</div>

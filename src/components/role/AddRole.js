@@ -63,7 +63,7 @@ function CustomTable({ list }) {
 	return (
 		<Card>
 			<div className='text-center my-2 flex justify-between'>
-				<h5 className='text-xl role-list-title mb-2'>Role List</h5>
+				<h5 className='text-xl role-list-title mb-2'>Liste des rôles</h5>
 				{list && (
 					<div>
 						<CsvLinkBtn>
@@ -71,7 +71,7 @@ function CustomTable({ list }) {
 								data={list}
 								className='btn btn-dark btn-sm mb-1'
 								filename='roles'>
-								Download CSV
+							Télécharger CSV
 							</CSVLink>
 						</CsvLinkBtn>
 					</div>
@@ -138,7 +138,7 @@ const AddRole = ({ drawer }) => {
 						xl={drawer ? 22 : 12}
 						className='column-design border rounded card-custom'>
 						<Title level={4} className='mt-10 m-2 text-center'>
-							Add New Role
+						Ajouter un nouveau rôle
 						</Title>
 						<Form
 							style={{ marginBottom: "100px" }}
@@ -180,7 +180,7 @@ const AddRole = ({ drawer }) => {
 										htmlType='submit'
 										block
 										loading={loader}>
-										Add New Role
+									Ajouter un nouveau rôle
 									</Button>
 								</Form.Item>
 							</div>

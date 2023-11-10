@@ -80,7 +80,7 @@ function CustomTable({ list, total }) {
 					<div>
 						<CsvLinkBtn>
 							<CSVLink data={CSVlist} filename='accounts'>
-								Download CSV
+							Télécharger CSV
 							</CSVLink>
 						</CsvLinkBtn>
 					</div>
@@ -127,7 +127,7 @@ const GetAllAccount = (props) => {
 	return (
 		<Card className=''>
 			<h5 className=' text-2xl'>
-				<span className='ml-4'>Accounts List</span>
+				<span className='ml-4'>Liste des comptes</span>
 			</h5>
 
 			<CustomTable list={list} startdate={startdate} enddate={enddate} />

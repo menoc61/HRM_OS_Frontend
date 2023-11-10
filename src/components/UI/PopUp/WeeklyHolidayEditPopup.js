@@ -101,13 +101,13 @@ const WeeklyHolidayEdit = ({ data }) => {
 							<Select
 								placeholder='Select Start Day'
 								defaultValue={initialValues.startDay}>
-								<Select.Option value='Saturday'>Saturday</Select.Option>
-								<Select.Option value='Sunday'>Sunday</Select.Option>
-								<Select.Option value='Monday'>Monday</Select.Option>
-								<Select.Option value='Tuesday'>Tuesday</Select.Option>
-								<Select.Option value='Wednesday'>Wednesday</Select.Option>
-								<Select.Option value='Thursday'>Thursday</Select.Option>
-								<Select.Option value='Friday'>Friday</Select.Option>
+								<Select.Option value='Saturday'>Samedi</Select.Option>
+								<Select.Option value='Sunday'>Dimanche</Select.Option>
+								<Select.Option value='Monday'>lundi</Select.Option>
+								<Select.Option value='Tuesday'>mardi</Select.Option>
+								<Select.Option value='Wednesday'>mercredi</Select.Option>
+								<Select.Option value='Thursday'>jeudi</Select.Option>
+								<Select.Option value='Friday'>vendredi</Select.Option>
 							</Select>
 						</Form.Item>
 
@@ -123,14 +123,14 @@ const WeeklyHolidayEdit = ({ data }) => {
 							]}>
 							<Select
 								placeholder='Select Start Day'
-								defaultValue={initialValues.endDay}>
-								<Select.Option value='Saturday'>Saturday</Select.Option>
-								<Select.Option value='Sunday'>Sunday</Select.Option>
-								<Select.Option value='Monday'>Monday</Select.Option>
-								<Select.Option value='Tuesday'>Tuesday</Select.Option>
-								<Select.Option value='Wednesday'>Wednesday</Select.Option>
-								<Select.Option value='Thursday'>Thursday</Select.Option>
-								<Select.Option value='Friday'>Friday</Select.Option>
+								defaultValue={initialValues.startDay}>
+								<Select.Option value='Saturday'>Samedi</Select.Option>
+								<Select.Option value='Sunday'>Dimanche</Select.Option>
+								<Select.Option value='Monday'>lundi</Select.Option>
+								<Select.Option value='Tuesday'>mardi</Select.Option>
+								<Select.Option value='Wednesday'>mercredi</Select.Option>
+								<Select.Option value='Thursday'>jeudi</Select.Option>
+								<Select.Option value='Friday'>vendredi</Select.Option>
 							</Select>
 						</Form.Item>
 
@@ -147,7 +147,7 @@ const WeeklyHolidayEdit = ({ data }) => {
 								htmlType='submit'
 								block
 								loading={loader}>
-								Update Weekly Holiday
+								Mettre à jour les jours fériés hebdomadaires
 							</Button>
 						</Form.Item>
 					</div>

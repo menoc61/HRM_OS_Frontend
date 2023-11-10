@@ -5,7 +5,7 @@ import styles from "./AddNewAccount.module.css";
 
 import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
-import { addAccount } from "../../redux/rtk/features/account/accountSlice";
+import { addAccount } from "../../redux/rtk/features/announcement/account/accountSlice";
 import { getMainAccount } from "./account.api";
 
 const AddAccount = ({ drawer }) => {
@@ -67,7 +67,7 @@ const AddAccount = ({ drawer }) => {
 					className='border rounded column-design'>
 					<Card bordered={false}>
 						<Title level={4} className='m-2 text-center'>
-							Add Account
+						Ajouter un compte
 						</Title>
 						<Form
 							form={form}
@@ -140,7 +140,7 @@ const AddAccount = ({ drawer }) => {
 									size='large'
 									loading={loader}
 									onClick={() => setLoader(true)}>
-									Add New Account
+									Ajouter un nouveau compte
 								</Button>
 							</Form.Item>
 						</Form>

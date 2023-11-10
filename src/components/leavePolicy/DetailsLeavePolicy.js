@@ -84,14 +84,14 @@ const CustomTable = ({ list, data }) => {
 		<div>
 			<div className='text-center my-2 flex justify-between'>
 				<h5 className='award-list-title text-color-2 text-xl mb-2'>
-					Employee List
+				Liste des employés
 				</h5>
 
 				{list && (
 					<div>
 						<CsvLinkBtn>
 							<CSVLink data={list} filename='user_award'>
-								Download CSV
+							Télécharger CSV
 							</CSVLink>
 						</CsvLinkBtn>
 					</div>

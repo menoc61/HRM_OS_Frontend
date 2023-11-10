@@ -18,7 +18,7 @@ const NewDashboardCard = ({ information }) => {
 						<Col xs={20} sm={16} md={12} lg={4} xl={5}>
 							<Card className='ant-shadow txt-color-2' bordered={false}>
 								<Statistic
-									title={<p className='text-xl  txt-color-2'> TOTAL USERS </p>}
+									title={<p className='text-xl  txt-color-2'>nombre total d'utilisateurs </p>}
 									loading={!information}
 									value={information?.totalUsers}
 									valueStyle={{
@@ -36,7 +36,7 @@ const NewDashboardCard = ({ information }) => {
 						<Col xs={20} sm={16} md={12} lg={5} xl={5}>
 							<Card className='ant-shadow txt-color-2' bordered={false}>
 								<Statistic
-									title={<p className='text-xl  txt-color-2'>TOTAL SALARY</p>}
+									title={<p className='text-xl  txt-color-2'>SALAIRE TOTAL</p>}
 									loading={!information}
 									value={information?.totalSalary || 0}
 									precision={2}
@@ -57,7 +57,7 @@ const NewDashboardCard = ({ information }) => {
 							<Card className='ant-shadow txt-color-2' bordered={false}>
 								<Statistic
 									title={
-										<p className='text-xl  txt-color-2'> TODAY PRESENT </p>
+										<p className='text-xl  txt-color-2'>  PRÉSENCE AUJOURD'HUI</p>
 									}
 									loading={!information}
 									value={information?.totalPresent}
@@ -76,7 +76,7 @@ const NewDashboardCard = ({ information }) => {
 						<Col xs={20} sm={16} md={12} lg={5} xl={5}>
 							<Card className='ant-shadow txt-color-2' bordered={false}>
 								<Statistic
-									title={<p className='text-xl  txt-color-2'>TODAY ON LEAVE</p>}
+									title={<p className='text-xl  txt-color-2'>CONGÉ D AUJOURD'HUI </p>}
 									loading={!information}
 									value={information?.totalOnLeave}
 									valueStyle={{
@@ -94,7 +94,7 @@ const NewDashboardCard = ({ information }) => {
 						<Col xs={20} sm={16} md={12} lg={4} xl={4}>
 							<Card className='ant-shadow txt-color-2' bordered={false}>
 								<Statistic
-									title={<p className='text-xl  txt-color-2'> TODAY ABSENT</p>}
+									title={<p className='text-xl  txt-color-2'> ABSENCE DU JOUR</p>}
 									loading={!information}
 									value={information?.totalAbsent}
 									valueStyle={{

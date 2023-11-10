@@ -30,13 +30,13 @@ const WelcomePage = () => {
 							<Link
 								to='/admin/auth/login'
 								className='inline-flex items-center justify-center px-4 py-2 text-base font-medium leading-6 text-white whitespace-no-wrap bg-blue-600 border border-transparent rounded-md shadow-sm hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-600'>
-								Login
+								Se connecter
 							</Link>
 						) : (
 							<Link
 								to='/admin/dashboard'
 								className='inline-flex items-center justify-center px-4 py-2 text-base font-medium leading-6 text-white whitespace-no-wrap bg-teal-600 border border-transparent rounded-md shadow-sm hover:bg-teal-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-600'>
-								Dashboard
+								Tableau de bord
 							</Link>
 						)}
 					</div>
@@ -50,21 +50,21 @@ const WelcomePage = () => {
 							<div className='w-full pb-6 space-y-6 sm:max-w-md lg:max-w-lg md:space-y-4 lg:space-y-8 xl:space-y-9 sm:pr-5 lg:pr-0 md:pb-0'>
 								<h1 className='text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-4xl lg:text-5xl xl:text-6xl'>
 									<span className='block xl:inline'>
-										Revolutionize & Simplify.
+									Révolutionnez et simplifiez.
 									</span>
 									<span className='block text-blue-600 xl:inline'>
-										Your HR Solutions.
+									Vos solutions RH.
 									</span>
 								</h1>
 								<p className='mx-auto text-base text-gray-500 sm:max-w-md lg:text-xl md:max-w-3xl'>
-									Embrace digital transformation with our powerful HR tool. Stay
-									ahead of the curve and gain a competitive edge.
+								Adoptez la transformation numérique avec notre puissant outil RH. Rester
+avoir une longueur d'avance et acquérir un avantage concurrentiel.
 								</p>
 								<div className='relative flex flex-col sm:flex-row sm:space-x-4'>
 									<a
 										href='/admin/dashboard'
 										className='flex items-center w-full px-6 py-3 mb-3 text-lg text-white bg-blue-600 rounded-md sm:mb-0 hover:bg-blue-700 sm:w-auto'>
-										Try Demo Now
+										Essayez la démo maintenant
 										<svg
 											xmlns='http://www.w3.org/2000/svg'
 											className='w-5 h-5 ml-1'
@@ -81,7 +81,7 @@ const WelcomePage = () => {
 									<a
 										href='/admin/dashboard'
 										className='flex items-center px-6 py-3 text-gray-500 bg-gray-100 rounded-md hover:bg-gray-200 hover:text-gray-600'>
-										Learn More
+										Apprendre encore plus
 									</a>
 								</div>
 							</div>
@@ -110,11 +110,11 @@ const WelcomePage = () => {
 
 					<div className='box-border order-first w-full text-black border-solid md:w-1/2 md:pl-10 md:order-none'>
 						<h2 className='m-0 text-xl font-semibold leading-tight border-0 border-gray-300 lg:text-3xl md:text-2xl'>
-							Embrace digital transformation
+						Adoptez la transformation numérique
 						</h2>
 						<p className='pt-4 pb-8 m-0 leading-7 text-gray-700 border-0 border-gray-300 sm:pr-12 xl:pr-32 lg:text-lg'>
-							Stay ahead of the curve and gain a competitive edge with our
-							innovative HR technologies.
+						Gardez une longueur d'avance et obtenez un avantage concurrentiel grâce à notre
+technologies RH innovantes.
 						</p>
 						<ul className='p-0 m-0 leading-6 border-0 border-gray-300'>
 							<li className='box-border relative py-1 pl-0 text-left text-gray-500 border-solid'>
@@ -127,13 +127,13 @@ const WelcomePage = () => {
 								<span className='inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-indigo-500 rounded-full'>
 									<span className='text-sm font-bold'>✓</span>
 								</span>{" "}
-								Simplify Your HR Processes
+								Simplifiez vos processus RH
 							</li>
 							<li className='box-border relative py-1 pl-0 text-left text-gray-500 border-solid'>
 								<span className='inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-indigo-500 rounded-full'>
 									<span className='text-sm font-bold'>✓</span>
 								</span>{" "}
-								Empower Your HR Operations
+								Renforcez vos opérations RH
 							</li>
 						</ul>
 					</div>
@@ -144,26 +144,26 @@ const WelcomePage = () => {
 							Automated Systems
 						</h2>
 						<p className='pt-4 pb-8 m-0 leading-7 text-gray-700 border-0 border-gray-300 sm:pr-10 lg:text-lg'>
-							Get More Done in Less Time with Our Intuitive, Automated System
+						Faites-en plus en moins de temps grâce à notre système intuitif et automatisé
 						</p>
 						<ul className='p-0 m-0 leading-6 border-0 border-gray-300'>
 							<li className='box-border relative py-1 pl-0 text-left text-gray-500 border-solid'>
 								<span className='inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-indigo-500 rounded-full'>
 									<span className='text-sm font-bold'>✓</span>
 								</span>{" "}
-								Automated Payroll Processing and Payslip Generation.
+								Faites-en plus en moins de temps grâce à notre système intuitif et automatisé
 							</li>
 							<li className='box-border relative py-1 pl-0 text-left text-gray-500 border-solid'>
 								<span className='inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-indigo-500 rounded-full'>
 									<span className='text-sm font-bold'>✓</span>
 								</span>{" "}
-								Holiday Management and Leave Management.
+								Gestion des vacances et gestion des congés.
 							</li>
 							<li className='box-border relative py-1 pl-0 text-left text-gray-500 border-solid'>
 								<span className='inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-indigo-500 rounded-full'>
 									<span className='text-sm font-bold'>✓</span>
 								</span>{" "}
-								Automated Attendance Management and Time Tracking.
+								Gestion automatisée des présences et suivi du temps.
 							</li>
 						</ul>
 					</div>
@@ -184,11 +184,11 @@ const WelcomePage = () => {
 						<div className='order-1 w-full px-3 lg:w-1/2 lg:order-0'>
 							<div className='w-full lg:max-w-md'>
 								<h2 className='mb-4 text-3xl font-bold leading-tight tracking-tight sm:text-4xl font-heading'>
-									Reduce Your Workload and Improve Your Efficiency
+								Réduisez votre charge de travail et améliorez votre efficacité
 								</h2>
 								<p className='mb-4 font-medium tracking-tight text-gray-400 xl:mb-6'>
-									User-Friendly HR Solutions for All Your Needs, Designed to
-									Make Your Life Easier
+								Des solutions RH conviviales pour tous vos besoins, conçues pour
+Facilitez-vous la vie
 								</p>
 								<ul>
 									<li className='flex items-center py-2 space-x-4 xl:py-3'>
@@ -205,7 +205,7 @@ const WelcomePage = () => {
 												d='M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z'></path>
 										</svg>
 										<span className='font-medium text-gray-500'>
-											Intrigrated Accounting System with Payroll Management
+										Système comptable intégré avec gestion de la paie
 										</span>
 									</li>
 									<li className='flex items-center py-2 space-x-4 xl:py-3'>
@@ -222,7 +222,7 @@ const WelcomePage = () => {
 												d='M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4'></path>
 										</svg>
 										<span className='font-medium text-gray-500'>
-											Automated Leave Management and Holiday Management.
+										Gestion automatisée des congés et gestion des vacances.
 										</span>
 									</li>
 									<li className='flex items-center py-2 space-x-4 xl:py-3'>
@@ -239,7 +239,7 @@ const WelcomePage = () => {
 												d='M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z'></path>
 										</svg>
 										<span className='font-medium text-gray-500'>
-											Role Based Access Control and User Management.
+										Contrôle d'accès basé sur les rôles et gestion des utilisateurs.
 										</span>
 									</li>
 								</ul>
@@ -260,7 +260,7 @@ const WelcomePage = () => {
 				<div className='px-16 bg-white'>
 					<div className='container flex flex-col items-start mx-auto lg:items-center'>
 						<p className='relative flex items-start justify-start w-full text-lg font-bold tracking-wider text-purple-500 uppercase lg:justify-center lg:items-center'>
-							Verify for yourself instead of simply accepting our statement.
+						Vérifiez par vous-même au lieu de simplement accepter notre déclaration.
 						</p>
 
 						<h2 className='relative flex items-start justify-start w-full max-w-3xl text-4xl font-bold lg:justify-center'>
@@ -271,7 +271,7 @@ const WelcomePage = () => {
 								viewBox='0 0 975.036 975.036'>
 								<path d='M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z'></path>
 							</svg>
-							Explore the perspectives of others.
+							Explorez les points de vue des autres.
 						</h2>
 						<div className='block w-full h-0.5 max-w-lg mt-6 bg-purple-100 rounded-full'></div>
 
@@ -286,13 +286,13 @@ const WelcomePage = () => {
 									</div>
 									<div className='flex flex-col items-start justify-center'>
 										<h4 className='font-bold text-gray-800'>Karan Kumar</h4>
-										<p className='text-gray-600'>From Bahrain</p>
+										<p className='text-gray-600'>De Bahreïn</p>
 									</div>
 								</div>
 								<blockquote className='mt-8 text-lg text-gray-500'>
-									"All the necessary features are available. Very easy to
-									navigate and use. Loved it! Very fast customer support.
-									Impressive."
+								"Toutes les fonctionnalités nécessaires sont disponibles. Très simple à
+naviguer et utiliser. J'ai adoré ! Support client très rapide.
+Impressionnant."
 								</blockquote>
 							</div>
 							<div className='flex flex-col items-start justify-start w-full h-auto px-0 mx-0 mb-12 border-l border-r border-transparent lg:w-1/3 lg:mb-0 lg:px-8 lg:mx-8 lg:border-gray-200'>
@@ -305,14 +305,14 @@ const WelcomePage = () => {
 									</div>
 									<div className='flex flex-col items-start justify-center'>
 										<h4 className='font-bold text-gray-800'>Abu Wahid</h4>
-										<p className='text-gray-600'>From Albania</p>
+										<p className='text-gray-600'>D'Albanie</p>
 									</div>
 								</div>
 								<blockquote className='mt-8 text-lg text-gray-500'>
-									" All the must needed features are available. Very fast and
-									lightweight but good design. I needed some customization and
-									they delivered it very well and fast at a reasonable price.
-									Thanks to the team and their outstanding fast support."
+								" Toutes les fonctionnalités indispensables sont disponibles. Très rapide et
+léger mais bon design. J'avais besoin d'une personnalisation et
+ils l'ont livré très bien et rapidement à un prix raisonnable.
+Merci à l'équipe et à son soutien rapide et exceptionnel."
 								</blockquote>
 							</div>
 							<div className='flex flex-col items-start justify-start w-full h-auto lg:w-1/3'>
@@ -325,12 +325,12 @@ const WelcomePage = () => {
 									</div>
 									<div className='flex flex-col items-start justify-center'>
 										<h4 className='font-bold text-gray-800'>Dsuza</h4>
-										<p className='text-gray-600'>From Belarus</p>
+										<p className='text-gray-600'>De Biélorussie</p>
 									</div>
 								</div>
 								<blockquote className='mt-8 text-lg text-gray-500'>
-									"All the needed functionalities for my work was available in
-									this software. Good design and easy to use."
+								"Toutes les fonctionnalités nécessaires à mon travail étaient disponibles dans
+ce logiciel. Bon design et facile à utiliser."
 								</blockquote>
 							</div>
 						</div>
@@ -345,7 +345,7 @@ const WelcomePage = () => {
 							Our Other Products
 						</h2>
 						<p className='box-border mt-4 text-2xl leading-normal text-gray-900 border-solid'>
-							We're also working on some other products. Check them out!
+						Nous travaillons également sur d'autres produits. Vérifie-les!
 						</p>
 					</div>
 					<div className='grid max-w-md mx-auto mt-6 overflow-hidden leading-7 text-gray-900 border border-b-4 border-gray-300 border-blue-600 rounded-xl md:max-w-lg lg:max-w-none sm:mt-10 lg:grid-cols-3'>
@@ -354,8 +354,8 @@ const WelcomePage = () => {
 								POS OS
 							</h3>
 							<p className='mt-3 text-base leading-7 text-gray-900 border-0 border-solid'>
-								POS OS is a point of sale software for shops, restaurants, and
-								other businesses.
+							POS OS est un logiciel de point de vente pour les magasins, les restaurants et
+d'autres entreprises.
 							</p>
 							<div className='flex items-center justify-center mt-6 leading-7 text-gray-900 border-0 border-solid sm:mt-8'>
 								<p className='box-border m-0 text-6xl font-semibold leading-normal text-center border-0 border-gray-200'>
@@ -377,7 +377,7 @@ const WelcomePage = () => {
 								ERP OS
 							</h3>
 							<p className='mt-3 leading-7 text-gray-900 border-0 border-solid'>
-								ERP OS is a complete ERP software for businesses.
+							ERP OS est un logiciel ERP complet pour les entreprises.
 							</p>
 							<div className='flex items-center justify-center mt-6 leading-7 text-gray-900 border-0 border-solid sm:mt-8'>
 								<p className='box-border m-0 text-6xl font-semibold leading-normal text-center border-0 border-gray-200'>
@@ -388,7 +388,7 @@ const WelcomePage = () => {
 								href='https://codecanyon.net/item/erp-os-best-erp-software-for-store-inventory-and-invoice-management/39644625?s_rank=4'
 								target='_blank'
 								className='inline-flex items-center justify-center w-full py-3 mt-6 font-sans text-sm leading-none text-center text-white no-underline bg-blue-600 border-b-4 border-blue-700 rounded cursor-pointer hover:text-white sm:text-base sm:mt-8 md:text-lg'>
-								Buy Now
+								Acheter maintenant
 							</a>
 						</div>
 						<div className='box-border px-4 py-8 text-center bg-white border-solid sm:px-4 sm:py-8 md:px-8 md:py-12 lg:px-10'>
@@ -396,8 +396,8 @@ const WelcomePage = () => {
 								INVOICE OS
 							</h3>
 							<p className='mt-3 leading-7 text-gray-900 border-0 border-solid'>
-								Invoice OS is a simple invoicing software for small businesses
-								and freelancers.
+							Invoice OS est un logiciel de facturation simple pour les petites entreprises
+et les indépendants.
 							</p>
 							<div className='flex items-center justify-center mt-6 leading-7 text-gray-900 border-0 border-solid sm:mt-8'>
 								<p className='box-border m-0 text-6xl font-semibold leading-normal text-center border-0 border-gray-200'>
@@ -408,7 +408,7 @@ const WelcomePage = () => {
 								href='https://codecanyon.net/item/invoice-os-invoice-management-software-with-email-accounting-inventory-store-functionality/42021434?s_rank=1'
 								target='_blank'
 								className='inline-flex items-center justify-center w-full py-3 mt-6 font-sans text-sm leading-none text-center text-blue-600 no-underline bg-transparent border border-b-2 border-blue-600 rounded cursor-pointer hover:bg-blue-600 hover:border-blue-600 hover:text-white sm:text-base sm:mt-8 md:text-lg'>
-								Buy Now
+								Acheter maintenant
 							</a>
 						</div>
 					</div>
@@ -422,7 +422,7 @@ const WelcomePage = () => {
 							<a
 								href='https://solution.omega.ac/about-us/'
 								className='text-base leading-6 text-gray-500 hover:text-gray-900'>
-								About
+								À propos
 							</a>
 						</div>
 						<div className='px-5 py-2'>
@@ -443,7 +443,7 @@ const WelcomePage = () => {
 							<a
 								href='https://codecanyon.net/user/omegasolution/portfolio'
 								className='text-base leading-6 text-gray-500 hover:text-gray-900'>
-								Products
+								Produits
 							</a>
 						</div>
 						<div className='px-5 py-2'>

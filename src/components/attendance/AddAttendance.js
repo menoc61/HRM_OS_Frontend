@@ -82,7 +82,7 @@ const Attendance = ({ drawer }) => {
 						xl={drawer ? 22 : 12}
 						className='column-design border rounded card-custom'>
 						<Title level={4} className='m-2 mt-5 mb-5 text-center'>
-							Add Manual Attendance
+						Ajouter une présence manuelle
 						</Title>
 						{inTimeDate.time === null ||
 						inTimeDate.date === null ||
@@ -90,7 +90,7 @@ const Attendance = ({ drawer }) => {
 						outTimeDate.date === null ? (
 							<p className='text-center text-rose-500 text-sm font-medium mb-4'>
 								{" "}
-								* Please fill Date and Time
+								*Veuillez remplir la date et l'heure
 							</p>
 						) : (
 							""
@@ -214,7 +214,7 @@ const Attendance = ({ drawer }) => {
 										htmlType='submit'
 										block
 										loading={loader}>
-										Add Attendance
+										Ajouter une participation
 									</Button>
 								</Form.Item>
 							</div>

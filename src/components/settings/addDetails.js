@@ -76,7 +76,7 @@ const AddDetails = () => {
 						className='border rounded column-design'>
 						<Card bordered={false}>
 							<Title level={4} className='m-2 mb-4 text-center'>
-								Company Setting
+							Paramètres de l'entreprise
 							</Title>
 							{initValues ? (
 								<Form

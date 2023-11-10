@@ -71,7 +71,7 @@ const EducaitonAddSinglePopup = ({ data, setLoading }) => {
 		<>
 			<div className='text-center'>
 				<Button type='primary' onClick={showModal}>
-					Add New Education
+				Ajouter une nouvelle éducation
 				</Button>
 			</div>
 			<Modal
@@ -181,7 +181,7 @@ const EducaitonAddSinglePopup = ({ data, setLoading }) => {
 								htmlType='submit'
 								block
 								loading={loader}>
-								Add Now
+								Ajouter maintenant
 							</Button>
 						</Form.Item>
 					</div>

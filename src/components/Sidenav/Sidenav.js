@@ -60,7 +60,7 @@ const Sidenav = ({ color, sideNavOpenKeys }) => {
 				hasPermission("create-user") && {
 					label: (
 						<NavLink to='/admin/hr/staffs/new'>
-							<span>New Employee</span>
+							<span>Nouvel employé</span>
 						</NavLink>
 					),
 
@@ -70,7 +70,7 @@ const Sidenav = ({ color, sideNavOpenKeys }) => {
 				hasPermission("readAll-user") && {
 					label: (
 						<NavLink to='/admin/hr/staffs'>
-							<span>Employee List</span>
+							<span>Liste des employés</span>
 						</NavLink>
 					),
 					key: "users",
@@ -115,7 +115,7 @@ const Sidenav = ({ color, sideNavOpenKeys }) => {
 				hasPermission("create-attendance") && {
 					label: (
 						<NavLink to='/admin/attendance'>
-							<span>Attendance</span>
+							<span>Présence</span>
 						</NavLink>
 					),
 					key: "attendance",
@@ -124,7 +124,7 @@ const Sidenav = ({ color, sideNavOpenKeys }) => {
 				hasPermission("readSingle-attendance") && {
 					label: (
 						<NavLink to={`/admin/attendance/user/${user}`}>
-							<span>My Attendance</span>
+							<span>Ma présence</span>
 						</NavLink>
 					),
 					key: "myAttendance",
@@ -141,7 +141,7 @@ const Sidenav = ({ color, sideNavOpenKeys }) => {
 				hasPermission("create-payroll") && {
 					label: (
 						<NavLink to='/admin/payroll/new'>
-							<span>Calculate Payroll</span>
+							<span>Calculer la paie</span>
 						</NavLink>
 					),
 					key: "calculatePayroll",
@@ -150,7 +150,7 @@ const Sidenav = ({ color, sideNavOpenKeys }) => {
 				hasPermission("readAll-payroll") && {
 					label: (
 						<NavLink to='/admin/payroll/list'>
-							<span>Payslip List</span>
+							<span>Liste des fiches de paie</span>
 						</NavLink>
 					),
 					key: "payslipList",
@@ -167,7 +167,7 @@ const Sidenav = ({ color, sideNavOpenKeys }) => {
 				hasPermission("readAll-shift") && {
 					label: (
 						<NavLink to='/admin/shift'>
-							<span>Shift</span>
+							<span>Changement</span>
 						</NavLink>
 					),
 					key: "newShift",
@@ -203,7 +203,7 @@ const Sidenav = ({ color, sideNavOpenKeys }) => {
 				hasPermission("create-leaveApplication") && {
 					label: (
 						<NavLink to='/admin/leave/new'>
-							<span> New Leave </span>
+							<span> Nouveau congé </span>
 						</NavLink>
 					),
 					key: "newLeave",
@@ -212,7 +212,7 @@ const Sidenav = ({ color, sideNavOpenKeys }) => {
 				hasPermission("readAll-leaveApplication") && {
 					label: (
 						<NavLink to='/admin/leave'>
-							<span>Leave Status</span>
+							<span>Statut de congé</span>
 						</NavLink>
 					),
 					key: "leaveStatus",
@@ -221,7 +221,7 @@ const Sidenav = ({ color, sideNavOpenKeys }) => {
 				hasPermission("readSingle-leaveApplication") && {
 					label: (
 						<NavLink to={`/admin/leave/user/${user}`}>
-							<span>My Leaves</span>
+							<span>Mon  congé</span>
 						</NavLink>
 					),
 					key: "myLeaves",
@@ -239,7 +239,7 @@ const Sidenav = ({ color, sideNavOpenKeys }) => {
 				hasPermission("readAll-weeklyHoliday") && {
 					label: (
 						<NavLink to='/admin/holiday/week'>
-							<span>Weekly Holiday</span>
+							<span>Vacances hebdomadaires</span>
 						</NavLink>
 					),
 					key: "weeklyHoliday",
@@ -248,7 +248,7 @@ const Sidenav = ({ color, sideNavOpenKeys }) => {
 				hasPermission("readAll-publicHoliday") && {
 					label: (
 						<NavLink to='/admin/holiday/public'>
-							<span>Public Holiday</span>
+							<span>Jour férié</span>
 						</NavLink>
 					),
 					key: "publicHoliday",
@@ -265,7 +265,7 @@ const Sidenav = ({ color, sideNavOpenKeys }) => {
 				hasPermission("readAll-leavePolicy") && {
 					label: (
 						<NavLink to='/admin/leave-policy'>
-							<span>Leave Policy</span>
+							<span>Politique de congé</span>
 						</NavLink>
 					),
 					key: "leavePolicy",
@@ -282,7 +282,7 @@ const Sidenav = ({ color, sideNavOpenKeys }) => {
 				hasPermission("readAll-announcement") && {
 					label: (
 						<NavLink to='/admin/announcement'>
-							<span>Announcement</span>
+							<span>Annonce</span>
 						</NavLink>
 					),
 					key: "newLeave",
@@ -301,7 +301,7 @@ const Sidenav = ({ color, sideNavOpenKeys }) => {
 				hasPermission("readAll-account") && {
 					label: (
 						<NavLink to='/admin/account/'>
-							<span>Account</span>
+							<span>Compte</span>
 						</NavLink>
 					),
 					key: "accountList",
@@ -310,7 +310,7 @@ const Sidenav = ({ color, sideNavOpenKeys }) => {
 				hasPermission("create-transaction") && {
 					label: (
 						<NavLink to='/admin/transaction/create'>
-							<span>New Transaction</span>
+							<span>Nouvelle opération</span>
 						</NavLink>
 					),
 					key: "newTransaction",
@@ -336,7 +336,7 @@ const Sidenav = ({ color, sideNavOpenKeys }) => {
 				hasPermission("readAll-account") && {
 					label: (
 						<NavLink to='/admin/account/trial-balance'>
-							<span>Trial Balance</span>
+							<span>Balance de vérification</span>
 						</NavLink>
 					),
 					key: "trialBalance",
@@ -345,7 +345,7 @@ const Sidenav = ({ color, sideNavOpenKeys }) => {
 				hasPermission("readAll-account") && {
 					label: (
 						<NavLink to='/admin/account/balance-sheet'>
-							<span>Balance Sheet</span>
+							<span>Bilan</span>
 						</NavLink>
 					),
 					key: "balanceSheet",
@@ -354,7 +354,7 @@ const Sidenav = ({ color, sideNavOpenKeys }) => {
 				hasPermission("readAll-account") && {
 					label: (
 						<NavLink to='/admin/account/income'>
-							<span>Income Statement</span>
+							<span>releve de revenue</span>
 						</NavLink>
 					),
 					key: "incomeStatement",
@@ -371,7 +371,7 @@ const Sidenav = ({ color, sideNavOpenKeys }) => {
 				hasPermission("create-award") && {
 					label: (
 						<NavLink to='/admin/award/new'>
-							<span>New Award</span>
+							<span>Nouveau prix</span>
 						</NavLink>
 					),
 					key: "newAward",
@@ -381,7 +381,7 @@ const Sidenav = ({ color, sideNavOpenKeys }) => {
 				hasPermission("readAll-award") && {
 					label: (
 						<NavLink to='/admin/award'>
-							<span>Award</span>
+							<span>Prix</span>
 						</NavLink>
 					),
 					key: "award",
@@ -403,7 +403,7 @@ const Sidenav = ({ color, sideNavOpenKeys }) => {
 				hasPermission("create-project") && {
 					label: (
 						<NavLink to='/admin/project/new'>
-							<span>Add Project</span>
+							<span>Ajouter un projet</span>
 						</NavLink>
 					),
 					key: "project",
@@ -412,7 +412,7 @@ const Sidenav = ({ color, sideNavOpenKeys }) => {
 				hasPermission("readAll-project") && {
 					label: (
 						<NavLink to='/admin/project'>
-							<span>All Project</span>
+							<span>Ajouter un projet</span>
 						</NavLink>
 					),
 					key: "allProject",
@@ -421,7 +421,7 @@ const Sidenav = ({ color, sideNavOpenKeys }) => {
 				hasPermission("create-projectTeam") && {
 					label: (
 						<NavLink to='/admin/team'>
-							<span>Team</span>
+							<span>Équipe</span>
 						</NavLink>
 					),
 					key: "team",
@@ -431,7 +431,7 @@ const Sidenav = ({ color, sideNavOpenKeys }) => {
 					hasPermission("readAll-priority")) && {
 					label: (
 						<NavLink to='/admin/task-priority'>
-							<span>Task Priority</span>
+							<span>Priorité des tâches</span>
 						</NavLink>
 					),
 					key: "taskPriority",
@@ -440,7 +440,7 @@ const Sidenav = ({ color, sideNavOpenKeys }) => {
 				hasPermission("create-milestone") && {
 					label: (
 						<NavLink to='/admin/milestone'>
-							<span>Add Milestone</span>
+							<span>Ajouter un jalon</span>
 						</NavLink>
 					),
 					key: "milestone",
@@ -450,7 +450,7 @@ const Sidenav = ({ color, sideNavOpenKeys }) => {
 				hasPermission("create-taskStatus") && {
 					label: (
 						<NavLink to='/admin/task-status'>
-							<span>Add Task Status</span>
+							<span>Ajouter le statut d'une tâche</span>
 						</NavLink>
 					),
 					key: "taskStatus",
@@ -467,7 +467,7 @@ const Sidenav = ({ color, sideNavOpenKeys }) => {
 				hasPermission("readAll-setting") && {
 					label: (
 						<NavLink to='/admin/company-setting'>
-							<span>Company Settings</span>
+							<span>Paramètres de l'entreprise</span>
 						</NavLink>
 					),
 					key: "invoiceSetting",

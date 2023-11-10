@@ -79,7 +79,7 @@ const UpdateAccount = ({ account, id }) => {
         onCancel={handleCancel}
         footer={[
           <Button key="back" type="danger" onClick={handleCancel}>
-            cancel
+           Annuler
           </Button>,
         ]}>
         <Form
@@ -157,7 +157,7 @@ const UpdateAccount = ({ account, id }) => {
               shape="round"
               loading={loading}
               onClick={() => setLoading(true)}>
-              Update Account
+              Compte mis à jour
             </Button>
           </Form.Item>
         </Form>

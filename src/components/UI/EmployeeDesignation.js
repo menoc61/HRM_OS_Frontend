@@ -65,10 +65,10 @@ const EmployeeDesignation = ({ list, edit, setLoading }) => {
 											</div>
 
 											<Heading1>
-												Comment : <Heading2>{item?.comment}</Heading2>
+												Commentaire : <Heading2>{item?.comment}</Heading2>
 											</Heading1>
 											<Heading1 class=''>
-												Start Date :{" "}
+											Date de début :{" "}
 												<Heading2>
 													{" "}
 													{dayjs(item?.startDate).format("DD/MM/YYYY")}
@@ -76,7 +76,7 @@ const EmployeeDesignation = ({ list, edit, setLoading }) => {
 											</Heading1>
 
 											<Heading1 class=''>
-												End Date :{" "}
+											Date de fin :{" "}
 												<Heading2>
 													{item?.endDate
 														? dayjs(item?.endDate).format("DD/MM/YYYY")

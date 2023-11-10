@@ -88,7 +88,7 @@ function CustomTable({ list, total }) {
 				{list && (
 					<CsvLinkBtn>
 						<CSVLink data={CSVlist} filename='transaction'>
-							Download CSV
+						Télécharger CSV
 						</CSVLink>
 					</CsvLinkBtn>
 				)}
@@ -159,7 +159,7 @@ const GetAllTransaction = (props) => {
 			<Card className=''>
 				<div className='card-title  flex  justify-between mr-4'>
 					<h5 className='text-xl txt-color-2'>
-						<span>Transaction History</span>
+						<span>Historique des transactions</span>
 					</h5>
 					<div>
 						<RangePicker

@@ -59,7 +59,7 @@ const AddAward = ({ drawer }) => {
 						xl={drawer ? 22 : 12}
 						className='column-design border rounded card-custom'>
 						<Title level={4} className='m-2 mt-5 mb-5 text-center'>
-							Add Award
+						Ajouter une récompense
 						</Title>
 						<Form
 							style={{ marginBottom: "40px" }}
@@ -115,7 +115,7 @@ const AddAward = ({ drawer }) => {
 										htmlType='submit'
 										block
 										loading={loader}>
-										Add New Award
+										Ajouter une nouvelle récompense
 									</Button>
 								</Form.Item>
 							</div>

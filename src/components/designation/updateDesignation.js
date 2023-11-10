@@ -86,7 +86,7 @@ function UpdateDesignation() {
 								</div>
 							)}
 							<Title level={3} className='m-3 text-center'>
-								Edit Designation Form
+							Modifier le formulaire de désignation
 							</Title>
 							<Form
 								initialValues={{
@@ -125,7 +125,7 @@ function UpdateDesignation() {
 										span: 16,
 									}}>
 									<Button block type='primary' htmlType='submit' shape='round'>
-										Update Now
+									Mettez à jour maintenant
 									</Button>
 								</Form.Item>
 							</Form>

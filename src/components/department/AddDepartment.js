@@ -58,7 +58,7 @@ function CustomTable({ list }) {
 		<Card>
 			<div className='text-center my-2 flex justify-between'>
 				<h5 className='department-list-title text-color-2 text-xl mb-2'>
-					Department List
+				Liste des départements
 				</h5>
 				{list && (
 					<div>
@@ -67,7 +67,7 @@ function CustomTable({ list }) {
 								data={list}
 								className='btn btn-dark btn-sm mb-1'
 								filename='departments'>
-								Download CSV
+							Télécharger CSV
 							</CSVLink>
 						</CsvLinkBtn>
 					</div>
@@ -134,7 +134,7 @@ const AddDepartment = ({ drawer }) => {
 						xl={drawer ? 22 : 12}
 						className='column-design border rounded card-custom'>
 						<Title level={4} className='m-2 mt-5 mb-5 text-center'>
-							Add department
+						Ajouter un département
 						</Title>
 						<Form
 							style={{ marginBottom: "40px" }}
@@ -176,7 +176,7 @@ const AddDepartment = ({ drawer }) => {
 										htmlType='submit'
 										block
 										loading={loader}>
-										Add New department
+										Ajouter un nouveau département
 									</Button>
 								</Form.Item>
 							</div>

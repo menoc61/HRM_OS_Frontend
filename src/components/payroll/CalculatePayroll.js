@@ -386,7 +386,7 @@ const CalculatePayroll = () => {
 							htmlType='sumbit'
 							onClick={OnSubmit}
 							className='mt-5 text-end'>
-							Genrate Payslip
+							Générer une fiche de paie
 						</Button>
 					</div>
 				</Card>

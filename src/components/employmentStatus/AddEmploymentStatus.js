@@ -93,7 +93,7 @@ function CustomTable({ list, loading }) {
 		<Card>
 			<div className='text-center my-2 flex justify-between'>
 				<h5 className='department-list-title text-color-2 text-xl mb-2'>
-					Shift List
+				Liste des équipes
 				</h5>
 				{list && (
 					<div>
@@ -102,7 +102,7 @@ function CustomTable({ list, loading }) {
 								data={list}
 								className='btn btn-dark btn-sm mb-1'
 								filename='shift'>
-								Download CSV
+								Télécharger CSV
 							</CSVLink>
 						</CsvLinkBtn>
 					</div>
@@ -178,7 +178,7 @@ const AddEmploymentStatus = ({ drawer }) => {
 						xl={drawer ? 22 : 12}
 						className='column-design border rounded card-custom'>
 						<Title level={4} className='m-2 mt-5 mb-5 text-center'>
-							Add Employment Status
+						Ajouter un statut d'emploi
 						</Title>
 						<Form
 							form={form}
@@ -227,7 +227,7 @@ const AddEmploymentStatus = ({ drawer }) => {
 											<Button
 												type='danger'
 												onClick={() => setShowColorPicker(false)}>
-												Close
+												Fermer
 											</Button>
 										</div>
 									)}
@@ -253,7 +253,7 @@ const AddEmploymentStatus = ({ drawer }) => {
 										block
 										htmlType='submit'
 										loading={loader}>
-										Add Employment Status
+										Ajouter un statut d'emploi
 									</Button>
 								</Form.Item>
 							</div>

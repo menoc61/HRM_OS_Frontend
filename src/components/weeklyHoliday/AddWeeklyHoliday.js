@@ -154,7 +154,7 @@ const AddWeeklyHoliday = ({ drawer }) => {
 						xl={drawer ? 22 : 12}
 						className='column-design border rounded card-custom'>
 						<Title level={4} className='m-2 mt-5 mb-5 text-center'>
-							Add Weekly Holiday
+						Ajouter des jours fériés hebdomadaires
 						</Title>
 						<Form
 							style={{ marginBottom: "40px" }}
@@ -195,13 +195,13 @@ const AddWeeklyHoliday = ({ drawer }) => {
 										},
 									]}>
 									<Select placeholder='Select Start Day'>
-										<Select.Option value='Saturday'>Saturday</Select.Option>
-										<Select.Option value='Sunday'>Sunday</Select.Option>
-										<Select.Option value='Monday'>Monday</Select.Option>
-										<Select.Option value='Tuesday'>Tuesday</Select.Option>
-										<Select.Option value='Wednesday'>Wednesday</Select.Option>
-										<Select.Option value='Thursday'>Thursday</Select.Option>
-										<Select.Option value='Friday'>Friday</Select.Option>
+										<Select.Option value='Saturday'>Samedi</Select.Option>
+										<Select.Option value='Sunday'>dimanche</Select.Option>
+										<Select.Option value='Monday'>lundi</Select.Option>
+										<Select.Option value='Tuesday'>mardi</Select.Option>
+										<Select.Option value='Wednesday'>mercredi</Select.Option>
+										<Select.Option value='Thursday'>jeudi</Select.Option>
+										<Select.Option value='Friday'>vendredi</Select.Option>
 									</Select>
 								</Form.Item>
 
@@ -215,16 +215,17 @@ const AddWeeklyHoliday = ({ drawer }) => {
 											message: "Please input End day!",
 										},
 									]}>
-									<Select placeholder='Select Start Day'>
-										<Select.Option value='Saturday'>Saturday</Select.Option>
-										<Select.Option value='Sunday'>Sunday</Select.Option>
-										<Select.Option value='Monday'>Monday</Select.Option>
-										<Select.Option value='Tuesday'>Tuesday</Select.Option>
-										<Select.Option value='Wednesday'>Wednesday</Select.Option>
-										<Select.Option value='Thursday'>Thursday</Select.Option>
-										<Select.Option value='Friday'>Friday</Select.Option>
+										<Select placeholder='Select Start Day'>
+										<Select.Option value='Saturday'>Samedi</Select.Option>
+										<Select.Option value='Sunday'>dimanche</Select.Option>
+										<Select.Option value='Monday'>lundi</Select.Option>
+										<Select.Option value='Tuesday'>mardi</Select.Option>
+										<Select.Option value='Wednesday'>mercredi</Select.Option>
+										<Select.Option value='Thursday'>jeudi</Select.Option>
+										<Select.Option value='Friday'>vendredi</Select.Option>
 									</Select>
 								</Form.Item>
+									
 
 								<Form.Item
 									style={{ marginBottom: "10px" }}
@@ -239,7 +240,7 @@ const AddWeeklyHoliday = ({ drawer }) => {
 										htmlType='submit'
 										block
 										loading={loader}>
-										Add Weekly Holiday
+										Ajouter des jours fériés hebdomadaires
 									</Button>
 								</Form.Item>
 							</div>

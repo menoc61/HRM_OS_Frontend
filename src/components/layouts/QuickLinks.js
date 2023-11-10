@@ -18,7 +18,7 @@ export default function QuickLinks({ sideNavOpenKeysHandler }) {
 
   return (
     <div className="quick-links-wrapper">
-      <p className="quick-links-title">Quick Links</p>
+      <p className="quick-links-title">Liens rapides</p>
 
       <div className="quick-links-container">
         <QuickLinksContainer

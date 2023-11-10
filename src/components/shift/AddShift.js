@@ -80,7 +80,7 @@ function CustomTable({ list }) {
 		<Card>
 			<div className='text-center my-2 flex justify-between'>
 				<h5 className='department-list-title text-color-2 text-xl mb-2'>
-					Shift List
+				Liste des équipes
 				</h5>
 				{list && (
 					<div>
@@ -89,7 +89,7 @@ function CustomTable({ list }) {
 								data={list}
 								className='btn btn-dark btn-sm mb-1'
 								filename='shift'>
-								Download CSV
+								Télécharger CSV
 							</CSVLink>
 						</CsvLinkBtn>
 					</div>
@@ -232,7 +232,7 @@ const AddShift = ({ drawer }) => {
 										htmlType='submit'
 										block
 										loading={loader}>
-										Add New Shift
+										Ajouter une nouvelle équipe
 									</Button>
 								</Form.Item>
 							</div>

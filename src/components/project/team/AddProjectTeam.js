@@ -73,7 +73,7 @@ const AddProjectTeam = ({ projectId }) => {
 					xl={22}
 					className='column-design border rounded card-custom'>
 					<Title level={4} className='m-2 mt-5 mb-5 text-center'>
-						Add Team To Project
+					Ajouter une équipe au projet
 					</Title>
 					<Form
 						form={form}

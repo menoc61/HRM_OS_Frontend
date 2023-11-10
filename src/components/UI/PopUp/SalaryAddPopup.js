@@ -79,7 +79,7 @@ const SalaryAddSinglePopup = ({ data, setLoading }) => {
 		<>
 			<div className='text-center'>
 				<Button type='primary' onClick={showModal}>
-					Add New Salary
+				Ajouter un nouveau salaire
 				</Button>
 			</div>
 			<Modal
@@ -151,7 +151,7 @@ const SalaryAddSinglePopup = ({ data, setLoading }) => {
 								htmlType='submit'
 								block
 								loading={loader}>
-								Add Now
+							Ajouter maintenant
 							</Button>
 						</Form.Item>
 					</div>

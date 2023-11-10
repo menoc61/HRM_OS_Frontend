@@ -75,7 +75,7 @@ const DetailRole = () => {
 													shape='round'
 													icon={<EditOutlined />}>
 													{" "}
-													New Permission{" "}
+													Nouvelle autorisation{" "}
 												</Button>
 											</Link>
 										</UserPrivateComponent>
@@ -85,7 +85,7 @@ const DetailRole = () => {
 												content={
 													<a onClick={onDelete}>
 														<Button disabled={true} type='primary' danger>
-															Yes Please !
+														Oui s'il vous plait !
 														</Button>
 													</a>
 												}

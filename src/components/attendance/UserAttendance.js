@@ -63,7 +63,7 @@ function CustomTable({ list, loading }) {
 				} else if (inTimeStatus === "On Time") {
 					return <Tag color='green'>{inTimeStatus.toUpperCase()}</Tag>;
 				} else {
-					return <Tag style={{ color: "orange" }}>NONE</Tag>;
+					return <Tag style={{ color: "orange" }}>AUCUN</Tag>;
 				}
 			},
 		},
@@ -81,7 +81,7 @@ function CustomTable({ list, loading }) {
 				} else if (outTimeStatus === "On Time") {
 					return <Tag color='green'>{outTimeStatus.toUpperCase()}</Tag>;
 				} else {
-					return <Tag style={{ color: "orange" }}>NONE</Tag>;
+					return <Tag style={{ color: "orange" }}>AUCUN</Tag>;
 				}
 			},
 		},
@@ -133,7 +133,7 @@ function CustomTable({ list, loading }) {
 		<Card className='mt-5'>
 			<div className='text-center my-2 flex justify-between'>
 				<h5 className='department-list-title text-color-2 text-xl mb-2'>
-					Attendance History
+				Historique des présences
 				</h5>
 				{list && (
 					<div>
@@ -142,7 +142,7 @@ function CustomTable({ list, loading }) {
 								data={list}
 								className='btn btn-dark btn-sm mb-1'
 								filename='attendance_user'>
-								Download CSV
+								Télécharger CSV
 							</CSVLink>
 						</CsvLinkBtn>
 					</div>

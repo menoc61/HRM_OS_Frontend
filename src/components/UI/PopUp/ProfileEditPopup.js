@@ -177,7 +177,7 @@ const ProfileEditPopup = ({ data }) => {
 					onFinishFailed={onFinishFailed}
 					autoComplete='off'>
 					<h2 className='text-center text-xl mt-3 mb-3 txt-color'>
-						User Information
+					informations de l'utilisateur
 					</h2>
 					<Form.Item
 						style={{ marginBottom: "10px" }}
@@ -254,7 +254,7 @@ const ProfileEditPopup = ({ data }) => {
 					</Form.Item>
 
 					<h2 className='text-center text-xl mt-3 mb-3 txt-color'>
-						Address Information
+					Informations sur l'adresse
 					</h2>
 					<Form.Item
 						style={{ marginBottom: "10px" }}
@@ -299,7 +299,7 @@ const ProfileEditPopup = ({ data }) => {
 
 					<h2 className='text-center text-xl mt-3 mb-3 txt-color'>
 						{" "}
-						Employee Information{" "}
+						Informations sur les employés{" "}
 					</h2>
 					<Form.Item
 						style={{ marginBottom: "10px" }}
@@ -520,7 +520,7 @@ const ProfileEditPopup = ({ data }) => {
 							shape='round'
 							htmlType='submit'
 							loading={loader}>
-							Update Employee
+							Mettre à jour l'employé
 						</Button>
 					</Form.Item>
 				</Form>

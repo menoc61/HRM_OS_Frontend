@@ -131,20 +131,20 @@ const DetailStaff = () => {
 									<div className='flex justify-center py-8 px-4 mt-4'>
 										<div className='flex flex-col items-around'>
 											<h1 className='text-2xl font-bold txt-color-2 mb-1'>
-												Leave Status
+											Statut de congé
 											</h1>
 
 											<h3 className='text-base font-medium txt-color-secondary'>
-												Leaves :{" "}
+											congé :{" "}
 												<span className='text-base font-medium txt-color-2'>
 													Paid - {user?.leavePolicy.paidLeaveCount} | U.Paid -{" "}
 													{user?.leavePolicy.unpaidLeaveCount}
 												</span>
 											</h3>
 											<h3 className='text-base font-medium txt-color-secondary'>
-												Taken :{" "}
+											Pris :{" "}
 												<span className='text-base font-medium txt-color-2'>
-													Paid -{" "}
+												Payé -{" "}
 													{user?.leavePolicy.paidLeaveCount -
 														user?.leftPaidLeaveDays}{" "}
 													| U.Paid -{" "}
@@ -153,9 +153,9 @@ const DetailStaff = () => {
 												</span>
 											</h3>
 											<h3 className='text-base font-medium txt-color-secondary'>
-												Balance :{" "}
+											Équilibre:{" "}
 												<span className='text-base font-medium txt-color-2'>
-													Paid - {user?.leftPaidLeaveDays} | U.Paid -{" "}
+												Payé - {user?.leftPaidLeaveDays} | U.Paid -{" "}
 													{user?.leftUnpaidLeaveDays}
 												</span>
 											</h3>
@@ -168,18 +168,18 @@ const DetailStaff = () => {
 								<div className='flex justify-center py-8 px-4 mt-4'>
 									<div className='flex flex-col items-around'>
 										<h1 className='text-2xl font-bold txt-color-2 mb-1'>
-											Clock In & Out
+										Horloge d'entrée et de sortie
 										</h1>
 
 										<h3 className='text-base font-medium txt-color-secondary'>
-											In Time :{" "}
+										À l'heure :{" "}
 											<span className='text-base font-medium txt-color-2'>
 												{dayjs(user?.attendance.inTime).format("hh:mm A")}
 											</span>
 										</h3>
 
 										<h3 className='text-base font-medium txt-color-secondary'>
-											Out Time :{" "}
+										Temps d'arrêt :{" "}
 											<span className='text-base font-medium txt-color-2'>
 												{dayjs(user?.attendance.outTime).format("hh:mm A")}
 											</span>
@@ -222,7 +222,7 @@ const DetailStaff = () => {
 								xl={11}
 								className='new-card rounded h-auto m-2'>
 								<ProfileCardText className='text-start'>
-									Personal Information
+								Informations personnelles
 								</ProfileCardText>
 
 								<Hr />
@@ -247,7 +247,7 @@ const DetailStaff = () => {
 												style={{ fontSize: "15px" }}
 											/>
 											<span className='txt-color-2 font-medium'>
-												Employment Status:
+											Statut d'emploi :
 											</span>
 											<p className='txt-color-secondary ml-2'>
 												{user?.employmentStatus?.name}
@@ -273,7 +273,7 @@ const DetailStaff = () => {
 												style={{ fontSize: "15px" }}
 											/>
 											<span className='txt-color-2 font-medium'>
-												Leave Date:
+											Date de départ :
 											</span>
 											<p className='txt-color-secondary ml-2'>
 												{user?.leaveDate
@@ -299,7 +299,7 @@ const DetailStaff = () => {
 												style={{ fontSize: "15px" }}
 											/>
 											<span className='txt-color-2 font-medium'>
-												Leave Policy:
+											Politique de congé :
 											</span>
 											<p className='txt-color-secondary ml-2'>
 												{user?.leavePolicy.name}
@@ -312,7 +312,7 @@ const DetailStaff = () => {
 												style={{ fontSize: "15px" }}
 											/>
 											<span className='txt-color-2 font-medium'>
-												Weekly Holiday:
+											Congé hebdomadaire :
 											</span>
 											<p className='txt-color-secondary ml-2'>
 												{user?.weeklyHoliday.name}
@@ -324,7 +324,7 @@ const DetailStaff = () => {
 												className='mr-3'
 												style={{ fontSize: "15px" }}
 											/>
-											<span className='txt-color-2 font-medium'>Shift :</span>
+											<span className='txt-color-2 font-medium'>Changement:</span>
 											<p className='txt-color-secondary ml-2'>
 												{user?.shift?.name || "No Shift"} (
 												{dayjs(user?.shift?.startTime).format("LT")} -{" "}
@@ -342,7 +342,7 @@ const DetailStaff = () => {
 								xl={12}
 								className='new-card rounded h-auto m-2'>
 								<ProfileCardText className='text-start'>
-									Contact Information
+								Coordonnées
 								</ProfileCardText>
 
 								<Hr />
@@ -374,7 +374,7 @@ const DetailStaff = () => {
 												className='mr-3'
 												style={{ fontSize: "15px" }}
 											/>
-											<span className='txt-color-2 font-medium'>Address:</span>
+											<span className='txt-color-2 font-medium'>Addresse:</span>
 											<div className=''>
 												<li className='txt-color-secondary ml-2'>
 													{" "}
@@ -406,7 +406,7 @@ const DetailStaff = () => {
 												style={{ fontSize: "15px" }}
 											/>
 											<span className='txt-color-2 font-medium'>
-												Blood Group:
+											Groupe sanguin:
 											</span>
 											<p className='txt-color-secondary ml-2'>
 												{user?.bloodGroup || "No Blood Group"}
@@ -424,7 +424,7 @@ const DetailStaff = () => {
 								className='new-card rounded h-auto m-2'>
 								<div className='flex justify-between'>
 									<ProfileCardText className='text-start'>
-										Designation History
+									Historique de la désignation
 									</ProfileCardText>
 
 									<UserPrivateComponent
@@ -441,7 +441,7 @@ const DetailStaff = () => {
 									) : (
 										<div className='mb-10'>
 											<p className='text-center mt-3 mb-3'>
-												No Designation History Found
+											Aucun historique de désignation trouvé
 											</p>
 											<Alert
 												message='Not found , Click on edit button to add new'
@@ -462,7 +462,7 @@ const DetailStaff = () => {
 								className='new-card rounded h-auto m-2 '>
 								<div className='flex justify-between'>
 									<ProfileCardText className='text-start'>
-										Educaiton History
+									Histoire de l'éducation
 									</ProfileCardText>
 									<UserPrivateComponent permission={"update-education"}>
 										{user?.educations && (
@@ -477,7 +477,7 @@ const DetailStaff = () => {
 									) : (
 										<div className='mb-10'>
 											<p className='text-center mt-3 mb-3'>
-												No Education History Found
+											Aucun historique scolaire trouvé
 											</p>
 											<Alert
 												message='Not found , Click on edit button to add new'
@@ -498,7 +498,7 @@ const DetailStaff = () => {
 								className='new-card rounded h-auto m-2 '>
 								<div className='flex justify-between'>
 									<ProfileCardText className='text-start'>
-										Salary History
+									Historique des salaires
 									</ProfileCardText>
 									<UserPrivateComponent permission={"update-salaryHistory"}>
 										{user?.salaryHistory && (
@@ -513,7 +513,7 @@ const DetailStaff = () => {
 									) : (
 										<div className='mb-10'>
 											<p className='text-center mt-3 mb-3 '>
-												No Education History Found
+											Aucun historique scolaire trouvé
 											</p>
 											<Alert
 												message='Not found , Click on edit button to add new'
@@ -534,7 +534,7 @@ const DetailStaff = () => {
 								className='new-card rounded h-auto m-2 '>
 								<div className='flex justify-between'>
 									<ProfileCardText className='text-start'>
-										Award History
+									Historique des récompenses
 									</ProfileCardText>
 
 									<UserPrivateComponent permission={"update-awardHistory"}>
@@ -550,7 +550,7 @@ const DetailStaff = () => {
 									) : (
 										<div className='mb-10'>
 											<p className='text-center mt-3 mb-3 '>
-												No Award History Found
+											Aucun historique de récompense trouvé
 											</p>
 											<Alert
 												message='Not found , Click on edit button to add new'
@@ -566,7 +566,7 @@ const DetailStaff = () => {
 				) : (
 					<div className='mt-10'>
 						<Loader />
-						{error && <p className='text-center mt-3 mb-3'>No Data Found</p>}
+						{error && <p className='text-center mt-3 mb-3'>Aucune donnée disponible</p>}
 					</div>
 				)}
 			</UserPrivateComponent>

@@ -25,7 +25,7 @@ const BalanceSheet = () => {
 						<div className='card-title  flex  justify-between'>
 							<h5 className='text-xl mb-3'>
 								<span className='ml-2 report-section-card-title'>
-									Balance Sheet
+								Bilan
 								</span>
 							</h5>
 						</div>
@@ -34,19 +34,19 @@ const BalanceSheet = () => {
 								<table className=' w-full max-w-full mb-4 bg-transparent report-section-table'>
 									<h5 className='mt-2 mb-1 ml-2  font-semibold text-base'>
 										{" "}
-										Assets
+										Actifs
 									</h5>
 									<thead className='text-gray-600 text-xs font-semibold border-gray tracking-wider text-left px-5 py-3 hover:cursor-pointer uppercase border-b-2 border-gray-200'>
 										<tr className='border-b border-gray'>
 											<th
 												scope='col'
 												className='text-white border-gray border-b-2 border-t-2 border-gray-200 py-3 px-3 bg-gray-900 text-left text-xs font-semibold uppercase tracking-wider'>
-												Account
+												Compte
 											</th>
 											<th
 												scope='col'
 												className='text-white border-gray border-b-2 border-t-2 border-gray-200 py-3 px-3 bg-gray-900 text-left text-xs font-semibold uppercase tracking-wider'>
-												Amount
+												Montant
 											</th>
 										</tr>
 									</thead>
@@ -77,7 +77,7 @@ const BalanceSheet = () => {
 
 										<h5 className='mt-2 mb-1 ml-2  font-semibold text-base'>
 											{" "}
-											Liabilities
+											Passifs
 										</h5>
 
 										{data &&
@@ -105,7 +105,7 @@ const BalanceSheet = () => {
 
 										<h5 className='mt-2 mb-1 ml-2  font-semibold text-base'>
 											{" "}
-											Equity
+											Équité
 										</h5>
 
 										{data &&
@@ -134,7 +134,7 @@ const BalanceSheet = () => {
 										<tr className='hover:bg-gray-100 hover:cursor-pointer'>
 											<td className='py-4 px-6 border-b border-gray-200 text-gray-900 text-sm'>
 												{" "}
-												<strong>Total Liability and Equity</strong>
+												<strong>Responsabilité totale et capitaux propres</strong>
 											</td>
 											<td className='py-4 px-6 border-b border-gray-200 text-gray-900 text-sm'>
 												<strong>

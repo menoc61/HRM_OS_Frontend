@@ -66,10 +66,10 @@ const EmployeeAward = ({ list, edit, setLoading }) => {
 												</Heading2>
 											</Heading1>
 											<Heading1>
-												Comment : <Heading2>{item?.comment}</Heading2>
+											Commentaire : <Heading2>{item?.comment}</Heading2>
 											</Heading1>
 											<Heading1 class=''>
-												Awarded Date :
+											Date d'attribution :
 												<Heading2>
 													{" "}
 													{dayjs(item?.awardedDate).format("DD/MM/YYYY")}

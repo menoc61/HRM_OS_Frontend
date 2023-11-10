@@ -40,7 +40,7 @@ const Task = ({ taskS: task, btnLoading, btnId, handleDeleteTask }) => {
 				<span>{/* 		<i class='fas fa-comment'></i>4 */}</span>
 				<span>{/* <i class='fas fa-paperclip'></i>8 */}</span>
 				{/* <span class='task__owner'></span> */}
-				<span> Time : {task.completionTime} Hours</span>
+				<span> Temps: {task.completionTime}Heures</span>
 			</div>
 		</div>
 	);

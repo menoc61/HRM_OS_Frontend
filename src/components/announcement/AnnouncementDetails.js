@@ -41,7 +41,7 @@ const DetailAnnouncement = () => {
 									ID : {employmentStatus.id} | {employmentStatus.name}
 								</h3>
 								<div className='flex justify-end'>
-									<h2 className='mr-5'>Status</h2>
+									<h2 className='mr-5'>Statut</h2>
 								</div>
 							</div>
 						</div>

@@ -25,7 +25,7 @@ const ShowAttTaskStatusBtn = ({ projectId }) => {
 	return (
 		<Link to={`/admin/project/${projectId}/task-status/`}>
 			<Button className='mt-5 ml-2' type='primary' size='large'>
-				Add Task Status Colum
+			Ajouter une colonne d'état de la tâche
 			</Button>
 		</Link>
 	);
@@ -158,7 +158,7 @@ function KanbanBoard2() {
 		<div style={{ height: "97%" }}>
 			<div className='flex justify-between items-center'>
 				<h1 className='text-2xl font-semibold antialiased txt-color-2'>
-					PROJECT BOARD{" "}
+				CONSEIL DE PROJET{" "}
 				</h1>
 				<AddColumn projectId={projectId} />
 			</div>
@@ -193,7 +193,7 @@ function KanbanBoard2() {
 															// onClick={() => handleAddTask(column.id)}
 															projectId={projectId}
 															taskStatusId={column.id}>
-															Add Task
+															Ajouter une tâche
 														</TaskAddSinglePopup>
 														<DeleteColumn
 															id={column.id}
@@ -248,7 +248,7 @@ function KanbanBoard2() {
 				<div className='flex justify-center items-center h-96'>
 					<div>
 						<h1 className='text-3xl font-semibold text-gray-600'>
-							No Task Found
+						Aucune tâche trouvée
 						</h1>
 						<ShowAttTaskStatusBtn projectId={projectId} />
 					</div>

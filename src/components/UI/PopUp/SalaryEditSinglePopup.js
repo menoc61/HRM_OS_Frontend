@@ -171,7 +171,7 @@ const SalaryEditSinglePopup = ({ data, setLoading }) => {
 								htmlType='submit'
 								block
 								loading={loader}>
-								Update Now
+								Ajouter maintenant
 							</Button>
 						</Form.Item>
 					</div>

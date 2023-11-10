@@ -151,7 +151,7 @@ const AddPermission = () => {
 						className='border rounded column-design'>
 						<Card bordered={false} className='criclebox h-full'>
 							<Title level={3} className='m-3 text-center mb-5'>
-								Add Permission :{" "}
+							Ajouter une autorisation:{" "}
 								<span className='text-primary'>{roleName}</span>
 							</Title>
 
@@ -173,7 +173,7 @@ const AddPermission = () => {
 											size='large'
 											shape='round'
 											loading={loader}>
-											Permit Now
+											Permis maintenant
 										</Button>
 									</div>
 								</>

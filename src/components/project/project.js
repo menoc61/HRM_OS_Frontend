@@ -129,7 +129,7 @@ const Project = (props) => {
 		<div className='ant-card p-4 rounded mt-5'>
 			<div className='flex my-2 justify-between'>
 				<div className='w-50'>
-					<h4 className='text-2xl mb-2'>Project List</h4>
+					<h4 className='text-2xl mb-2'>Liste des projets</h4>
 				</div>
 				{list && (
 					<div className='flex justify-end mr-4'>
@@ -140,7 +140,7 @@ const Project = (props) => {
 									className='btn btn-dark btn-sm'
 									style={{ marginTop: "5px" }}
 									filename='leave_applications'>
-									Download CSV
+									Télécharger CSV
 								</CSVLink>
 							</CsvLinkBtn>
 						</div>
@@ -160,7 +160,7 @@ const Project = (props) => {
 									{
 										label: (
 											<span>
-												<i className='bi bi-person-lines-fill'></i> PROGRESS
+												<i className='bi bi-person-lines-fill'></i>PROGRÈS
 											</span>
 										),
 										value: "PROGRESS",
@@ -168,7 +168,7 @@ const Project = (props) => {
 									{
 										label: (
 											<span>
-												<i className='bi bi-person-dash-fill'></i> COMPLETE
+												<i className='bi bi-person-dash-fill'></i> COMPLÈTE
 											</span>
 										),
 										value: "COMPLETE",
@@ -176,7 +176,7 @@ const Project = (props) => {
 									{
 										label: (
 											<span>
-												<i className='bi bi-person-dash-fill'></i> ONHOLD
+												<i className='bi bi-person-dash-fill'></i>EN ATTENTE
 											</span>
 										),
 										value: "ONHOLD",
@@ -184,7 +184,7 @@ const Project = (props) => {
 									{
 										label: (
 											<span>
-												<i className='bi bi-person-dash-fill'></i> DELETED
+												<i className='bi bi-person-dash-fill'></i>SUPPRIMÉ
 											</span>
 										),
 										value: "DELETED",

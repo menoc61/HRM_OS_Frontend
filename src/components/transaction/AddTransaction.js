@@ -244,7 +244,7 @@ const AddTransaction = () => {
 										size='large'
 										loading={loader}
 										onClick={() => setLoader(true)}>
-										Pay Now
+										Payez maintenant
 									</Button>
 								</Form.Item>
 							</Form>

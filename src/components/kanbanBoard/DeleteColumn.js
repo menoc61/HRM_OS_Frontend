@@ -27,7 +27,7 @@ const DeleteColumn = ({ id, projectId }) => {
 			<Button
 				className='text-sm text-red-500 ml-2'
 				onClick={onDelete}>
-					Delete
+					Supprimer
 			</Button>
 		</div>
 	);

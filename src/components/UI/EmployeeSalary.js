@@ -38,7 +38,7 @@ const EmployeeSalary = ({ list, edit, setLoading }) => {
 										<SalaryTimelineSvg />
 										<div class='block p-6  max-w-md ml-6 mb-5 '>
 											<div class='flex justify-between mb-4'>
-												<Heading>Salary : {item?.salary}</Heading>
+												<Heading>Salaire: {item?.salary}</Heading>
 
 												<Heading>
 													{dayjs(item?.startDate).format("YYYY")} -{" "}
@@ -63,10 +63,10 @@ const EmployeeSalary = ({ list, edit, setLoading }) => {
 											</div>
 
 											<Heading1>
-												Comment : <Heading2>{item?.comment}</Heading2>
+												Commentaire : <Heading2>{item?.comment}</Heading2>
 											</Heading1>
 											<Heading1 class=''>
-												Start Date :{" "}
+											Date de début :{" "}
 												<Heading2>
 													{" "}
 													{dayjs(item?.startDate).format("DD/MM/YYYY")}
@@ -74,7 +74,7 @@ const EmployeeSalary = ({ list, edit, setLoading }) => {
 											</Heading1>
 
 											<Heading1 class=''>
-												End Date :{" "}
+											Date de fin :{" "}
 												<Heading2>
 													{item.endDate
 														? dayjs(item?.endDate).format("DD/MM/YYYY")

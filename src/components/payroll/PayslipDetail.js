@@ -32,7 +32,7 @@ const PrintToPdf = forwardRef(({ data, invoiceData }, ref) => {
 					</Row>
 					<Row justify='center'>
 						<h1 className='text-3xl font-semibold text-slate-600 mt-2 mb-8'>
-							SALARY SLIP
+						FICHE DE SALAIRE
 						</h1>
 					</Row>
 					<Row>
@@ -54,24 +54,24 @@ const PrintToPdf = forwardRef(({ data, invoiceData }, ref) => {
 
 						<Col span={6}>
 							<p>
-								<TitleText>Salary:</TitleText> $ {data.salary}
+								<TitleText>Salaire:</TitleText> $ {data.salary}
 							</p>
-							<TitleText>Work Day: </TitleText> {data.workDay}
+							<TitleText>Journée de travail: </TitleText> {data.workDay}
 							<p>
-								<TitleText>Working Hour: </TitleText> {data.workingHour} Hours
+								<TitleText>Heure de travail: </TitleText> {data.workingHour} Hours
 							</p>
 						</Col>
 						<Col span={6}>
 							<p>
-								<TitleText>Payslip for:</TitleText>{" "}
+								<TitleText>Créé à:</TitleText>{" "}
 								{dayjs(data.salaryMonth, "M").format("MMMM")}, {data.salaryYear}
 							</p>
 							<p>
-								<TitleText>Created at:</TitleText>{" "}
+								<TitleText>Créé à:</TitleText>{" "}
 								{dayjs(data.createdAt).format("DD/MM/YYYY")}
 							</p>
 							<p>
-								<TitleText>Status:</TitleText> {data.paymentStatus}
+								<TitleText>Statut:</TitleText> {data.paymentStatus}
 							</p>
 						</Col>
 					</Row>
@@ -81,11 +81,11 @@ const PrintToPdf = forwardRef(({ data, invoiceData }, ref) => {
 
 						<Col span={12}>
 							<h2 className='text-xl font-semibold text-slate-600 mb-4'>
-								Earnings
+							Gains
 							</h2>
 							<Row>
 								<Col span={12}>
-									<Title level={5}>Salary Payable</Title>
+									<Title level={5}>Salaire payable</Title>
 								</Col>
 								<Col
 									span={12}
@@ -107,7 +107,7 @@ const PrintToPdf = forwardRef(({ data, invoiceData }, ref) => {
 							<Divider></Divider>
 							<Row>
 								<Col span={12}>
-									<Title level={4}>Total Earnings</Title>
+									<Title level={4}>Total des gains</Title>
 								</Col>
 								<Col
 									span={12}
@@ -150,11 +150,11 @@ const PrintToPdf = forwardRef(({ data, invoiceData }, ref) => {
 					<div style={{ marginTop: "5%" }} className='flex justify-end'>
 						<div>
 							<Title level={4}>
-								Total Earnings : $ {data.salaryPayable + data.bonus}{" "}
+							Total des gains : $ {data.salaryPayable + data.bonus}{" "}
 							</Title>
-							<Title level={4}>Total Deduction : $ {data.deduction} </Title>
+							<Title level={4}>Déduction totale : $ {data.deduction} </Title>
 							<Title level={3}>
-								Total Payable Salary : $ {data.totalPayable}{" "}
+							Salaire total payable : $ {data.totalPayable}{" "}
 							</Title>
 						</div>
 					</div>
@@ -194,7 +194,7 @@ const DetailPayslip = () => {
 					<div className='flex justify-end mr-10'>
 						{invoiceData && (
 							<Button type='primary' size='large' onClick={handlePrint}>
-								Print Payslip
+							Imprimer la fiche de paie
 							</Button>
 						)}
 					</div>

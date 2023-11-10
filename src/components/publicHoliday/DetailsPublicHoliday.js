@@ -85,7 +85,7 @@ const DetailPublicHoliday = () => {
 										<div className='flex justify-center'>
 											<ul className='list-inside list-none '>
 												<ListItem>
-													Name :{" "}
+													Nom :{" "}
 													<TextInside>
 														{(publicHoliday?.name).toUpperCase()}{" "}
 													</TextInside>
@@ -98,7 +98,7 @@ const DetailPublicHoliday = () => {
 												</ListItem>
 
 												<ListItem>
-													Created At :{" "}
+												Créé à:{" "}
 													<TextInside>
 														{dayjs(publicHoliday?.createdAt).format(
 															"DD/MM/YYYY"
@@ -107,7 +107,7 @@ const DetailPublicHoliday = () => {
 												</ListItem>
 
 												<ListItem>
-													Updated At :{" "}
+												Mis à jour à :{" "}
 													<TextInside>
 														{dayjs(publicHoliday?.updatedAt).format(
 															"DD/MM/YYYY"

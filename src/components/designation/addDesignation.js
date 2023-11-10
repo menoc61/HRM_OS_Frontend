@@ -52,7 +52,7 @@ const AddDesignation = () => {
 						className='rounded column-design'>
 						<Card bordered={false}>
 							<Title level={4} className='m-2 mb-4 text-center'>
-								Add designation
+							Ajouter une désignation
 							</Title>
 							<Form
 								form={form}
@@ -96,7 +96,7 @@ const AddDesignation = () => {
 										shape='round'
 										size='large'
 										loading={loader}>
-										Add designation
+										Ajouter une désignation
 									</Button>
 								</Form.Item>
 							</Form>

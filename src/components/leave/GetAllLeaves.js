@@ -65,9 +65,9 @@ function CustomTable({ list, total }) {
 			key: "leaveDuration",
 			render: (leaveDuration) => {
 				if (leaveDuration > 1) {
-					return <span>{leaveDuration} days</span>;
+					return <span>{leaveDuration}jours</span>;
 				} else {
-					return <span>{leaveDuration} day</span>;
+					return <span>{leaveDuration} jour</span>;
 				}
 			},
 		},
@@ -127,7 +127,7 @@ function CustomTable({ list, total }) {
 		<div className='ant-card p-4 rounded mt-5'>
 			<div className='flex my-2 justify-between'>
 				<div className='w-50'>
-					<h4 className='text-2xl mb-2'> Leave Applications</h4>
+					<h4 className='text-2xl mb-2'> Demandes de congé</h4>
 				</div>
 				{list && (
 					<div className='flex justify-end mr-4'>
@@ -138,7 +138,7 @@ function CustomTable({ list, total }) {
 									className='btn btn-dark btn-sm'
 									style={{ marginTop: "5px" }}
 									filename='leave_applications'>
-									Download CSV
+									Télécharger CSV
 								</CSVLink>
 							</CsvLinkBtn>
 						</div>
@@ -160,7 +160,7 @@ function CustomTable({ list, total }) {
 									{
 										label: (
 											<span>
-												<i className='bi bi-person-lines-fill'></i> Accepted
+												<i className='bi bi-person-lines-fill'></i> Accepter
 											</span>
 										),
 										value: "accepted",
@@ -168,7 +168,7 @@ function CustomTable({ list, total }) {
 									{
 										label: (
 											<span>
-												<i className='bi bi-person-dash-fill'></i> Pending
+												<i className='bi bi-person-dash-fill'></i> En attente
 											</span>
 										),
 										value: "pending",

@@ -40,7 +40,7 @@ const DetailAccount = () => {
 							<div className='flex justify-between mb-4'>
 								<h5 className='text-xl'>
 									<i className='bi bi-card-list'>
-										<span className=' ml-2'> Account Details: {data.name}</span>{" "}
+										<span className=' ml-2'> Détails du compte: {data.name}</span>{" "}
 									</i>
 								</h5>
 								<UserPrivateComponent permission={"update-account"}>
@@ -64,7 +64,7 @@ const DetailAccount = () => {
 											<th
 												scope='col'
 												className='text-white border-gray border-b-2 border-t-2 border-gray-200 py-3 px-3 bg-gray-900 text-left text-xs font-semibold uppercase tracking-wider'>
-												Perticulars
+												Détails
 											</th>
 											<th
 												scope='col'
@@ -114,7 +114,7 @@ const DetailAccount = () => {
 												<td
 													colSpan='2'
 													className=' table-active py-4 px-6 border-b border-gray-200 text-gray-900 text-base'>
-													<strong>Balance</strong>
+													<strong>Balance des paiements</strong>
 												</td>
 												<td>
 													<strong>{data?.balance}</strong>

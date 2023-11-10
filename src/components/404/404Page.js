@@ -15,12 +15,12 @@ const Page404 = () => {
                 </div>
 
                 <div className="contant_box_404">
-                  <h3 className="h2">Look like you're lost !</h3>
+                  <h3 className="h2">On dirait que tu es perdu !</h3>
 
-                  <p>the page you are looking for not avaible!</p>
+                  <p>la page recherchée n'est pas disponible  ou vous êtes!</p>
 
                   <a href="/admin/dashboard" className="link_404">
-                    Go to Dashboard
+                  Aller au tableau de bord
                   </a>
                 </div>
               </div>

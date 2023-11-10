@@ -83,7 +83,7 @@ const UpdateTaskPriority = () => {
 					xl={16}
 					className='column-design border rounded card-custom'>
 					<Title level={4} className='m-2 mt-5 mb-5 text-center'>
-						Update Task Priority
+					Mettre à jour la priorité des tâches
 					</Title>
 					{initialValues ? (
 						<Form
@@ -128,7 +128,7 @@ const UpdateTaskPriority = () => {
 										htmlType='submit'
 										block
 										loading={loader}>
-										Update Now
+										Mettez à jour maintenant
 									</Button>
 								</Form.Item>
 							</div>

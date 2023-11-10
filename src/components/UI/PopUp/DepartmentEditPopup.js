@@ -97,7 +97,7 @@ const DepartmentEditPopup = ({ data }) => {
 								htmlType='submit'
 								block
 								loading={loader}>
-								Add New department
+								Ajouter un nouveau département
 							</Button>
 						</Form.Item>
 					</div>

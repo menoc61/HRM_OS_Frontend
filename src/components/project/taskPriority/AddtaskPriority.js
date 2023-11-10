@@ -54,7 +54,7 @@ const AddTaskPriority = (props) => {
 					xl={22}
 					className='column-design border rounded card-custom'>
 					<Title level={4} className='m-2 mt-5 mb-5 text-center'>
-						Add TaskPriority
+					Ajouter une priorité de tâche
 					</Title>
 					<Form
 						form={form}
@@ -97,7 +97,7 @@ const AddTaskPriority = (props) => {
 									htmlType='submit'
 									block
 									loading={loader}>
-									Submit
+								Soumettre
 								</Button>
 							</Form.Item>
 						</div>

@@ -32,7 +32,7 @@ const BigDrawer = ({ children, btnTitle, title }) => {
 				extra={
 					<Space>
 						<Button id='btn-drawer' type='danger' onClick={onClose}>
-							Cancel
+						Annulation 1
 						</Button>
 					</Space>
 				}>

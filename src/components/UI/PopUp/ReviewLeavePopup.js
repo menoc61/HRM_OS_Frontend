@@ -66,7 +66,7 @@ const ReviewLeavePopup = () => {
 	return (
 		<>
 			<Button onClick={showDrawer} className='mt-4' type='primary'>
-				Review Leave
+			Congé de révision
 			</Button>
 			{data && (
 				<Drawer
@@ -76,7 +76,7 @@ const ReviewLeavePopup = () => {
 					onClose={onClose}
 					open={open}>
 					<h2 className='text-2xl font-semibold mb-4 text-center mt-5'>
-						Approve Leave
+					Approuver le congé
 					</h2>
 					<Form
 						className='list-inside list-none border-2 border-inherit rounded px-5 py-5 m-5 mt-10'
@@ -129,7 +129,7 @@ const ReviewLeavePopup = () => {
 
 							{status === null && (
 								<p className='text-red-500 text-center mb-3'>
-									Please select status
+									Veuillez sélectionner le statut
 								</p>
 							)}
 
@@ -146,8 +146,8 @@ const ReviewLeavePopup = () => {
 								<Radio.Group
 									buttonStyle='solid'
 									onChange={(e) => setStatus(e.target.value)}>
-									<Radio.Button value='ACCEPTED'>ACCEPTED</Radio.Button>
-									<Radio.Button value='REJECTED'>REJECTED</Radio.Button>
+									<Radio.Button value='ACCEPTED'>ACCEPTÉ</Radio.Button>
+									<Radio.Button value='REJECTED'>REJECTÉ</Radio.Button>
 								</Radio.Group>
 							</Form.Item>
 
@@ -165,7 +165,7 @@ const ReviewLeavePopup = () => {
 									block
 									disabled={status === null}
 									loading={loader}>
-									Review Leave
+									Congé de révision
 								</Button>
 							</Form.Item>
 						</div>

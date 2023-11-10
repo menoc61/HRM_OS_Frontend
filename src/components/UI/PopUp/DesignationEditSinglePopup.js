@@ -186,7 +186,7 @@ const DesignationEditSinglePopup = ({ data, setLoading }) => {
 								htmlType='submit'
 								block
 								loading={loader}>
-								Update Now
+							
 							</Button>
 						</Form.Item>
 					</div>

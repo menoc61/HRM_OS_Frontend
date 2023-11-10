@@ -117,7 +117,7 @@ const ShiftEditPopup = ({ data }) => {
 								htmlType='submit'
 								block
 								loading={loading}>
-								Update Shift
+								Mettre à jour le changement
 							</Button>
 						</Form.Item>
 					</div>

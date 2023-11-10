@@ -79,7 +79,7 @@ const DesignationAddSinglePopup = ({ list, setLoading }) => {
 		<>
 			<div className='text-center'>
 				<Button type='primary' onClick={showModal}>
-					Add New Designation
+				Ajouter une nouvelle désignation
 				</Button>
 			</div>
 			<Modal
@@ -166,7 +166,7 @@ const DesignationAddSinglePopup = ({ list, setLoading }) => {
 								htmlType='submit'
 								block
 								loading={loader}>
-								Add Now
+								Ajouter maintenant
 							</Button>
 						</Form.Item>
 					</div>

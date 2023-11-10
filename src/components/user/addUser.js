@@ -141,7 +141,7 @@ const AddUser = () => {
 							}}>
 							<Col span={12} className='gutter-row form-color'>
 								<h2 className='text-center text-xl mt-3 mb-3 txt-color'>
-									User Information
+								informations de l'utilisateur
 								</h2>
 								<Form.Item
 									style={{ marginBottom: "10px" }}
@@ -206,7 +206,7 @@ const AddUser = () => {
 							</Col>
 							<Col span={12} className='gutter-row'>
 								<h2 className='text-center text-xl mt-3 mb-3 txt-color'>
-									Address Information
+								Informations sur l'adresse
 								</h2>
 								<Form.Item
 									style={{ marginBottom: "10px" }}
@@ -268,7 +268,7 @@ const AddUser = () => {
 							<Col span={12} className='gutter-row'>
 								<h2 className='text-center text-xl mt-3 mb-3 txt-color'>
 									{" "}
-									Employee Information{" "}
+									Informations sur les employés{" "}
 								</h2>
 								<Form.Item
 									style={{ marginBottom: "10px" }}
@@ -482,7 +482,7 @@ const AddUser = () => {
 							</Col>
 							<Col span={12} className='gutter-row'>
 								<h2 className='text-center text-xl mt-3 mb-3 txt-color'>
-									Designation & Salary Information
+								Désignation et informations sur le salaire
 								</h2>
 
 								<Form.Item
@@ -573,12 +573,12 @@ const AddUser = () => {
 						</Row>
 
 						<h2 className='text-center text-xl mt-3 mb-5 txt-color'>
-							Education Information
+						Informations sur l'éducation
 						</h2>
 
 						<div className='text-center'>
 							<p className='text-red-500 text-base mb-4'>
-								Please add education information using the button below
+							Veuillez ajouter des informations sur l'éducation en utilisant le bouton ci-dessous
 							</p>
 						</div>
 
@@ -606,7 +606,7 @@ const AddUser = () => {
 											onClick={() => add()}
 											block
 											icon={<PlusOutlined />}>
-											Add Education Information
+											Ajouter des informations sur l'éducation
 										</Button>
 									</Form.Item>
 								</>
@@ -628,7 +628,7 @@ const AddUser = () => {
 								htmlType='submit'
 								shape='round'
 								loading={loader}>
-								Add New Staff
+								Ajouter un nouveau personnel
 							</Button>
 						</Form.Item>
 					</Form>

@@ -43,7 +43,7 @@ const AddSalaryHistory = ({ drawer }) => {
 						xl={drawer ? 22 : 12}
 						className='column-design border rounded card-custom'>
 						<Title level={4} className='m-2 mt-5 mb-5 text-center'>
-							Add New Salary History
+						Ajouter un nouvel historique de salaire
 						</Title>
 						<Form
 							style={{ marginBottom: "100px" }}
@@ -109,7 +109,7 @@ const AddSalaryHistory = ({ drawer }) => {
 										htmlType='submit'
 										block
 										loading={loader}>
-										Add New Designation
+										Ajouter une nouvelle désignation
 									</Button>
 								</Form.Item>
 							</div>

@@ -180,7 +180,7 @@ function CustomTable({ list, loading, month, year, paymentStatus }) {
 								data={list}
 								className='btn btn-dark btn-sm mb-1'
 								filename='payslips'>
-								Download CSV
+							Télécharger CSV
 							</CSVLink>
 						</CsvLinkBtn>
 					</div>
@@ -263,7 +263,7 @@ const PayslipList = () => {
 					<div className='flex justify-end'>
 						<h1 className='text-base text-color-2 items-center mr-2 mt-1'>
 							{" "}
-							Select Month :{" "}
+							Sélectionnez un mois:{" "}
 						</h1>
 						<DatePicker
 							format={"M"}
@@ -275,7 +275,7 @@ const PayslipList = () => {
 						/>
 						<h1 className='text-base text-color-2 items-center mr-2 mt-1'>
 							{" "}
-							Select Year :{" "}
+							Sélectionnez l'année :{" "}
 						</h1>
 						<DatePicker
 							format={"YYYY"}

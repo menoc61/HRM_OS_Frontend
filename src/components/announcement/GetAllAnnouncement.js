@@ -28,7 +28,7 @@ const GetAllAnnouncement = () => {
 
 	return (
 		<Card>
-			<h2 className='text-center text-2xl txt-color-2'>Announcements</h2>
+			<h2 className='text-center text-2xl txt-color-2'>Annonces</h2>
 			<hr className='mt-3 mb-5 mx-5' />
 			<List
 				className='m-4'

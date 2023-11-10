@@ -92,7 +92,7 @@ const UpdateProject = ({ drawer }) => {
 					xl={drawer ? 22 : 16}
 					className='column-design border rounded card-custom'>
 					<Title level={4} className='m-2 mt-5 mb-5 text-center'>
-						Update Project
+                    Update Project
 					</Title>
                     { initialState ? (
                         <Form
@@ -200,7 +200,7 @@ const UpdateProject = ({ drawer }) => {
                                         htmlType='submit'
                                         block
                                         loading={loader}>
-                                        Update Project
+                                        Mettre à jour le projet
                                     </Button>
                                 </Form.Item>
                             </div>

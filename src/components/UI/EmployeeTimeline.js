@@ -64,7 +64,7 @@ const EmployeeTimeline = ({ list, edit, setLoading }) => {
 											</div>
 
 											<Heading1>
-												Field of Study :{" "}
+											Domaine d'études :{" "}
 												<Heading2>{item?.fieldOfStudy}</Heading2>
 											</Heading1>
 
@@ -73,7 +73,7 @@ const EmployeeTimeline = ({ list, edit, setLoading }) => {
 											</Heading1>
 
 											<Heading1>
-												Result : <Heading2>{item?.result}</Heading2>
+												Resultat : <Heading2>{item?.result}</Heading2>
 											</Heading1>
 										</div>
 									</div>

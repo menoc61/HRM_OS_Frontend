@@ -35,17 +35,17 @@ const HomeLayout = ({ children }) => (
           },
           {
             key: 2,
-            label: <NavLink to={"/admin/product"}>Products</NavLink>,
+            label: <NavLink to={"/admin/product"}>Produits</NavLink>,
             icon: <SaveOutlined />,
           },
           {
             key: 3,
-            label: <NavLink to={"/admin/purchase"}>Purchase New</NavLink>,
+            label: <NavLink to={"/admin/purchase"}>Acheter du neuf</NavLink>,
             icon: <AppstoreAddOutlined />,
           },
           {
             key: 4,
-            label: <NavLink to={"/admin/users"}>User List</NavLink>,
+            label: <NavLink to={"/admin/users"}>liste d'utilisateurs</NavLink>,
             icon: <AppstoreAddOutlined />,
           },
         ]}

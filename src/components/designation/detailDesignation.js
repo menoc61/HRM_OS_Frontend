@@ -92,7 +92,7 @@ const DetailDesignation = () => {
 												content={
 													<a onClick={onDelete}>
 														<Button type='primary' danger>
-															Yes Please !
+														Oui s'il vous plait !
 														</Button>
 													</a>
 												}

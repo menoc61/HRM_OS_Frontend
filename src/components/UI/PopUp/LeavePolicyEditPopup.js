@@ -133,7 +133,7 @@ const LeavePolicyEdit = ({ data }) => {
 								htmlType='submit'
 								block
 								loading={loader}>
-								Update Leave Policy
+								Mettre à jour la politique de congé
 							</Button>
 						</Form.Item>
 					</div>

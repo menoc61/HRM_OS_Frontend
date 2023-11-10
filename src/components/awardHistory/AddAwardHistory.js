@@ -66,7 +66,7 @@ const AddAwardHistory = ({ setLoading }) => {
 	return (
 		<Fragment bordered={false}>
 			<UserPrivateComponent permission={"create-awardHistory"}>
-				<Row className='mr-top' justify='center'>
+				<Row className='mr-top' justify='center'> 
 					<Col
 						xs={24}
 						sm={24}
@@ -75,7 +75,7 @@ const AddAwardHistory = ({ setLoading }) => {
 						xl={24}
 						className='column-design border rounded card-custom'>
 						<Title level={4} className='m-2 mt-5 mb-5 text-center'>
-							Add Award History
+						Ajouter l'historique des récompenses
 						</Title>
 						<Form
 							form={form}
@@ -140,7 +140,7 @@ const AddAwardHistory = ({ setLoading }) => {
 										htmlType='submit'
 										block
 										loading={loader}>
-										Add New Award
+										Ajouter une nouvelle récompense
 									</Button>
 								</Form.Item>
 							</div>

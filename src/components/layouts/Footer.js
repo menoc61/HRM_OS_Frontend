@@ -35,7 +35,7 @@ function Footer() {
                   className="nav-link pe-0 text-muted"
                   target="_blank"
                 >
-                  License
+                  Licence
                 </a>
               </li>
             </ul>

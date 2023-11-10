@@ -103,7 +103,7 @@ const AddTag = ({ setTags, tags }) => {
       )}
       {!inputVisible && (
         <Tag className="site-tag-plus" onClick={showInput}>
-          <PlusOutlined /> New Tag
+          <PlusOutlined />Nouvelle balise
         </Tag>
       )}
     </>

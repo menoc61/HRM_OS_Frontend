@@ -34,14 +34,14 @@ const DetailLeave = () => {
 					<div className='text-center mb-4'>
 						{" "}
 						<h2 className='text-2xl font-semibold text-gray-600'>
-							Leave Application #{leave?.id}{" "}
+						Demande de congé #{leave?.id}{" "}
 						</h2>
 					</div>
 					{leave ? (
 						<div className='flex justify-center '>
 							<ul className='list-inside list-none border-2 border-inherit rounded px-5 py-5 '>
 								<ListItem>
-									Name :{" "}
+								Nom :{" "}
 									<TextInside>
 										{(
 											leave?.user.firstName +
@@ -51,36 +51,36 @@ const DetailLeave = () => {
 									</TextInside>
 								</ListItem>
 								<ListItem>
-									Leave Type : <TextInside>{leave.leaveType}</TextInside>
+								Type de congé : <TextInside>{leave.leaveType}</TextInside>
 								</ListItem>
 								<ListItem>
-									Leave From :{" "}
+								Partir de :{" "}
 									<TextInside>
 										{dayjs(leave.leaveFrom).format("DD-MM-YYYY")}
 									</TextInside>
 								</ListItem>
 
 								<ListItem>
-									Leave To :{" "}
+								Laisser à :{" "}
 									<TextInside>
 										{dayjs(leave.leaveTo).format("DD-MM-YYYY")}
 									</TextInside>
 								</ListItem>
 
 								<ListItem>
-									Leave Duration :{" "}
+								Durée du congé :{" "}
 									<TextInside className='text-red-500'>
 										{leave.leaveDuration}
 									</TextInside>
 								</ListItem>
 
 								<ListItem>
-									Leave Reason :{" "}
+								Raison du congé :{" "}
 									<TextInside>{leave.reason || "No reason"}</TextInside>
 								</ListItem>
 
 								<ListItem>
-									Leave Status :{" "}
+								Statut de congé :{" "}
 									<TextInside>
 										{leave.status === "pending" ? (
 											<span className='text-yellow-500'>
@@ -99,7 +99,7 @@ const DetailLeave = () => {
 								</ListItem>
 
 								<ListItem>
-									Leave Acceted From :{" "}
+								Congé accepté à partir de :{" "}
 									<TextInside>
 										{leave.acceptLeaveFrom
 											? dayjs(leave.acceptLeaveFrom).format("DD-MM-YYYY")
@@ -108,7 +108,7 @@ const DetailLeave = () => {
 								</ListItem>
 
 								<ListItem>
-									Leave Acceted To :{" "}
+								Laisser accepté à :{" "}
 									<TextInside>
 										{leave.acceptLeaveTo
 											? dayjs(leave.acceptLeaveTo).format("DD-MM-YYY")
@@ -117,7 +117,7 @@ const DetailLeave = () => {
 								</ListItem>
 
 								<ListItem>
-									Leave Acceted By :{" "}
+								Congé accepté par :{" "}
 									<TextInside className='text-green-500'>
 										{(leave.acceptLeaveBy?.firstName || "ON") +
 											" " +
@@ -126,12 +126,12 @@ const DetailLeave = () => {
 								</ListItem>
 
 								<ListItem>
-									Review Comment :{" "}
+								Commentaire de révision :{" "}
 									<TextInside>{leave.reviewComment || "No comment"}</TextInside>
 								</ListItem>
 
 								<ListItem>
-									Attachment :{" "}
+								Pièce jointe :{" "}
 									<TextInside>
 										{leave.attachment ? (
 											<a
@@ -139,7 +139,7 @@ const DetailLeave = () => {
 												target='_blank'
 												rel='noreferrer'
 												className='text-blue-500'>
-												Download
+												Télécharger
 											</a>
 										) : (
 											"No Attachment"

@@ -62,7 +62,7 @@ const UploadMany = ({ urlPath }) => {
 		<div className='text-center mt-2'>
 			{!file && (
 				<p className='text-center mb-2' style={{ color: "red" }}>
-					Please select a CSV file for uploading
+					Veuillez sélectionner un fichier CSV à télécharger
 				</p>
 			)}
 			<form className='form-group'>
@@ -88,7 +88,7 @@ const UploadMany = ({ urlPath }) => {
 					disabled={!file}
 					type='submit'
 					onClick={handleOnSubmit}>
-					Import From CSV
+					Importer depuis CSV
 				</button>
 			</form>
 		</div>

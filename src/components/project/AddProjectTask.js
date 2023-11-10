@@ -81,7 +81,7 @@ const AddProjectTeam = ({ drawer }) => {
 					xl={drawer ? 22 : 12}
 					className='column-design border rounded card-custom'>
 					<Title level={4} className='m-2 mt-5 mb-5 text-center'>
-						Add Project Team
+					Ajouter une équipe de projet
 					</Title>
 					<Form
 						form={form}
@@ -133,7 +133,7 @@ const AddProjectTeam = ({ drawer }) => {
 									htmlType='submit'
 									block
 									loading={loader}>
-									Submit
+									Soumettre
 								</Button>
 							</Form.Item>
 						</div>

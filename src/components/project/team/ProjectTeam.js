@@ -84,7 +84,7 @@ const ProjectTeam = () => {
 			<PageTitle title='Back' />
 			<AddProjectTeam />
 			<Card>
-				<h1 className='text-xl mb-4'> Team List </h1>
+				<h1 className='text-xl mb-4'>Liste des équipes </h1>
 				<Table
 					scroll={{ x: true }}
 					loading={loading}

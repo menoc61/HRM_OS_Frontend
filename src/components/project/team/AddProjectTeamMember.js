@@ -111,7 +111,7 @@ const AddProjectTeamMember = ({ id, projectId, teamName }) => {
 									htmlType='submit'
 									block
 									loading={loader}>
-									Submit
+									Soumettre
 								</Button>
 							</Form.Item>
 						</div>

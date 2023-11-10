@@ -67,7 +67,7 @@ const AddProject = ({ drawer }) => {
 					xl={drawer ? 22 : 16}
 					className='column-design border rounded card-custom'>
 					<Title level={4} className='m-2 mt-5 mb-5 text-center'>
-						Add New Project
+					Ajouter un nouveau projet
 					</Title>
 					<Form
 						form={form}
@@ -173,7 +173,7 @@ const AddProject = ({ drawer }) => {
 									htmlType='submit'
 									block
 									loading={loader}>
-									Submit
+								Soumettre
 								</Button>
 							</Form.Item>
 						</div>

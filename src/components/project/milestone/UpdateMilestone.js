@@ -95,7 +95,7 @@ const UpdateMilestone = () => {
 					xl={18}
 					className='column-design border rounded card-custom'>
 					<Title level={4} className='m-2 mt-5 mb-5 text-center'>
-						Update Milestone
+					Mettre à jour le jalon
 					</Title>
 					{initialState ? (
 						<Form
@@ -201,7 +201,7 @@ const UpdateMilestone = () => {
 										htmlType='submit'
 										block
 										loading={loader}>
-										Submit
+										Soumettre
 									</Button>
 								</Form.Item>
 							</div>

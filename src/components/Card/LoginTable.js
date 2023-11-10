@@ -8,11 +8,11 @@ const LoginTable = () => {
 					<tr className='border border-slate-500'>
 						<td className='border border-slate-500 px-9 py-3'>
 							{" "}
-							<strong>username</strong>
+							<strong>nom d'utilisateur</strong>
 						</td>
 						<td className='border border-slate-500 px-9 py-3'>
 							{" "}
-							<strong>password</strong>
+							<strong>mot de passe</strong>
 						</td>
 					</tr>
 

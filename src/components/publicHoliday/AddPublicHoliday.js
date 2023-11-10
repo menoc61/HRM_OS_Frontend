@@ -92,7 +92,7 @@ function CustomTable({ list, loading }) {
 								data={list}
 								className='btn btn-dark btn-sm mb-1'
 								filename='public-holiday'>
-								Download CSV
+								Télécharger CSV
 							</CSVLink>
 						</CsvLinkBtn>
 					</div>
@@ -160,7 +160,7 @@ const AddPublicHoliday = ({ drawer }) => {
 						xl={drawer ? 22 : 12}
 						className='column-design border rounded card-custom'>
 						<Title level={4} className='m-2 mt-5 mb-5 text-center'>
-							Add Public Holiday
+						Ajouter un jour férié
 						</Title>
 						<Form
 							style={{ marginBottom: "40px" }}
@@ -216,7 +216,7 @@ const AddPublicHoliday = ({ drawer }) => {
 										htmlType='submit'
 										block
 										loading={loader}>
-										Add Public Holiday
+										Ajouter un jour férié
 									</Button>
 								</Form.Item>
 							</div>

@@ -43,7 +43,7 @@ const Register = () => {
         <Col span={12} offset={4}>
           <Card bordered={false} className="criclebox h-full">
             <Title level={3} className="m-3 text-center">
-              Register
+            Registre
             </Title>
             <Form
               form={form}
@@ -122,12 +122,12 @@ const Register = () => {
                   shape="round"
                   loading={loader}
                 >
-                  Register
+                  Registre
                 </Button>
               </Form.Item>
               <h6 className="text-center mt-2">
-                Already have an account ?{" "}
-                <Link to={"/admin/auth/login"}>Login Here</Link>
+              Vous avez déjà un compte ?{" "}
+                <Link to={"/admin/auth/login"}></Link>
               </h6>
             </Form>
           </Card>

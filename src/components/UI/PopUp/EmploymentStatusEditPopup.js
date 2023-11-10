@@ -111,7 +111,7 @@ const EmploymentStatusEditPopup = ({ data }) => {
 								htmlType='submit'
 								block
 								loading={loading}>
-								Update Now
+							Mettez à jour maintenant
 							</Button>
 						</Form.Item>
 					</div>

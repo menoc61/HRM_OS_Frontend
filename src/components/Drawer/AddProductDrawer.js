@@ -28,7 +28,7 @@ const AddProductDrawer = ({ children, btnTitle, title }) => {
         extra={
           <Space>
             <Button id="btn-drawer" type="danger" onClick={onClose}>
-              Cancel
+            Annuler
             </Button>
           </Space>
         }>

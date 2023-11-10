@@ -46,7 +46,7 @@ const AddAnnouncement = ({ drawer }) => {
 					xl={drawer ? 22 : 12}
 					className='column-design border rounded card-custom'>
 					<Title level={4} className='m-2 mt-5 mb-5 text-center'>
-						Add Announcement
+					Ajouter une annonce
 					</Title>
 					<Form
 						form={form}
@@ -95,7 +95,7 @@ const AddAnnouncement = ({ drawer }) => {
 									block
 									htmlType='submit'
 									loading={loading}>
-									Add Announcement
+									Ajouter une annonce
 								</Button>
 							</Form.Item>
 						</div>

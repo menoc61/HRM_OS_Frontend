@@ -77,7 +77,7 @@ const UpdateStatus = () => {
 					xl={16}
 					className='column-design border rounded card-custom'>
 					<Title level={4} className='m-2 mt-5 mb-5 text-center'>
-						Update Status
+					État de mise à jour
 					</Title>
 					{initialValues ? (
 						<Form
@@ -107,10 +107,10 @@ const UpdateStatus = () => {
 										},
 									]}>
 										<Select placeholder='Select Status Name'>
-											<Select.Option value='PROGRESS'>PROGRESS</Select.Option>
-											<Select.Option value='COMPLETE'>COMPLETE</Select.Option>
-											<Select.Option value='ONHOLD'>ONHOLD</Select.Option>
-											<Select.Option value='DELETED'>DELETED</Select.Option>
+											<Select.Option value='PROGRESS'>PROGRÈS</Select.Option>
+											<Select.Option value='COMPLETE'>COMPLET</Select.Option>
+											<Select.Option value='ONHOLD'>EN ATTENTE</Select.Option>
+											<Select.Option value='DELETED'>SUPPRIMÉ</Select.Option>
 										</Select>
 								</Form.Item>
 
@@ -127,7 +127,7 @@ const UpdateStatus = () => {
 										htmlType='submit'
 										block
 										loading={loader}>
-										Update Now
+										Mettez à jour maintenant
 									</Button>
 								</Form.Item>
 							</div>

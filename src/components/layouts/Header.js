@@ -46,7 +46,7 @@ function Header({ onPress, collapsed, handleCollapsed }) {
 					className='flex align-items-center'>
 					<Link to='/admin/auth/logout' className={styles.logoutLink}>
 						<LogoutOutlined className='text-danger' />
-						<span className='logout-text font-weight-bold'>Log Out</span>
+						<span className='logout-text font-weight-bold'>Se déconnecter</span>
 					</Link>
 				</p>
 			),

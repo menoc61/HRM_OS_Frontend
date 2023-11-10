@@ -112,7 +112,7 @@ function CustomTable({ list, loading }) {
 		<div className='ant-card p-4 rounded mt-5'>
 			<div className='flex my-2 justify-between'>
 				<div className='w-50'>
-					<h4 className='text-2xl mb-2'> My Leave Applications</h4>
+					<h4 className='text-2xl mb-2'> Mes demandes de congé</h4>
 				</div>
 				{list && (
 					<div className='flex justify-end mr-4'>
@@ -123,7 +123,7 @@ function CustomTable({ list, loading }) {
 									className='btn btn-dark btn-sm'
 									style={{ marginTop: "5px" }}
 									filename='leave_applications'>
-									Download CSV
+									Télécharger CSV
 								</CSVLink>
 							</CsvLinkBtn>
 						</div>

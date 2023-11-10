@@ -39,7 +39,7 @@ const DashboardCard = ({ information, count, isCustomer, title }) => {
               {" "}
               {count?.id ? count?.id : 0}
             </span>
-            <span className="block text-gray-500"> Total Inoices </span>
+            <span className="block text-gray-500"> Total des factures </span>
           </div>
         </div>
         <div className="flex items-center p-8 bg-white shadow rounded-lg dashboard-card-bg">
@@ -72,7 +72,7 @@ const DashboardCard = ({ information, count, isCustomer, title }) => {
               {" "}
               {information?.total_amount ? information?.total_amount : 0}
             </span>
-            <span className="block text-gray-500">Total Amount</span>
+            <span className="block text-gray-500">Montant total</span>
           </div>
         </div>
         <div className="flex items-center p-8 bg-white shadow rounded-lg dashboard-card-bg">
@@ -108,7 +108,7 @@ const DashboardCard = ({ information, count, isCustomer, title }) => {
               {information?.profit ? information?.profit : 0}
             </span>
 
-            <span className="block text-gray-500">Total Profit </span>
+            <span className="block text-gray-500">Bénéfice total </span>
           </div>
         </div>
 
@@ -143,7 +143,7 @@ const DashboardCard = ({ information, count, isCustomer, title }) => {
                 {information?.paid_amount ? information?.paid_amount : 0}
               </span>
 
-              <span className="block text-gray-500">Total Paid Amount </span>
+              <span className="block text-gray-500">Montant total payé </span>
             </div>
           </div>
         ) : (
@@ -153,14 +153,14 @@ const DashboardCard = ({ information, count, isCustomer, title }) => {
                 {" "}
                 {information?.paid_amount ? information?.paid_amount : 0}
               </span>
-              <span className="block text-gray-500">Paid Amount</span>
+              <span className="block text-gray-500">Montant payé</span>
             </div>
             <div className="ml-auto">
               <span className="block text-2xl font-bold">
                 {" "}
                 {information?.due_amount ? information?.due_amount : 0}
               </span>
-              <span className="block text-gray-500">Due Amount</span>
+              <span className="block text-gray-500">Montant dû</span>
             </div>
           </div>
         )}

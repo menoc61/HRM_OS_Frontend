@@ -202,7 +202,7 @@ const EducaitonEditSinglePopup = ({ data, setLoading }) => {
 								htmlType='submit'
 								block
 								loading={loader}>
-								Update Now
+								Mettez à jour maintenant
 							</Button>
 						</Form.Item>
 					</div>

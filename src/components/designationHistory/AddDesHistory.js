@@ -38,7 +38,7 @@ const AddDesHistory = ({ drawer }) => {
 						xl={drawer ? 22 : 12}
 						className='column-design border rounded card-custom'>
 						<Title level={4} className='m-2 mt-5 mb-5 text-center'>
-							Add New department
+						Ajouter un nouveau département
 						</Title>
 						<Form
 							style={{ marginBottom: "100px" }}
@@ -80,7 +80,7 @@ const AddDesHistory = ({ drawer }) => {
 										htmlType='submit'
 										block
 										loading={loader}>
-										Add New Designation
+										Ajouter une nouvelle désignation
 									</Button>
 								</Form.Item>
 							</div>

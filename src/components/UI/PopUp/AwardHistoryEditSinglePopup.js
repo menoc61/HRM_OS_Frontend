@@ -6,7 +6,7 @@ import { useParams } from "react-router-dom";
 import { toast } from "react-toastify";
 import { loadSingleStaff } from "../../../redux/rtk/features/user/userSlice";
 import BtnEditSvg from "../Button/btnEditSvg";
-import { updateAwardHistory } from "../../../redux/rtk/features/awardHistory/awardHistorySlice";
+import { updateAwardHistory } from "../../../redux/rtk/features/designation/awardHistorySlice";
 
 const AwardHistoryEditSinglePopup = ({ data, setLoading }) => {
 	const [isModalOpen, setIsModalOpen] = useState(false);
@@ -169,7 +169,7 @@ const AwardHistoryEditSinglePopup = ({ data, setLoading }) => {
 								htmlType='submit'
 								block
 								loading={loader}>
-								Update Now
+								Mettez à jour maintenant
 							</Button>
 						</Form.Item>
 					</div>

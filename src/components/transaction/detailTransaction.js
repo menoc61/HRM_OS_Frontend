@@ -81,7 +81,7 @@ const DetailTransaction = () => {
 											content={
 												<a onClick={onDelete}>
 													<Button type='primary' danger>
-														Yes Please !
+													Payez maintenant
 													</Button>
 												</a>
 											}
@@ -110,7 +110,7 @@ const DetailTransaction = () => {
 									</p>
 
 									<p>
-										<Typography.Text strong>Particulars :</Typography.Text>{" "}
+										<Typography.Text strong>Détails :</Typography.Text>{" "}
 										{payment.particulars}
 									</p>
 									<p>

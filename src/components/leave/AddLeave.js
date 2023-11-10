@@ -67,7 +67,7 @@ const AddLeave = ({ drawer }) => {
 						xl={drawer ? 22 : 12}
 						className='column-design border rounded card-custom'>
 						<Title level={4} className='m-2 mt-5 mb-5 text-center'>
-							Application for Leave
+						Demande de congé
 						</Title>
 						<Form
 							form={form}
@@ -98,8 +98,8 @@ const AddLeave = ({ drawer }) => {
 										mode='single'
 										placeholder='Select leave type'
 										optionFilterProp='children'>
-										<Select.Option value='PAID'>PAID</Select.Option>
-										<Select.Option value='UNPAID'>UNPAID</Select.Option>
+										<Select.Option value='PAID'>PAYÉ</Select.Option>
+										<Select.Option value='UNPAID'>NON PAYÉ</Select.Option>
 									</Select>
 								</Form.Item>
 
@@ -142,7 +142,7 @@ const AddLeave = ({ drawer }) => {
 										htmlType='submit'
 										block
 										loading={loader}>
-										Submit Leave
+										Soumettre un congé
 									</Button>
 								</Form.Item>
 							</div>

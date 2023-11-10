@@ -75,7 +75,7 @@ function GetAllAward() {
 				<Card className='mt-5'>
 					<div className='text-center my-2 flex justify-between'>
 						<h5 className='department-list-title text-color-2 text-xl mb-2'>
-							Award List
+						Liste des récompenses
 						</h5>
 						{list && (
 							<div>
@@ -84,7 +84,7 @@ function GetAllAward() {
 										data={list}
 										className='btn btn-dark btn-sm mb-1'
 										filename='awards'>
-										Download CSV
+										Liste des récompenses
 									</CSVLink>
 								</CsvLinkBtn>
 							</div>

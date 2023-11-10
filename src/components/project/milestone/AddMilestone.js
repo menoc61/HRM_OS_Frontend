@@ -84,7 +84,7 @@ const AddMilestone = ({ isFixed, projectId }) => {
 					xl={22}
 					className='column-design border rounded card-custom'>
 					<Title level={4} className='m-2 mt-5 mb-5 text-center'>
-						Add Milestone in Project
+					Ajouter un jalon dans le projet
 					</Title>
 					<Form
 						form={form}
@@ -204,7 +204,7 @@ const AddMilestone = ({ isFixed, projectId }) => {
 									htmlType='submit'
 									block
 									loading={loader}>
-									Add Milestone
+									Ajouter un jalon
 								</Button>
 							</Form.Item>
 						</div>

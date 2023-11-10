@@ -25,7 +25,7 @@ const AwardAddSinglePopup = ({ data, setLoading }) => {
 		<>
 			<div className='text-center'>
 				<Button type='primary' onClick={showModal}>
-					Add New Award
+				Ajouter une nouvelle récompense
 				</Button>
 			</div>
 			<Modal
