@@ -28,7 +28,7 @@ import { NavLink } from "react-router-dom";
 import { disable } from "workbox-navigation-preload";
 import getPermissions from "../../utils/getPermissions";
 import getUserFromToken from "../../utils/getUserFromToken";
-// import styles from "./Sidenav.module.css";
+import styles from "./Sidenav.module.css";
 
 const Sidenav = ({ color, sideNavOpenKeys }) => {
 	const user = getUserFromToken();
@@ -221,7 +221,7 @@ const Sidenav = ({ color, sideNavOpenKeys }) => {
 				hasPermission("readSingle-leaveApplication") && {
 					label: (
 						<NavLink to={`/admin/leave/user/${user}`}>
-							<span>Mon  congé</span>
+							<span>Mon congé</span>
 						</NavLink>
 					),
 					key: "myLeaves",
@@ -478,15 +478,19 @@ const Sidenav = ({ color, sideNavOpenKeys }) => {
 	];
 
 	return (
-		<div>
+		<div className={styles.sidenavContainer}>
 			<Menu
 				theme='dark'
 				mode='inline'
 				items={menu}
 				className='sidenav-menu '
+				defaultSelectedKeys={["dashboard"]}
+				defaultOpenKeys={sideNavOpenKeys}
 				// openKeys={[sideNavOpenKeys]}
 				// style={{ backgroundColor: "transparent" }}
-			/>
+			>
+				{/* Menu items */}
+			</Menu>
 		</div>
 	);
 };
