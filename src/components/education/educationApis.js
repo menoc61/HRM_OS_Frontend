@@ -24,14 +24,14 @@ export const addEducation = async (values) => {
 			},
 		});
 		//dispatching data
-		toast.success("Added successful");
+		toast.success("Ajout réussi");
 
 		return {
 			data,
 			message: "success",
 		};
 	} catch (error) {
-		toast.error("Error in adding Educationtry again");
+		toast.error("Erreur lors de l'ajout de l'Education, réessayer");
 		console.log(error.message);
 		return {
 			message: "error",
@@ -72,14 +72,14 @@ export const updateEducation = async (id, values) => {
 			},
 		});
 		//dispatching data
-		toast.success("Updated successful");
+		toast.success("Mise à jour réussie");
 
 		return {
 			data,
 			message: "success",
 		};
 	} catch (error) {
-		toast.error("Error in updating Educationtry again");
+		toast.error("Erreur lors de la mise à jour de l'éducation, réessayez");
 		console.log(error.message);
 
 		return {
@@ -101,14 +101,14 @@ export const deleteEducation = async (id) => {
 			url: `education/${id}`,
 		});
 		//dispatching data
-		toast.success("Deleted successful");
+		toast.success("Supprimé avec succès");
 
 		return {
 			data,
 			message: "success",
 		};
 	} catch (error) {
-		toast.error("Error in deleting Educationtry again");
+		toast.error("Erreur lors de la suppression de l'éducation, réessayez");
 		console.log(error.message);
 		return {
 			message: "error",

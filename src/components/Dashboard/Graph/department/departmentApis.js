@@ -24,14 +24,14 @@ export const addDepartment = async (values) => {
 			},
 		});
 		//dispatching data
-		toast.success("Added successful");
+		toast.success("Ajout réussi");
 
 		return {
 			data,
 			message: "success",
 		};
 	} catch (error) {
-		toast.error("Error in adding Department try again");
+		toast.error("Erreur lors de l'ajout du département, réessayez");
 		console.log(error.message);
 		return {
 			message: "error",
@@ -79,7 +79,7 @@ export const updateDepartment = async (id, values) => {
 			message: "success",
 		};
 	} catch (error) {
-		toast.error("Error in updating Department try again");
+		toast.error("Erreur lors de la mise à jour du service, réessayez");
 		console.log(error.message);
 
 		return {
@@ -108,7 +108,7 @@ export const deleteDepartment = async (id) => {
 			message: "success",
 		};
 	} catch (error) {
-		toast.error("Error in deleting Department try again");
+		toast.error("Erreur lors de la suppression du département, réessayez");
 		console.log(error.message);
 		return {
 			message: "error",

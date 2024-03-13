@@ -46,21 +46,21 @@ function CustomTable({ list, total, status, setStatus, loading }) {
 		},
 		{
 			id: 10,
-			title: "Name",
+			title: "Nom",
 			dataIndex: "user",
 			key: "user",
 			render: (user) => `${user?.firstName} ${user?.lastName}`,
 		},
 		{
 			id: 2,
-			title: "In Time",
+			title: "À l'heure",
 			dataIndex: "inTime",
 			key: "inTime",
 			render: (inTime) => dayjs(inTime).format("DD-MM-YYYY, h:mm A") || "NONE",
 		},
 		{
 			id: 3,
-			title: "Out Time ",
+			title: "Temps d'arrêt ",
 			dataIndex: `outTime`,
 			key: "outTime",
 			render: (outTime) =>
@@ -68,7 +68,7 @@ function CustomTable({ list, total, status, setStatus, loading }) {
 		},
 		{
 			id: 4,
-			title: "In Status",
+			title: "En statut",
 			dataIndex: "inTimeStatus",
 			key: "inTimeStatus",
 			render: (inTimeStatus) => {
@@ -86,7 +86,7 @@ function CustomTable({ list, total, status, setStatus, loading }) {
 		},
 		{
 			id: 5,
-			title: "Out Status",
+			title: "Statut de sortie",
 			dataIndex: "outTimeStatus",
 			key: "outTimeStatus",
 			render: (outTimeStatus) => {
@@ -104,7 +104,7 @@ function CustomTable({ list, total, status, setStatus, loading }) {
 		},
 		{
 			id: 6,
-			title: "Total Hour",
+			title: "Heure Total",
 			dataIndex: "totalHour",
 			key: "totalHour",
 			render: (totalHour) => totalHour || "Not Checked",
@@ -285,7 +285,7 @@ const GetAllAttendance = (props) => {
 							/>
 							<VioletLinkBtn>
 								<button onClick={onClickSearch}>
-									<BtnSearchSvg size={25} title={"SEARCH"} loading={loading} />
+									<BtnSearchSvg size={25} title={"RECHERCHE"} loading={loading} />
 								</button>
 							</VioletLinkBtn>
 						</div>

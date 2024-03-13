@@ -23,14 +23,14 @@ function CustomTable({ list }) {
 		},
 		{
 			id: 2,
-			title: "Name",
+			title: "Nom",
 			dataIndex: "name",
 			key: "name",
 		},
 
 		{
 			id: 3,
-			title: "Created at",
+			title: "Créé a",
 			dataIndex: "createdAt",
 			key: "addrcreatedAtess",
 			render: (createdAt) => dayjs(createdAt).format("YYYY-MM-DD"),
@@ -119,7 +119,7 @@ const AddDepartment = ({ drawer }) => {
 	};
 
 	const onFinishFailed = (errorInfo) => {
-		toast.warning("Failed at adding department");
+		toast.warning("Échec de l'ajout du département");
 		setLoader(false);
 	};
 	return (
@@ -152,12 +152,12 @@ const AddDepartment = ({ drawer }) => {
 							<div>
 								<Form.Item
 									style={{ marginBottom: "20px" }}
-									label='Name'
+									label='Nom'
 									name='name'
 									rules={[
 										{
 											required: true,
-											message: "Please input your username!",
+											message: "Veuillez saisir votre nom d'utilisateur!",
 										},
 									]}>
 									<Input />

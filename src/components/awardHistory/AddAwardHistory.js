@@ -59,7 +59,7 @@ const AddAwardHistory = ({ setLoading }) => {
 	};
 
 	const onFinishFailed = (errorInfo) => {
-		toast.warning("Failed at adding award");
+		toast.warning("Échec de l'ajout de la récompense");
 		setLoader(false);
 		setLoading(false);
 	};
@@ -94,10 +94,10 @@ const AddAwardHistory = ({ setLoading }) => {
 							<div>
 								<Form.Item
 									style={{ marginBottom: "10px" }}
-									label='Award Name'
+									label='Nom du prix'
 									name='awardId'
 									rules={[{ required: true }]}>
-									<Select placeholder='Select award' loading={!award}>
+									<Select placeholder='Sélectionnez le prix' loading={!award}>
 										{award &&
 											award.map((award) => (
 												<Select.Option key={award.id} value={award.id}>
@@ -109,12 +109,12 @@ const AddAwardHistory = ({ setLoading }) => {
 
 								<Form.Item
 									style={{ marginBottom: "10px" }}
-									label='Awarded Date'
+									label='Date d/attribution'
 									name='awardedDate'
 									rules={[
 										{
 											required: true,
-											message: "Please input your awarded Date!",
+											message: "Veuillez saisir votre date d'attribution !",
 										},
 									]}>
 									<DatePicker />
@@ -122,7 +122,7 @@ const AddAwardHistory = ({ setLoading }) => {
 
 								<Form.Item
 									style={{ marginBottom: "20px" }}
-									label='Comment'
+									label='Commentaire'
 									name='comment'>
 									<Input />
 								</Form.Item>

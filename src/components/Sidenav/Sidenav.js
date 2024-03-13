@@ -160,7 +160,7 @@ const Sidenav = ({ color, sideNavOpenKeys }) => {
 		},
 
 		hasPermission("readAll-shift") && {
-			label: "SHIFT",
+			label: "Changement",
 			key: "shift",
 			icon: <ClockCircleOutlined />,
 			children: [

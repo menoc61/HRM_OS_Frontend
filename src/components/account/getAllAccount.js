@@ -32,14 +32,14 @@ function CustomTable({ list, total }) {
 
 		{
 			id: 2,
-			title: "Account",
+			title: "Compte",
 			dataIndex: "name",
 			key: "name",
 		},
 
 		{
 			id: 3,
-			title: "Account Type ",
+			title: "Type de compte ",
 			dataIndex: "account",
 			key: "account",
 			render: (account) => account?.name,

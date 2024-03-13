@@ -24,7 +24,7 @@ function GetAllAward() {
 		},
 		{
 			id: 2,
-			title: "Name",
+			title: "Nom",
 			dataIndex: "name",
 			key: "name",
 		},
@@ -38,7 +38,7 @@ function GetAllAward() {
 
 		{
 			id: 3,
-			title: "Created at",
+			title: "Créé à",
 			dataIndex: "createdAt",
 			key: "addrcreatedAtess",
 			render: (createdAt) => dayjs(createdAt).format("YYYY-MM-DD"),
@@ -70,7 +70,7 @@ function GetAllAward() {
 
 	return (
 		<>
-			<PageTitle title='Back' />
+			<PageTitle title='Retour' />
 			{!loading ? (
 				<Card className='mt-5'>
 					<div className='text-center my-2 flex justify-between'>

@@ -42,12 +42,12 @@ const AddAward = ({ drawer }) => {
 	};
 
 	const onFinishFailed = (errorInfo) => {
-		toast.warning("Failed at adding department");
+		toast.warning("Échec de l'ajout du département");
 		setLoader(false);
 	};
 	return (
 		<Fragment bordered={false}>
-			<PageTitle title='Back' />
+			<PageTitle title='Retour' />
 
 			<UserPrivateComponent permission={"create-award"}>
 				<Row className='mr-top' justify={drawer ? "center" : "space-between"}>
@@ -78,15 +78,15 @@ const AddAward = ({ drawer }) => {
 							<div>
 								<Form.Item
 									style={{ marginBottom: "10px" }}
-									label='Name'
+									label='Nom'
 									name='name'
 									rules={[
 										{
 											required: true,
-											message: "Please input your award name!",
+											message: "Veuillez saisir le nom de votre récompense !",
 										},
 									]}>
-									<Input placeholder='Employee Of The Month' />
+									<Input placeholder='L/employer du mois' />
 								</Form.Item>
 
 								<Form.Item
@@ -96,10 +96,10 @@ const AddAward = ({ drawer }) => {
 									rules={[
 										{
 											required: true,
-											message: "Please input your award description!",
+											message: "Veuillez saisir la description de votre récompense !",
 										},
 									]}>
-									<Input placeholder='Employee Who Performed Well' />
+									<Input placeholder='L/employé qui a bien performé' />
 								</Form.Item>
 
 								<Form.Item

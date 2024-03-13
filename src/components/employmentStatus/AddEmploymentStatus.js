@@ -39,14 +39,14 @@ function CustomTable({ list, loading }) {
 		},
 		{
 			id: 2,
-			title: "Name",
+			title: "Nom",
 			dataIndex: "name",
 			key: "name",
 		},
 
 		{
 			id: 3,
-			title: "Color Code",
+			title: "Code de couleur",
 			dataIndex: "colourValue",
 			key: "colourValue",
 			render: (colourValue) => (
@@ -163,7 +163,7 @@ const AddEmploymentStatus = ({ drawer }) => {
 	};
 
 	const onFinishFailed = (errorInfo) => {
-		toast.warning("Failed at adding shift");
+		toast.warning("Échec de l'ajout du quart de travail");
 		setLoader(false);
 	};
 	return (
@@ -197,12 +197,12 @@ const AddEmploymentStatus = ({ drawer }) => {
 							<div>
 								<Form.Item
 									style={{ marginBottom: "10px" }}
-									label='Name'
+									label='Nom'
 									name='name'
 									rules={[
 										{
 											required: true,
-											message: "Please input your shift!",
+											message: "Veuillez saisir votre quart de travail !",
 										},
 									]}>
 									<Input placeholder='Parmanet' />
@@ -210,7 +210,7 @@ const AddEmploymentStatus = ({ drawer }) => {
 
 								<Form.Item
 									style={{ marginBottom: "10px" }}
-									label='Color Code'
+									label='Code de couleur'
 									name='colourValue'>
 									<Input
 										placeholder='#00FF00'

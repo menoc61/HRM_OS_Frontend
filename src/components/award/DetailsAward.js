@@ -36,7 +36,7 @@ const CustomTable = ({ list }) => {
 
 		{
 			id: 2,
-			title: " Name",
+			title: " Nom",
 			key: "user",
 			dataIndex: "user",
 			render: (user) => user?.firstName + " " + user?.lastName,
@@ -44,7 +44,7 @@ const CustomTable = ({ list }) => {
 
 		{
 			id: 6,
-			title: "Awarded Date",
+			title: "Date d'attribution",
 			dataIndex: "awardedDate",
 			key: "awardedDate",
 			render: (awardedDate) => dayjs(awardedDate).format("DD/MM/YYYY"),
@@ -52,7 +52,7 @@ const CustomTable = ({ list }) => {
 
 		{
 			id: 5,
-			title: "Comment",
+			title: "Commentaire",
 			dataIndex: "comment",
 			key: "comment",
 		},
@@ -149,7 +149,7 @@ const DetailAward = () => {
 
 	return (
 		<div>
-			<PageTitle title=' Back  ' />
+			<PageTitle title=' Retour  ' />
 
 			<UserPrivateComponent permission={"readSingle-award"}>
 				<Card className='mr-top mt-5'>

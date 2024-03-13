@@ -13,7 +13,7 @@ const UserListCard = ({ list, loading }) => {
 			render: (id) => <Link to={`/admin/hr/staffs/${id}`}>{id}</Link>,
 		},
 		{
-			title: "Employee Name",
+			title: "Nom de l'employé",
 			key: "employee",
 			render: ({ firstName, lastName, id }) => (
 				<Link to={`/admin/hr/staffs/${id}`}>{firstName + " " + lastName}</Link>

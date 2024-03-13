@@ -59,7 +59,7 @@ const DetailDesignation = () => {
 
 	return (
 		<div>
-			<PageTitle title=' Back ' subtitle=' ' />
+			<PageTitle title=' Retour ' subtitle=' ' />
 
 			<div className='mr-top'>
 				<UserPrivateComponent permission={"readSingle-designation"}>
@@ -96,7 +96,7 @@ const DetailDesignation = () => {
 														</Button>
 													</a>
 												}
-												title='Are you sure you want to delete ?'
+												title='Etes-vous sûr que vous voulez supprimer ?'
 												trigger='click'
 												visible={visible}
 												onVisibleChange={handleVisibleChange}>

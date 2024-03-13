@@ -32,7 +32,7 @@ const AddAnnouncement = ({ drawer }) => {
 	};
 
 	const onFinishFailed = (errorInfo) => {
-		toast.warning("Failed at adding shift");
+		toast.warning("Échec de l'ajout du quart de travail");
 	};
 
 	return (
@@ -65,15 +65,15 @@ const AddAnnouncement = ({ drawer }) => {
 						<div>
 							<Form.Item
 								style={{ marginBottom: "10px" }}
-								label='Title'
+								label='Titre'
 								name='title'
 								rules={[
 									{
 										required: true,
-										message: "Please input your title!",
+										message: "Veuillez saisir votre titre !",
 									},
 								]}>
-								<Input placeholder='Meeting at 00:00' />
+								<Input placeholder='Rendez-vous à 00h00' />
 							</Form.Item>
 
 							<Form.Item

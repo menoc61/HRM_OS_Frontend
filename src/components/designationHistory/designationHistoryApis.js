@@ -26,14 +26,14 @@ export const addDesHistory = async (values) => {
 			},
 		});
 		//dispatching data
-		toast.success("Added successful");
+		toast.success("Ajout réussi");
 
 		return {
 			data,
 			message: "success",
 		};
 	} catch (error) {
-		toast.error("Error in adding designation History again");
+		toast.error("Erreur lors de l'ajout à nouveau de l'historique de la désignation");
 		console.log(error.message);
 		return {
 			message: "error",
@@ -74,14 +74,14 @@ export const updateDesHistory = async (id, values) => {
 			},
 		});
 		//dispatching data
-		toast.success("Updated successful");
+		toast.success("Mise à jour réussie");
 
 		return {
 			data,
 			message: "success",
 		};
 	} catch (error) {
-		toast.error("Error in updating designation History again");
+		toast.error("Erreur lors de la mise à jour à nouveau de l'historique des désignations");
 		console.log(error.message);
 
 		return {
@@ -103,14 +103,14 @@ export const deleteDesHistory = async (id) => {
 			url: `designationHistory/${id}`,
 		});
 		//dispatching data
-		toast.success("Deleted successful");
+		toast.success("Supprimé avec succès");
 
 		return {
 			data,
 			message: "success",
 		};
 	} catch (error) {
-		toast.error("Error in deleting designation History again");
+		toast.error("Erreur lors de la suppression à nouveau de l'historique des désignations");
 		console.log(error.message);
 		return {
 			message: "error",
