@@ -73,15 +73,15 @@ const AddTaskPriority = (props) => {
 						<div>
 							<Form.Item
 								style={{ marginBottom: "10px" }}
-								label='TaskPriority Name'
+								label='Nom de la priorité de la tâche'
 								name='name'
 								rules={[
 									{
 										required: true,
-										message: "Enter TaskPriority Name",
+										message: "Entrez le nom de la priorité de la tâche",
 									},
 								]}>
-								<Input placeholder='Enter TaskPriority Name' />
+								<Input placeholder='Entrez le nom de la priorité de la tâche' />
 							</Form.Item>
 
 							<Form.Item

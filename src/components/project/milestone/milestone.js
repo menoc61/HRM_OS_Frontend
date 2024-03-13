@@ -50,20 +50,20 @@ const Milestone = ({ isFixed }) => {
 		},
 		{
 			id: 2,
-			title: "Name",
+			title: "Nom",
 			dataIndex: "name",
 			key: "name",
 		},
 
 		{
 			id: 4,
-			title: "Start Date",
+			title: "Date de debut",
 			key: "startDate",
 			render: ({ startDate }) => dayjs(startDate).format("DD/MM/YYYY"),
 		},
 		{
 			id: 5,
-			title: "End Date",
+			title: "Date de fin",
 			key: "endDate",
 			render: ({ endDate }) => dayjs(endDate).format("DD/MM/YYYY"),
 		},
@@ -89,7 +89,7 @@ const Milestone = ({ isFixed }) => {
 
 	return (
 		<div>
-			<PageTitle title='Back' />
+			<PageTitle title='Retour' />
 			<AddMilestone isFixed={isFixed} />
 			{isFixed && (
 				<Card>

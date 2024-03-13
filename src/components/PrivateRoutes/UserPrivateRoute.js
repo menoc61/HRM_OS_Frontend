@@ -9,7 +9,7 @@ const UserPrivateRoute = ({ path, permission, ...props }) => {
 	if (permissions?.includes(permission)) {
 		return <Outlet />;
 	} else {
-		return <> {toast.error("You are not Authorized , Contact with Admin")}</>;
+		return <> {toast.error("Vous n'êtes pas autorisé, contactez l'administrateur")}</>;
 	}
 };
 

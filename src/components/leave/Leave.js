@@ -11,7 +11,7 @@ const Leave = (props) => {
 	}
 	return (
 		<div>
-			<PageTitle title='Back' />
+			<PageTitle title='Retour' />
 			<AddLeave />
 		</div>
 	);

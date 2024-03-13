@@ -34,29 +34,29 @@ function CustomTable({ list, loading, month, year, paymentStatus }) {
 			key: "id",
 		},
 		{
-			title: "Name",
+			title: "Nom",
 			key: "name",
 			dataIndex: "user",
 			render: (user) => `${user?.firstName} ${user?.lastName}`,
 		},
 
 		{
-			title: "Salary",
+			title: "Salaire",
 			dataIndex: "salary",
 			key: "salary",
 		},
 		{
-			title: "Salary Payable",
+			title: "Salaire Payable",
 			dataIndex: "salaryPayable",
 			key: "salaryPayable",
 		},
 		{
-			title: "Month ",
+			title: "Mois ",
 			key: "month",
 			render: ({ salaryMonth }) => `${dayjs(salaryMonth, "M").format("MMM")}`,
 		},
 		{
-			title: "Year",
+			title: "Annee",
 			key: "year",
 			render: ({ salaryYear }) => `${salaryYear}`,
 		},
@@ -68,7 +68,7 @@ function CustomTable({ list, loading, month, year, paymentStatus }) {
 		},
 
 		{
-			title: "bonusComment",
+			title: "Commentaire bonus",
 			dataIndex: "bonusComment",
 			key: "bonusComment",
 		},
@@ -80,7 +80,7 @@ function CustomTable({ list, loading, month, year, paymentStatus }) {
 		},
 
 		{
-			title: "deductionComment",
+			title: "Commentaire de deduction",
 			dataIndex: "deductionComment",
 			key: "deductionComment",
 		},
@@ -92,13 +92,13 @@ function CustomTable({ list, loading, month, year, paymentStatus }) {
 		},
 
 		{
-			title: "W Hours",
+			title: "W Heures",
 			dataIndex: "workingHour",
 			key: "workingHour",
 			render: (workingHour) => `${workingHour?.toFixed(2)} hours`,
 		},
 		{
-			title: "Status",
+			title: "Statut",
 			dataIndex: "paymentStatus",
 			key: "paymentStatus",
 		},
@@ -294,7 +294,7 @@ const PayslipList = () => {
 						/>
 						<VioletLinkBtn>
 							<button onClick={onClickSearch}>
-								<BtnSearchSvg size={25} title={"SEARCH"} loading={loading} />
+								<BtnSearchSvg size={25} title={"RECHERCHE"} loading={loading} />
 							</button>
 						</VioletLinkBtn>
 					</div>

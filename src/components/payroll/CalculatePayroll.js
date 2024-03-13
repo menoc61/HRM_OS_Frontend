@@ -28,19 +28,19 @@ function CustomTable({ list, loading }) {
 			key: "id",
 		},
 		{
-			title: "Name",
+			title: "Nom",
 			key: "name",
 			render: (record) => `${record.firstName} ${record.lastName}`,
 		},
 
 		{
-			title: "Salary",
+			title: "Salaire",
 			dataIndex: "salary",
 			key: "salary",
 		},
 
 		{
-			title: "Salary Payable",
+			title: "Salaire payable",
 			dataIndex: "salaryPayable",
 			key: "salaryPayable",
 			render: (salaryPayable, { id }) => {
@@ -84,7 +84,7 @@ function CustomTable({ list, loading }) {
 		},
 
 		{
-			title: "B-Comment",
+			title: "B-Commentaire",
 			dataIndex: "bonusComment",
 			key: "bonusComment",
 			render: (bonusComment, { id }) => {
@@ -135,14 +135,14 @@ function CustomTable({ list, loading }) {
 		},
 
 		{
-			title: "D-Comment",
+			title: "D-Commentaire",
 			dataIndex: "deductionComment",
 			key: "deductionComment",
 			render: (deductionComment, { id }) => {
 				return (
 					<div>
 						<Input
-							placeholder='comment'
+							placeholder='commentaire'
 							size={"small"}
 							style={{ width: "100px", fontSize: "15px" }}
 							onChange={(e) => {
@@ -164,7 +164,7 @@ function CustomTable({ list, loading }) {
 		},
 
 		{
-			title: "Working Hours",
+			title: "Heures d'ouverture",
 			dataIndex: "workingHour",
 			key: "workingHour",
 			render: (workingHour) => `${workingHour?.toFixed(2)} hours`,
@@ -207,7 +207,7 @@ function CustomTable({ list, loading }) {
 								data={list}
 								className='btn btn-dark btn-sm mb-1'
 								filename='payslips'>
-								Download CSV
+								Télécharger CSV
 							</CSVLink>
 						</CsvLinkBtn>
 					</div>
@@ -224,28 +224,28 @@ function CustomTable({ list, loading }) {
 						<div className='flex justify-start'>
 							<div className='flex flex-col mr-10'>
 								<div className='flex justify-between'>
-									<div className='font-bold'>Paid Leave : </div>
+									<div className='font-bold'>Congés payés : </div>
 									<div>{record.paidLeave}</div>
 								</div>
 								<div className='flex justify-between'>
-									<div className='font-bold'>Unpaid Leave : </div>
+									<div className='font-bold'>Congés impayés : </div>
 									<div className='ml-2'>{record.unpaidLeave}</div>
 								</div>
 							</div>
 							<div className='flex flex-col mr-10'>
 								<div className='flex justify-between '>
-									<div className='font-bold'>M-Holiday : </div>
+									<div className='font-bold'>M-Vacances : </div>
 									<div>{record.monthlyHoliday}</div>
 								</div>
 								<div className='flex justify-between'>
-									<div className='font-bold'>P-Holiday : </div>
+									<div className='font-bold'>P-Vacances : </div>
 									<div>{record.publicHoliday}</div>
 								</div>
 							</div>
 
 							<div className='flex flex-col mr-10'>
 								<div className='flex justify-between'>
-									<div className='font-bold'>Work Day : </div>
+									<div className='font-bold'>Journée de travail: </div>
 									<div className='ml-2'>{record.workDay}</div>
 								</div>
 								<div className='flex justify-between'>
@@ -255,11 +255,11 @@ function CustomTable({ list, loading }) {
 							</div>
 							<div className='flex flex-col mr-10'>
 								<div className='flex justify-between'>
-									<div className='font-bold'>Month W.H : </div>
+									<div className='font-bold'>Mois W.H : </div>
 									<div className='ml-2'>{record.monthlyWorkHour}</div>
 								</div>
 								<div className='flex justify-between'>
-									<div className='font-bold'>H Salary : </div>
+									<div className='font-bold'>H Salaire : </div>
 									<div className='ml-2'>{record.hourlySalary}</div>
 								</div>
 							</div>
@@ -347,13 +347,13 @@ const CalculatePayroll = () => {
 
 	return (
 		<div>
-			<PageTitle title='Back' />
+			<PageTitle title='Retour' />
 			<UserPrivateComponent permission={"readAll-payroll"}>
 				<Card className='mt-5'>
 					<div className='flex justify-end'>
 						<h1 className='text-base text-color-2 items-center mr-2 mt-1'>
 							{" "}
-							Select Month :{" "}
+							Sélectionnez un mois :{" "}
 						</h1>
 						<DatePicker
 							format={"M"}
@@ -365,7 +365,7 @@ const CalculatePayroll = () => {
 						/>
 						<h1 className='text-base text-color-2 items-center mr-2 mt-1'>
 							{" "}
-							Select Year :{" "}
+							Sélectionnez une année:{" "}
 						</h1>
 						<DatePicker
 							format={"YYYY"}

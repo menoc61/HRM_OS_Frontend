@@ -90,7 +90,7 @@ const AddTaskStatus = ({ isFixed, projectId }) => {
 									{!projectId && (
 										<Form.Item
 											style={{ marginBottom: "10px" }}
-											label='Project'
+											label='Projet'
 											tooltip='Project is already selected '
 											name='projectId'>
 											<Input defaultValue={id} />
@@ -100,18 +100,18 @@ const AddTaskStatus = ({ isFixed, projectId }) => {
 							) : (
 								<Form.Item
 									style={{ marginBottom: "10px" }}
-									label='Project'
+									label='Projet'
 									name='projectId'
 									rules={[
 										{
 											required: true,
-											message: "Select Project",
+											message: "Selectionnez un Projet",
 										},
 									]}>
 									<Select
 										showSearch
 										loading={projectLoading}
-										placeholder='Select Project'
+										placeholder='Selectionnez un Projet'
 										optionFilterProp='children'
 										filterOption={(input, option) =>
 											option.children
@@ -129,15 +129,15 @@ const AddTaskStatus = ({ isFixed, projectId }) => {
 							)}
 							<Form.Item
 								style={{ marginBottom: "20px" }}
-								label='Task Status Name'
+								label='Nom de l/état de la tâche'
 								name='name'
 								rules={[
 									{
 										required: true,
-										message: "Enter Task Status Name",
+										message: "Entrez le nom de l'état de la tâche",
 									},
 								]}>
-								<Input placeholder='Enter Task Status Name' />
+								<Input placeholder='Entrez le nom de l/état de la tâche' />
 							</Form.Item>
 
 							<Form.Item

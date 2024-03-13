@@ -46,7 +46,7 @@ const TaskStatus = (props) => {
 		},
 		{
 			id: 2,
-			title: "Name",
+			title: "Nom",
 			key: "name",
 			render: ({ name }) => name.toUpperCase(),
 		},
@@ -73,7 +73,7 @@ const TaskStatus = (props) => {
 	];
 	return (
 		<div>
-			<PageTitle title='Back' />
+			<PageTitle title='Retour' />
 			<AddTaskPriority list={list} loading={loading} />
 			<Card className='mb-4'>
 				<h1 className='text-xl mb-4'> Liste des colonnes de priorité des tâches </h1>

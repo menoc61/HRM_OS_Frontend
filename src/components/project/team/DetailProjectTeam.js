@@ -58,7 +58,7 @@ const DetailProjectTeam = () => {
 		<>
 			{ProjectTeam ? (
 				<div>
-					<PageTitle title='Back' />
+					<PageTitle title='Retour' />
 					{ProjectTeam && (
 						<AddProjectTeamMember
 							id={id}

@@ -73,7 +73,7 @@ const UpdateTaskPriority = () => {
 	return (
 		<Fragment bordered={false}>
 			{/* <UserPrivateComponent permission={"create-leaveApplication"}> */}
-			<PageTitle title='Back' />
+			<PageTitle title='Retour' />
 			<Row className='mr-top'>
 				<Col
 					xs={24}
@@ -104,15 +104,15 @@ const UpdateTaskPriority = () => {
 							<div>
 								<Form.Item
 									style={{ marginBottom: "20px" }}
-									label='Task Priority Name'
+									label='Nom de la priorité de la tâche'
 									name='name'
 									rules={[
 										{
 											required: true,
-											message: "Enter Task Status Name",
+											message: "Entrez le nom de l'état de la tâche",
 										},
 									]}>
-									<Input placeholder='Enter Task Status Name' />
+									<Input placeholder='Entrez le nom de l/état de la tâche' />
 								</Form.Item>
 
 								<Form.Item

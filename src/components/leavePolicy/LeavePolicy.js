@@ -10,7 +10,7 @@ const LeavePolicy = (props) => {
 	}
 	return (
 		<div>
-			<PageTitle title='Back' />
+			<PageTitle title='Retour' />
 			<AddLeavePolicy />
 		</div>
 	);

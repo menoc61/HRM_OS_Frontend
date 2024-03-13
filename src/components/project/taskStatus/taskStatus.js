@@ -49,13 +49,13 @@ const TaskStatus = ({ isFixed }) => {
 		},
 		{
 			id: 2,
-			title: "Name",
+			title: "Nom",
 			key: "name",
 			render: ({ name }) => name.toUpperCase(),
 		},
 		{
 			id: 4,
-			title: "Project",
+			title: "Projet",
 			key: "project",
 			render: ({ project }) => project?.name?.toUpperCase(),
 		},
@@ -80,7 +80,7 @@ const TaskStatus = ({ isFixed }) => {
 	];
 	return (
 		<div>
-			<PageTitle title='Back' />
+			<PageTitle title='Retour' />
 			<AddTaskStatus list={list} loading={loading} isFixed={isFixed} />
 
 			{isFixed && (

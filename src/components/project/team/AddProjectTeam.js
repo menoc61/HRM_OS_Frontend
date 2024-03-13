@@ -91,7 +91,7 @@ const AddProjectTeam = ({ projectId }) => {
 						autoComplete='off'>
 						<div>
 							<Form.Item
-								label='Project Name'
+								label='Nom du projet'
 								name='projectId'
 								style={{ marginBottom: "10px" }}
 								rules={[
@@ -105,7 +105,7 @@ const AddProjectTeam = ({ projectId }) => {
 										loading={projectListLoading}
 										showSearch
 										allowClear
-										placeholder='Select Project'
+										placeholder='Selectionnez un Projet'
 										optionFilterProp='children'>
 										{projectList?.map((item) => (
 											<Select.Option key={item.id} value={item.id}>
@@ -120,30 +120,30 @@ const AddProjectTeam = ({ projectId }) => {
 
 							<Form.Item
 								style={{ marginBottom: "10px" }}
-								label='Team Name'
+								label='Nom de l/équipe'
 								name='projectTeamName'
 								rules={[
 									{
 										required: true,
-										message: "Input Team Name",
+										message: "Saisir le nom de l'équipe",
 									},
 								]}>
-								<Input placeholder='Team Name' />
+								<Input placeholder='Nom de l/équipe' />
 							</Form.Item>
 							<Form.Item
 								style={{ marginBottom: "20px" }}
-								label='Team Member/s'
+								label='Membres de l/équipe'
 								name='projectTeamMember'
 								rules={[
 									{
 										required: true,
-										message: "Select Team Member/s",
+										message: "Sélectionnez les membres de l'équipe",
 									},
 								]}>
 								<Select
 									mode='multiple'
 									loading={userListLoading}
-									placeholder='Select Team Member/s'
+									placeholder='Sélectionnez les membres de l/équipe'
 									optionFilterProp='children'>
 									{usersList?.map((item) => (
 										<Select.Option key={item.id} value={item.id}>

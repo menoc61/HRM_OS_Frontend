@@ -119,12 +119,12 @@ const PrintToPdf = forwardRef(({ data, invoiceData }, ref) => {
 
 						<Col span={12}>
 							<h2 className='text-xl font-semibold text-slate-600 mb-4'>
-								Deductions
+								Déductions
 							</h2>
 
 							<Row>
 								<Col span={12}>
-									<Title level={5}>Deduction : {data.deductionComment}</Title>
+									<Title level={5}>Déduction : {data.deductionComment}</Title>
 								</Col>
 								<Col
 									span={12}
@@ -136,7 +136,7 @@ const PrintToPdf = forwardRef(({ data, invoiceData }, ref) => {
 							<Divider style={{ marginTop: "40px" }}></Divider>
 							<Row>
 								<Col span={12}>
-									<Title level={4}>Total Deduction</Title>
+									<Title level={4}>Total Déduction</Title>
 								</Col>
 								<Col
 									span={12}
