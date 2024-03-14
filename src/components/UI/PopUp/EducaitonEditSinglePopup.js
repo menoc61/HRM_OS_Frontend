@@ -105,12 +105,12 @@ const EducaitonEditSinglePopup = ({ data, setLoading }) => {
 					<div>
 						<Form.Item
 							style={{ marginBottom: "10px" }}
-							label='Degree'
+							label='Degré'
 							name='degree'
 							rules={[
 								{
 									required: true,
-									message: "Please input your degree!",
+									message: "Veuillez entrer votre Degré!",
 								},
 							]}>
 							<Input />

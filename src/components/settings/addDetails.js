@@ -52,7 +52,7 @@ const AddDetails = () => {
 	};
 
 	const onFinishFailed = (errorInfo) => {
-		toast.error("Something went wrong !");
+		toast.error("Quelque chose s'est mal passé!");
 		console.log("Failed:", errorInfo);
 	};
 
@@ -98,12 +98,12 @@ const AddDetails = () => {
 									<Form.Item
 										style={{ marginBottom: "10px" }}
 										fields={[{ name: "Company Name" }]}
-										label='Company Name'
+										label='nom de l/entreprise'
 										name='company_name'
 										rules={[
 											{
 												required: true,
-												message: "Please input Company name!",
+												message: "Veuillez saisir le nom de l'entreprise !",
 											},
 										]}>
 										<Input />
@@ -111,12 +111,12 @@ const AddDetails = () => {
 									<Form.Item
 										style={{ marginBottom: "10px" }}
 										fields={[{ name: "Tagline" }]}
-										label='Tagline'
+										label='Slogan'
 										name='tag_line'
 										rules={[
 											{
 												required: true,
-												message: "Please input Tagline!",
+												message: "Veuillez saisir le slogan!",
 											},
 										]}>
 										<Input />
@@ -124,12 +124,12 @@ const AddDetails = () => {
 
 									<Form.Item
 										style={{ marginBottom: "10px" }}
-										label='Address'
+										label='Addresse'
 										name='address'
 										rules={[
 											{
 												required: true,
-												message: "Please input Address!",
+												message: "Veuillez saisir l'adresse!",
 											},
 										]}>
 										<Input />
@@ -137,12 +137,12 @@ const AddDetails = () => {
 
 									<Form.Item
 										style={{ marginBottom: "10px" }}
-										label='Phone Number'
+										label='votre numéro de téléphone'
 										name='phone'
 										rules={[
 											{
 												required: true,
-												message: "Please input Phone Number!",
+												message: "Veuillez saisir votre numéro de téléphone !",
 											},
 										]}>
 										<Input />
@@ -150,12 +150,12 @@ const AddDetails = () => {
 
 									<Form.Item
 										style={{ marginBottom: "10px" }}
-										label='Email Address'
+										label='Adresse E-mail'
 										name='email'
 										rules={[
 											{
 												required: true,
-												message: "Please input Email Address!",
+												message: "Veuillez saisir votre adresse e-mail !",
 											},
 										]}>
 										<Input />
@@ -163,12 +163,12 @@ const AddDetails = () => {
 
 									<Form.Item
 										style={{ marginBottom: "10px" }}
-										label='Website'
+										label='site Web'
 										name='website'
 										rules={[
 											{
 												required: true,
-												message: "Please input Website!",
+												message: "Veuillez saisir le site Web !",
 											},
 										]}>
 										<Input />
@@ -176,12 +176,12 @@ const AddDetails = () => {
 
 									<Form.Item
 										style={{ marginBottom: "10px" }}
-										label='Footer'
+										label='Pied de page'
 										name='footer'
 										rules={[
 											{
 												required: true,
-												message: "Please input Footer!",
+												message: "Veuillez saisir le pied de page!",
 											},
 										]}>
 										<Input />
@@ -197,7 +197,7 @@ const AddDetails = () => {
 											size='large'
 											loading={loader}
 											onClick={onClickLoading}>
-											Update Details
+											Détails de la mise à jour
 										</Button>
 									</Form.Item>
 								</Form>

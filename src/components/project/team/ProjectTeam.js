@@ -26,7 +26,7 @@ const ProjectTeam = () => {
 		},
 		{
 			id: 2,
-			title: "Team Name",
+			title: "Nom de l'equipe",
 			dataIndex: "projectTeamName",
 			key: "projectTeamName",
 		},
@@ -81,7 +81,7 @@ const ProjectTeam = () => {
 	}
 	return (
 		<div>
-			<PageTitle title='Back' />
+			<PageTitle title='Retour' />
 			<AddProjectTeam />
 			<Card>
 				<h1 className='text-xl mb-4'>Liste des équipes </h1>

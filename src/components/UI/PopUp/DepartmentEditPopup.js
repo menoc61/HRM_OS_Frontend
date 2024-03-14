@@ -73,7 +73,7 @@ const DepartmentEditPopup = ({ data }) => {
 					<div>
 						<Form.Item
 							style={{ marginBottom: "20px" }}
-							label='Name'
+							label='Nom'
 							name='name'
 							rules={[
 								{

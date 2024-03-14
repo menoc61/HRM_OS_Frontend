@@ -121,7 +121,7 @@ technologies RH innovantes.
 								<span className='inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-indigo-500 rounded-full'>
 									<span className='text-sm font-bold'>✓</span>
 								</span>{" "}
-								Optimize Your HR Performance
+								Optimisez vos performances RH
 							</li>
 							<li className='box-border relative py-1 pl-0 text-left text-gray-500 border-solid'>
 								<span className='inline-flex items-center justify-center w-6 h-6 mr-2 text-white bg-indigo-500 rounded-full'>
@@ -141,7 +141,7 @@ technologies RH innovantes.
 				<div className='box-border flex flex-col items-center content-center px-8 mx-auto mt-2 leading-6 text-black border-0 border-gray-300 border-solid md:mt-20 xl:mt-0 md:flex-row max-w-7xl lg:px-16'>
 					<div className='box-border w-full text-black border-solid md:w-1/2 md:pl-6 xl:pl-32'>
 						<h2 className='m-0 text-xl font-semibold leading-tight border-0 border-gray-300 lg:text-3xl md:text-2xl'>
-							Automated Systems
+						Systèmes automatisés
 						</h2>
 						<p className='pt-4 pb-8 m-0 leading-7 text-gray-700 border-0 border-gray-300 sm:pr-10 lg:text-lg'>
 						Faites-en plus en moins de temps grâce à notre système intuitif et automatisé

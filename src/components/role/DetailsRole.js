@@ -25,7 +25,7 @@ const DetailRole = () => {
 	const onDelete = () => {
 		try {
 			setVisible(false);
-			toast.warning(`role Name : ${role.rolename} is removed `);
+			toast.warning(`Nom du rôle : ${role.rolename} est supprimé `);
 			return navigate("/admin/dashboard");
 		} catch (error) {
 			console.log(error.message);
@@ -50,7 +50,7 @@ const DetailRole = () => {
 
 	return (
 		<div>
-			<PageTitle title=' Back  ' />
+			<PageTitle title=' Retour  ' />
 
 			<UserPrivateComponent permission={"readSingle-role"}>
 				<div className='mr-top'>
@@ -81,7 +81,7 @@ const DetailRole = () => {
 										</UserPrivateComponent>
 										<UserPrivateComponent permission={"delete-role"}>
 											<Popover
-												className='m-2'
+												//className='m-2'
 												content={
 													<a onClick={onDelete}>
 														<Button disabled={true} type='primary' danger>
@@ -89,7 +89,7 @@ const DetailRole = () => {
 														</Button>
 													</a>
 												}
-												title='Are you sure you want to delete ?'
+												title='Etes-vous sûr que vous voulez supprimer ?'
 												trigger='click'
 												visible={visible}
 												onVisibleChange={handleVisibleChange}>

@@ -29,7 +29,7 @@ const DesignationEditPopup = ({ data }) => {
 				<BtnEditSvg size={25} />
 			</button>
 			<Modal
-				title='Edit Designation'
+				title='Modifier la désignation'
 				open={isModalOpen}
 				onOk={handleOk}
 				onCancel={handleCancel}>

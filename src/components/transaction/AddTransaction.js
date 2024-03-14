@@ -91,7 +91,7 @@ const AddTransaction = () => {
 
 	return (
 		<>
-			<PageTitle title='Back' />
+			<PageTitle title='Retour' />
 			<UserPrivateComponent permission={"create-transaction"}>
 				<Row className='mr-top'>
 					<Col
@@ -139,7 +139,7 @@ const AddTransaction = () => {
 								<Form.Item
 									style={{ marginBottom: "10px" }}
 									name='debit_id'
-									label='Debit Account'>
+									label='Compte de débit'>
 									<Space.Compact block>
 										<Select
 											onChange={(value) =>
@@ -147,7 +147,7 @@ const AddTransaction = () => {
 											}
 											loading={!accounts}
 											showSearch
-											placeholder='Select Debit ID'
+											placeholder='Sélectionnez l/ID de débit'
 											optionFilterProp='children'
 											filterOption={(input, option) =>
 												option.children.includes(input)
@@ -175,7 +175,7 @@ const AddTransaction = () => {
 								<Form.Item
 									style={{ marginBottom: "10px" }}
 									name='credit_id'
-									label='Credit Account'>
+									label='Compte créditeur'>
 									<Space.Compact block>
 										<Select
 											onChange={(value) =>
@@ -183,7 +183,7 @@ const AddTransaction = () => {
 											}
 											loading={!accounts}
 											showSearch
-											placeholder='Select Credit ID'
+											placeholder='Sélectionnez l\ID de crédit'
 											optionFilterProp='children'
 											filterOption={(input, option) =>
 												option.children.includes(input)
@@ -210,12 +210,12 @@ const AddTransaction = () => {
 
 								<Form.Item
 									style={{ marginBottom: "10px" }}
-									label='Amount'
+									label='Montant'
 									name='amount'
 									rules={[
 										{
 											required: true,
-											message: "Please input amount!",
+											message: "Veuillez entrez le montant!",
 										},
 									]}>
 									<Input type='number' />
@@ -223,12 +223,12 @@ const AddTransaction = () => {
 
 								<Form.Item
 									style={{ marginBottom: "10px" }}
-									label='Particulars'
+									label='Détails'
 									name='particulars'
 									rules={[
 										{
 											required: true,
-											message: "Please input particulars!",
+											message: "Veuillez saisir les détails!",
 										},
 									]}>
 									<Input />

@@ -77,7 +77,7 @@ const WeeklyHolidayEdit = ({ data }) => {
 					<div>
 						<Form.Item
 							style={{ marginBottom: "10px" }}
-							label='Name'
+							label='Nom'
 							name='name'
 							rules={[
 								{
@@ -90,7 +90,7 @@ const WeeklyHolidayEdit = ({ data }) => {
 
 						<Form.Item
 							style={{ marginBottom: "10px" }}
-							label='Start Day'
+							label='Jour de début'
 							name='startDay'
 							rules={[
 								{
@@ -99,7 +99,7 @@ const WeeklyHolidayEdit = ({ data }) => {
 								},
 							]}>
 							<Select
-								placeholder='Select Start Day'
+								placeholder='Sélectionnez le jour de debut'
 								defaultValue={initialValues.startDay}>
 								<Select.Option value='Saturday'>Samedi</Select.Option>
 								<Select.Option value='Sunday'>Dimanche</Select.Option>
@@ -113,16 +113,16 @@ const WeeklyHolidayEdit = ({ data }) => {
 
 						<Form.Item
 							style={{ marginBottom: "10px" }}
-							label='End Day'
+							label='Jour de fin'
 							name='endDay'
 							rules={[
 								{
 									required: true,
-									message: "Please input end day!",
+									message: "Sélectionnez le jour de fin!",
 								},
 							]}>
 							<Select
-								placeholder='Select Start Day'
+								placeholder='Sélectionnez le jour de fin!'
 								defaultValue={initialValues.startDay}>
 								<Select.Option value='Saturday'>Samedi</Select.Option>
 								<Select.Option value='Sunday'>Dimanche</Select.Option>

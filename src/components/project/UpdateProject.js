@@ -82,7 +82,7 @@ const UpdateProject = ({ drawer }) => {
 	return (
 		<Fragment bordered={false}>
 			{/* <UserPrivateComponent permission={"create-leaveApplication"}> */}
-			<PageTitle title={"Back"} />
+			<PageTitle title={"Retour"} />
 			<Row className='mr-top' justify={drawer ? "center" : "center"}>
 				<Col
 					xs={24}
@@ -92,7 +92,7 @@ const UpdateProject = ({ drawer }) => {
 					xl={drawer ? 22 : 16}
 					className='column-design border rounded card-custom'>
 					<Title level={4} className='m-2 mt-5 mb-5 text-center'>
-                    Update Project
+                    Mettre à jour le projet
 					</Title>
                     { initialState ? (
                         <Form
@@ -113,19 +113,19 @@ const UpdateProject = ({ drawer }) => {
                             <div>
                                 <Form.Item
                                     style={{ marginBottom: "10px" }}
-                                    label='Project Manager'
+                                    label='Chef de projet'
                                     name='projectManagerId'
                                     rules={[
                                         {
                                             required: true,
-                                            message: "Select Project Manager",
+                                            message: "Selectionnez Chef de projet",
                                         },
                                     ]}>
                                     <Select
                                         loading={!userList.length}
                                         mode='single'
                                         showSearch
-                                        placeholder='Select Project Manager'
+                                        placeholder='Selectionnez Chef de projet'
                                         optionFilterProp='children'>
                                         {userList.map((item) => (
                                             <Select.Option key={item.id} value={item.id}>
@@ -137,25 +137,25 @@ const UpdateProject = ({ drawer }) => {
 
                                 <Form.Item
                                     style={{ marginBottom: "10px" }}
-                                    label='Project Name'
+                                    label='Nom du Projet'
                                     name='name'
                                     rules={[
                                         {
                                             required: true,
-                                            message: "Enter Project Name",
+                                            message: "Entrez le Nom du Projet",
                                         },
                                     ]}>
-                                    <Input placeholder='Enter Project Name' />
+                                    <Input placeholder='Entrez le Nom du Projet' />
                                 </Form.Item>
 
                                 <Form.Item
                                     style={{ marginBottom: "10px" }}
-                                    label='Start Date'
+                                    label='Date de debut'
                                     name='startDate'
                                     rules={[
                                         {
                                             required: true,
-                                            message: "Please input Project Start Date!",
+                                            message: "Veuillez saisir la date de début du projet !",
                                         },
                                     ]}>
                                     <DatePicker />
@@ -163,12 +163,12 @@ const UpdateProject = ({ drawer }) => {
 
                                 <Form.Item
                                     style={{ marginBottom: "20px" }}
-                                    label='End Date'
+                                    label='Date de fin'
                                     name='endDate'
                                     rules={[
                                         {
                                             required: true,
-                                            message: "Please input Project End Date!",
+                                            message: "Veuillez saisir la date de fin du projet !",
                                         },
                                     ]}>
                                     <DatePicker />
@@ -176,15 +176,15 @@ const UpdateProject = ({ drawer }) => {
 
                                 <Form.Item
                                     style={{ marginBottom: "20px" }}
-                                    label='Project Description'
+                                    label='Description du projet'
                                     name='description'
                                     rules={[
                                         {
                                             required: true,
-                                            message: "Enter Project Description",
+                                            message: "Entrez la description du projet",
                                         },
                                     ]}>
-                                    <Input.TextArea placeholder='Enter Project Description' />
+                                    <Input.TextArea placeholder='Entrez la description du projet' />
                                 </Form.Item>
 
                                 <Form.Item

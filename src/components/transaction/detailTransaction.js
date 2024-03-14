@@ -60,7 +60,7 @@ const DetailTransaction = () => {
 
 	return (
 		<div>
-			<PageTitle title=' Back ' subtitle={`Payment ${id} information`} />
+			<PageTitle title=' Retour ' subtitle={`Payment ${id} information`} />
 
 			<UserPrivateComponent permission={"readSingle-transaction"}>
 				<div className='mr-top'>
@@ -105,7 +105,7 @@ const DetailTransaction = () => {
 									</p>
 
 									<p>
-										<Typography.Text strong>Amount :</Typography.Text>{" "}
+										<Typography.Text strong>Montant :</Typography.Text>{" "}
 										{payment.amount}
 									</p>
 

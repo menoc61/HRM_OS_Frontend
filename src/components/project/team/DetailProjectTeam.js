@@ -17,7 +17,7 @@ const columns = [
 	},
 	{
 		id: 2,
-		title: "Name",
+		title: "Nom",
 		key: "username",
 		render: ({ user }) => user.firstName + " " + user.lastName,
 	},

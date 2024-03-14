@@ -55,7 +55,7 @@ const DetailPublicHoliday = () => {
 
 	return (
 		<div>
-			<PageTitle title=' Back  ' />
+			<PageTitle title=' Retour  ' />
 			<UserPrivateComponent permission={"readSingle-publicHoliday"}>
 				<Card className='mr-top mt-5'>
 					{publicHoliday ? (

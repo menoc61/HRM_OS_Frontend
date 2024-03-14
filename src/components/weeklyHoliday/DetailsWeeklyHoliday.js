@@ -37,7 +37,7 @@ const CustomTable = ({ list, data }) => {
 
 		{
 			id: 2,
-			title: " Name",
+			title: " Nom",
 			key: "name",
 
 			render: ({ firstName, lastName }) => firstName + " " + lastName,
@@ -45,14 +45,14 @@ const CustomTable = ({ list, data }) => {
 
 		{
 			id: 6,
-			title: "Start Day",
+			title: "Date de debut",
 			key: "startDay",
 			render: () => data?.startDay,
 		},
 
 		{
 			id: 6,
-			title: "End Day",
+			title: "Date de fin",
 			key: "endDay",
 			render: () => data?.endDay,
 		},
@@ -84,7 +84,7 @@ const CustomTable = ({ list, data }) => {
 		<div>
 			<div className='text-center my-2 flex justify-between'>
 				<h5 className='award-list-title text-color-2 text-xl mb-2'>
-					Employee List
+					Liste des employes
 				</h5>
 
 				{list && (
@@ -155,7 +155,7 @@ const DetailWeeklyHoliday = () => {
 
 	return (
 		<div>
-			<PageTitle title=' Back  ' />
+			<PageTitle title=' Retour ' />
 
 			<UserPrivateComponent permission={"readSingle-weeklyHoliday"}>
 				<Card className='mr-top mt-5'>

@@ -145,7 +145,7 @@ const AddUser = () => {
 								</h2>
 								<Form.Item
 									style={{ marginBottom: "10px" }}
-									label='First Name'
+									label='Prenom'
 									name='firstName'
 									rules={[
 										{
@@ -157,7 +157,7 @@ const AddUser = () => {
 								</Form.Item>
 								<Form.Item
 									style={{ marginBottom: "10px" }}
-									label='Last Name'
+									label='Nom de famille'
 									name='lastName'
 									rules={[
 										{
@@ -169,7 +169,7 @@ const AddUser = () => {
 								</Form.Item>
 								<Form.Item
 									style={{ marginBottom: "10px" }}
-									label='User Name'
+									label='Nom d\utilisateur'
 									name='userName'
 									rules={[
 										{
@@ -181,7 +181,7 @@ const AddUser = () => {
 								</Form.Item>
 								<Form.Item
 									style={{ marginBottom: "10px" }}
-									label='Password'
+									label='Mot de passe'
 									name='password'
 									rules={[
 										{
@@ -189,7 +189,7 @@ const AddUser = () => {
 											message: "Please input your password !",
 										},
 									]}>
-									<Input placeholder='Strong Password' />
+									<Input placeholder='Mot de passe fort' />
 								</Form.Item>
 								<Form.Item
 									style={{ marginBottom: "10px" }}
@@ -210,7 +210,7 @@ const AddUser = () => {
 								</h2>
 								<Form.Item
 									style={{ marginBottom: "10px" }}
-									label='Street'
+									label='Rue'
 									name='street'
 									rules={[
 										{
@@ -225,21 +225,21 @@ const AddUser = () => {
 								</Form.Item>
 								<Form.Item
 									style={{ marginBottom: "10px" }}
-									label='City'
+									label='Ville'
 									name='city'
 									rules={[{ required: true, message: "Please input city!" }]}>
 									<Input placeholder='Los Angeles' />
 								</Form.Item>
 								<Form.Item
 									style={{ marginBottom: "10px" }}
-									label='State'
+									label='Etat'
 									name='state'
 									rules={[{ required: true, message: "Please input state!" }]}>
 									<Input placeholder='CA' />
 								</Form.Item>
 								<Form.Item
 									style={{ marginBottom: "10px" }}
-									label='Zip Code'
+									label='Code postal'
 									name='zipCode'
 									rules={[
 										{ required: true, message: "Please input Zip Code!" },
@@ -248,7 +248,7 @@ const AddUser = () => {
 								</Form.Item>
 								<Form.Item
 									style={{ marginBottom: "10px" }}
-									label='Country'
+									label='Pays'
 									name='country'
 									rules={[
 										{ required: true, message: "Please input Country!" },
@@ -272,7 +272,7 @@ const AddUser = () => {
 								</h2>
 								<Form.Item
 									style={{ marginBottom: "10px" }}
-									label='Joining Date'
+									label='Date d/inscription'
 									name='joinDate'
 									rules={[
 										{
@@ -284,13 +284,13 @@ const AddUser = () => {
 								</Form.Item>
 								<Form.Item
 									style={{ marginBottom: "10px" }}
-									label='Leave Date'
+									label='Date de congés'
 									name='leaveDate'>
 									<DatePicker className='date-picker hr-staffs-date-picker' />
 								</Form.Item>
 								<Form.Item
 									style={{ marginBottom: "10px" }}
-									label='Employee ID'
+									label='ID de l\Employé '
 									name='employeeId'
 									rules={[
 										{
@@ -302,7 +302,7 @@ const AddUser = () => {
 								</Form.Item>
 								<Form.Item
 									style={{ marginBottom: "10px" }}
-									label='Blood Group'
+									label='Groupe Sanguin'
 									name='bloodGroup'
 									rules={[
 										{
@@ -311,7 +311,7 @@ const AddUser = () => {
 										},
 									]}>
 									<Select
-										placeholder='Select Blood Group'
+										placeholder='Selectionnez votre Groupe Sanguin'
 										allowClear
 										mode='single'
 										size='middle'
@@ -335,9 +335,9 @@ const AddUser = () => {
 											message: "Please input Employment Status!",
 										},
 									]}
-									label='Employee Status'>
+									label='Statut de l\employé'>
 									<Select
-										placeholder='Select Status'
+										placeholder='Selectionnez un Statut'
 										allowClear
 										size={"middle"}>
 										{employmentStatus &&
@@ -353,13 +353,13 @@ const AddUser = () => {
 								<Form.Item
 									name={"departmentId"}
 									style={{ marginBottom: "10px" }}
-									label='Department'
+									label='Departement'
 									rules={[
 										{ required: true, message: "Please input Department!" },
 									]}>
 									<Select
 										loading={!department}
-										placeholder='Select Department'
+										placeholder='Selectionnez un Departement'
 										allowClear
 										size={"middle"}>
 										{department &&
@@ -434,7 +434,7 @@ const AddUser = () => {
 									rules={[
 										{ required: true, message: "Please input Department!" },
 									]}
-									label='Leave Policy'
+									label='Politique de congés'
 									name={"leavePolicyId"}
 									style={{ marginBottom: "10px" }}>
 									<Select
@@ -459,7 +459,7 @@ const AddUser = () => {
 									rules={[
 										{ required: true, message: "Please input Department!" },
 									]}
-									label='WeekLy Holiday'
+									label='Vacances hebdomadaires'
 									name={"weeklyHolidayId"}
 									style={{ marginBottom: "10px" }}>
 									<Select
@@ -500,7 +500,7 @@ const AddUser = () => {
 										style={{
 											width: "100%",
 										}}
-										placeholder='Please select Designation'>
+										placeholder='Veuillez selectionnez la designation'>
 										{designation &&
 											designation.map((designation) => (
 												<Option key={designation.id} value={designation.id}>
@@ -517,7 +517,7 @@ const AddUser = () => {
 
 								<Form.Item
 									style={{ marginBottom: "10px" }}
-									label='Designation Start Date'
+									label='Date de début de la désignation'
 									rules={[{ required: true, message: "Please input date!" }]}
 									name='designationStartDate'>
 									<DatePicker className='date-picker hr-staffs-date-picker' />
@@ -525,14 +525,14 @@ const AddUser = () => {
 
 								<Form.Item
 									style={{ marginBottom: "10px" }}
-									label='Designation End Date'
+									label='Date de fin de la désignation'
 									name='designationEndDate'>
 									<DatePicker className='date-picker hr-staffs-date-picker' />
 								</Form.Item>
 
 								<Form.Item
 									style={{ marginBottom: "10px" }}
-									label='Salary'
+									label='Salaire'
 									name='salary'
 									rules={[
 										{
@@ -544,7 +544,7 @@ const AddUser = () => {
 								</Form.Item>
 
 								<Form.Item
-									label='Salary Start Date'
+									label='Date de début du salaire'
 									name='salaryStartDate'
 									style={{ marginBottom: "10px" }}
 									rules={[
@@ -558,14 +558,14 @@ const AddUser = () => {
 
 								<Form.Item
 									style={{ marginBottom: "10px" }}
-									label='Salary End Date'
+									label='Date de fin du salaire'
 									name='salaryEndDate'>
 									<DatePicker className='date-picker hr-staffs-date-picker' />
 								</Form.Item>
 
 								<Form.Item
 									style={{ marginBottom: "10px" }}
-									label='Salary Comment'
+									label='Commentaire sur le salaire'
 									name='salaryComment'>
 									<Input />
 								</Form.Item>

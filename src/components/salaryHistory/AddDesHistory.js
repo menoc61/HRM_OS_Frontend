@@ -61,12 +61,12 @@ const AddSalaryHistory = ({ drawer }) => {
 							<div>
 								<Form.Item
 									style={{ marginBottom: "10px" }}
-									label='Salary'
+									label='Salaire'
 									salary='salary'
 									rules={[
 										{
 											required: true,
-											message: "Please input your salary!",
+											message: "Entrez votre salaire!",
 										},
 									]}>
 									<InputNumber placeholder='ex:10000' />
@@ -74,7 +74,7 @@ const AddSalaryHistory = ({ drawer }) => {
 
 								<Form.Item
 									style={{ marginBottom: "10px" }}
-									label='Start Date'
+									label='Date de debut'
 									name='salaryStartDate'
 									rules={[
 										{
@@ -82,18 +82,18 @@ const AddSalaryHistory = ({ drawer }) => {
 											message: "Please input your start date!",
 										},
 									]}>
-									<DatePicker placeholder='Select date' />
+									<DatePicker placeholder='Selectionnez la date' />
 								</Form.Item>
 
 								<Form.Item
 									style={{ marginBottom: "10px" }}
-									label='End Date'
+									label='Date de fin'
 									name='salaryEndDate'>
-									<DatePicker placeholder='Select date' />
+									<DatePicker placeholder='Selectionnez la date' />
 								</Form.Item>
 
-								<Form.Item label='Comment' name='salaryComment'>
-									<Input placeholder='comment' />
+								<Form.Item label='Commentaire' name='salaryComment'>
+									<Input placeholder='commentaire' />
 								</Form.Item>
 
 								<Form.Item

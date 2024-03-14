@@ -294,7 +294,7 @@ const PayslipList = () => {
 						/>
 						<VioletLinkBtn>
 							<button onClick={onClickSearch}>
-								<BtnSearchSvg size={25} title={"RECHERCHE"} loading={loading} />
+								<BtnSearchSvg size={25} title={"SEARCH"} loading={loading} />
 							</button>
 						</VioletLinkBtn>
 					</div>

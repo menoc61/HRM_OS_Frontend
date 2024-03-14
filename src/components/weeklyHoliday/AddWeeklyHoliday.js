@@ -36,21 +36,21 @@ function CustomTable({ list, loading }) {
 		},
 		{
 			id: 2,
-			title: "Name",
+			title: "Nom",
 			dataIndex: "name",
 			key: "name",
 		},
 
 		{
 			id: 3,
-			title: "Start Day",
+			title: "Jour de debut",
 			dataIndex: "startDay",
 			key: "startDay",
 		},
 
 		{
 			id: 3,
-			title: "End Day",
+			title: "Jour de fin",
 			dataIndex: "endDay",
 			key: "endDay",
 		},
@@ -77,7 +77,7 @@ function CustomTable({ list, loading }) {
 		<Card>
 			<div className='text-center my-2 flex justify-between'>
 				<h5 className='department-list-title text-color-2 text-xl mb-2'>
-					Weekly Holiday List
+				Liste hebdomadaire des jours fériés
 				</h5>
 				{list && (
 					<div>
@@ -86,7 +86,7 @@ function CustomTable({ list, loading }) {
 								data={list}
 								className='btn btn-dark btn-sm mb-1'
 								filename='weekly-holiday'>
-								Download CSV
+								Telechargez CSV
 							</CSVLink>
 						</CsvLinkBtn>
 					</div>
@@ -186,7 +186,7 @@ const AddWeeklyHoliday = ({ drawer }) => {
 
 								<Form.Item
 									style={{ marginBottom: "10px" }}
-									label='Start Day'
+									label='Jour de debut'
 									name='startDay'
 									rules={[
 										{
@@ -194,7 +194,7 @@ const AddWeeklyHoliday = ({ drawer }) => {
 											message: "Please input start day!",
 										},
 									]}>
-									<Select placeholder='Select Start Day'>
+									<Select placeholder='Selectionnez le jour de debut'>
 										<Select.Option value='Saturday'>Samedi</Select.Option>
 										<Select.Option value='Sunday'>dimanche</Select.Option>
 										<Select.Option value='Monday'>lundi</Select.Option>
@@ -207,7 +207,7 @@ const AddWeeklyHoliday = ({ drawer }) => {
 
 								<Form.Item
 									style={{ marginBottom: "10px" }}
-									label='End Day'
+									label='Jour de fin'
 									name='endDay'
 									rules={[
 										{
@@ -215,7 +215,7 @@ const AddWeeklyHoliday = ({ drawer }) => {
 											message: "Please input End day!",
 										},
 									]}>
-										<Select placeholder='Select Start Day'>
+										<Select placeholder='Selectionnez le jour de fin'>
 										<Select.Option value='Saturday'>Samedi</Select.Option>
 										<Select.Option value='Sunday'>dimanche</Select.Option>
 										<Select.Option value='Monday'>lundi</Select.Option>

@@ -64,12 +64,12 @@ const Register = () => {
             >
               <Form.Item
                 style={{ marginBottom: "10px" }}
-                label="User Name"
+                label="Nom de l'utilisateur"
                 name="username"
                 rules={[
                   {
                     required: true,
-                    message: "Please input username!",
+                    message: "Veuillez entrer votre nom d'utilisateur!",
                   },
                 ]}
               >
@@ -78,12 +78,12 @@ const Register = () => {
 
               <Form.Item
                 style={{ marginBottom: "10px" }}
-                label="Security Key"
+                label="Clef de sécurité"
                 name="key"
                 rules={[
                   {
                     required: true,
-                    message: "Please input your security key !",
+                    message: "Veuillez entrer votre Clef de sécurité !",
                   },
                 ]}
               >
@@ -97,7 +97,7 @@ const Register = () => {
                     message: "Pleases Select Type!",
                   },
                 ]}
-                label="Staff Type "
+                label="Type de personnel "
                 name={"role"}
                 style={{ marginBottom: "10px" }}
               >

@@ -50,7 +50,7 @@ const Project = (props) => {
 		},
 		{
 			id: 2,
-			title: "Name",
+			title: "Nom",
 			key: "name",
 			render: ({ name }) => (
 				<div className='font-semibold'>{name.toUpperCase()}</div>
@@ -58,7 +58,7 @@ const Project = (props) => {
 		},
 		{
 			id: 3,
-			title: "Project Manager",
+			title: "Chef de projet",
 			key: "projectManager",
 			render: ({ projectManager }) =>
 				(
@@ -70,7 +70,7 @@ const Project = (props) => {
 
 		{
 			id: 5,
-			title: "Kanban Board",
+			title: "Tableau Kanban",
 			dataIndex: "id",
 			key: "board",
 			render: (id) => (
@@ -82,7 +82,7 @@ const Project = (props) => {
 		},
 		{
 			id: 4,
-			title: "Milestone",
+			title: "Jalon",
 			dataIndex: "id",
 			key: "milestone",
 			render: (id) => (
@@ -93,7 +93,7 @@ const Project = (props) => {
 		},
 		{
 			id: 4,
-			title: "Task Status",
+			title: "Statut de la tâche",
 			dataIndex: "id",
 			key: "taskStatus",
 			render: (id) => (

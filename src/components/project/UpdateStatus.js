@@ -67,7 +67,7 @@ const UpdateStatus = () => {
 	return (
 		<Fragment bordered={false}>
 			{/* <UserPrivateComponent permission={"create-leaveApplication"}> */}
-			<PageTitle title='Back' />
+			<PageTitle title='Retour' />
 			<Row className='mr-top'>
 				<Col
 					xs={24}
@@ -98,15 +98,15 @@ const UpdateStatus = () => {
 							<div>
 								<Form.Item
 									style={{ marginBottom: "20px" }}
-									label='Status'
+									label='Statut'
 									name='status'
 									rules={[
 										{
 											required: true,
-											message: "Select Status Name",
+											message: "Sélectionnez le nom du statut",
 										},
 									]}>
-										<Select placeholder='Select Status Name'>
+										<Select placeholder='Sélectionnez le nom du statut'>
 											<Select.Option value='PROGRESS'>PROGRÈS</Select.Option>
 											<Select.Option value='COMPLETE'>COMPLET</Select.Option>
 											<Select.Option value='ONHOLD'>EN ATTENTE</Select.Option>

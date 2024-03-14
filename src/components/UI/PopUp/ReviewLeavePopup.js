@@ -109,7 +109,7 @@ const ReviewLeavePopup = () => {
 
 							<Form.Item
 								style={{ marginBottom: "10px" }}
-								label='Accept To'
+								label='Accepter de'
 								name='acceptLeaveTo'
 								rules={[
 									{
@@ -122,7 +122,7 @@ const ReviewLeavePopup = () => {
 
 							<Form.Item
 								style={{ marginBottom: "10px" }}
-								label='Comment'
+								label='Commentaire'
 								name='reviewComment'>
 								<Input name='reviewComment' />
 							</Form.Item>
@@ -135,7 +135,7 @@ const ReviewLeavePopup = () => {
 
 							<Form.Item
 								style={{ marginBottom: "10px" }}
-								label='Select Status'
+								label='Selectionnez un Statut'
 								name='status'
 								rules={[
 									{

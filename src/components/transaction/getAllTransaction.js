@@ -37,7 +37,7 @@ function CustomTable({ list, total }) {
 
 		{
 			id: 3,
-			title: "Debit Account",
+			title: "Compte de débit",
 			dataIndex: "debit",
 			key: "debit",
 			render: (debit) => debit?.name,
@@ -45,7 +45,7 @@ function CustomTable({ list, total }) {
 
 		{
 			id: 4,
-			title: "Credit Account",
+			title: "Compte créditeur",
 			dataIndex: "credit",
 			key: "credit",
 			render: (credit) => credit?.name,
@@ -53,14 +53,14 @@ function CustomTable({ list, total }) {
 
 		{
 			id: 5,
-			title: "Amount",
+			title: "Montant",
 			dataIndex: "amount",
 			key: "amount",
 			responsive: ["md"],
 		},
 		{
 			id: 6,
-			title: "Particulars",
+			title: "Détails",
 			dataIndex: "particulars",
 			key: "particulars",
 		},

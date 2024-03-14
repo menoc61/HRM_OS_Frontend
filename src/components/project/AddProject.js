@@ -86,19 +86,19 @@ const AddProject = ({ drawer }) => {
 						<div>
 							<Form.Item
 								style={{ marginBottom: "10px" }}
-								label='Project Manager'
+								label='Chef de projet'
 								name='projectManagerId'
 								rules={[
 									{
 										required: true,
-										message: "Select Project Manager",
+										message: "Sélectionnez le chef de projet",
 									},
 								]}>
 								<Select
 									loading={!userList.length}
 									mode='single'
 									showSearch
-									placeholder='Select Project Manager'
+									placeholder='Sélectionnez le chef de projet'
 									optionFilterProp='children'>
 									{userList.map((item) => (
 										<Select.Option key={item.id} value={item.id}>
@@ -110,25 +110,25 @@ const AddProject = ({ drawer }) => {
 
 							<Form.Item
 								style={{ marginBottom: "10px" }}
-								label='Project Name'
+								label='nom du projet'
 								name='name'
 								rules={[
 									{
 										required: true,
-										message: "Enter Project Name",
+										message: "Entrez le nom du projet",
 									},
 								]}>
-								<Input placeholder='Enter Project Name' />
+								<Input placeholder='Entrez le nom du projet' />
 							</Form.Item>
 
 							<Form.Item
 								style={{ marginBottom: "10px" }}
-								label='Start Date'
+								label='Date de debut'
 								name='startDate'
 								rules={[
 									{
 										required: true,
-										message: "Please input Project Start Date!",
+										message: "Veuillez saisir la date de début du projet !",
 									},
 								]}>
 								<DatePicker />
@@ -136,12 +136,12 @@ const AddProject = ({ drawer }) => {
 
 							<Form.Item
 								style={{ marginBottom: "20px" }}
-								label='End Date'
+								label='Date de fin'
 								name='endDate'
 								rules={[
 									{
 										required: true,
-										message: "Please input Project End Date!",
+										message: "Veuillez saisir la date de fin du projet !",
 									},
 								]}>
 								<DatePicker />
@@ -149,15 +149,15 @@ const AddProject = ({ drawer }) => {
 
 							<Form.Item
 								style={{ marginBottom: "20px" }}
-								label='Project Description'
+								label='Description du projet'
 								name='description'
 								rules={[
 									{
 										required: true,
-										message: "Enter Project Description",
+										message: "Entrez la description du projet",
 									},
 								]}>
-								<Input.TextArea placeholder='Enter Project Description' />
+								<Input.TextArea placeholder='Entrez la description du projet' />
 							</Form.Item>
 
 							<Form.Item

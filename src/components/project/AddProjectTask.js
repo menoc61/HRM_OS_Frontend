@@ -100,17 +100,17 @@ const AddProjectTeam = ({ drawer }) => {
 						<div>
 							<Form.Item
 								style={{ marginBottom: "10px" }}
-								label='User'
+								label='Utilisateur'
 								name='userId'
 								rules={[
 									{
 										required: true,
-										message: "Select User",
+										message: "Sélectionnez un utilisateur",
 									},
 								]}>
 								<Select
 									mode='single'
-									placeholder='Select User'
+									placeholder='Sélectionnez un utilisateur'
 									optionFilterProp='children'>
 									{userList.map((item) => (
 										<Select.Option key={item.id} value={item.id}>

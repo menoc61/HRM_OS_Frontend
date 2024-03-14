@@ -122,7 +122,7 @@ const EducaitonAddSinglePopup = ({ data, setLoading }) => {
 
 						<Form.Item
 							style={{ marginBottom: "10px" }}
-							label='Field of Study'
+							label='Domaine d\études'
 							name='fieldOfStudy'
 							rules={[
 								{
@@ -135,7 +135,7 @@ const EducaitonAddSinglePopup = ({ data, setLoading }) => {
 
 						<Form.Item
 							style={{ marginBottom: "10px" }}
-							label='Result'
+							label='Resultat'
 							name='result'
 							rules={[
 								{
@@ -148,13 +148,13 @@ const EducaitonAddSinglePopup = ({ data, setLoading }) => {
 
 						<Form.Item
 							style={{ marginBottom: "10px" }}
-							label='Start Date'
+							label='Date de debut'
 							name='studyStartDate'
 							valuePropName='studyStartDate'
 							rules={[
 								{
 									required: true,
-									message: "Please input your start date!",
+									message: "Veuillez saisir votre date de début !",
 								},
 							]}>
 							<DatePicker onChange={(date) => setstudyStartDate(date)} />
@@ -162,7 +162,7 @@ const EducaitonAddSinglePopup = ({ data, setLoading }) => {
 
 						<Form.Item
 							style={{ marginBottom: "10px" }}
-							label='End Date'
+							label='Date de fin'
 							name='studyEndDate'
 							valuePropName='studyEndDate'>
 							<DatePicker onChange={(date) => setstudyEndDate(date)} />

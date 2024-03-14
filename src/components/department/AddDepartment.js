@@ -30,7 +30,7 @@ function CustomTable({ list }) {
 
 		{
 			id: 3,
-			title: "Créé a",
+			title: "Créé le",
 			dataIndex: "createdAt",
 			key: "addrcreatedAtess",
 			render: (createdAt) => dayjs(createdAt).format("YYYY-MM-DD"),

@@ -158,7 +158,7 @@ const ProfileEditPopup = ({ data }) => {
 			</button>
 			<Modal
 				width={"50%"}
-				title='Update Employee Information'
+				title='Mettre à jour les informations sur les employés'
 				open={isModalOpen}
 				onOk={handleOk}
 				onCancel={handleCancel}>
@@ -181,7 +181,7 @@ const ProfileEditPopup = ({ data }) => {
 					</h2>
 					<Form.Item
 						style={{ marginBottom: "10px" }}
-						label='First Name'
+						label='Prénom'
 						name='firstName'
 						rules={[
 							{
@@ -193,7 +193,7 @@ const ProfileEditPopup = ({ data }) => {
 					</Form.Item>
 					<Form.Item
 						style={{ marginBottom: "10px" }}
-						label='Last Name'
+						label='Nom de famille'
 						name='lastName'
 						rules={[
 							{
@@ -205,7 +205,7 @@ const ProfileEditPopup = ({ data }) => {
 					</Form.Item>
 					<Form.Item
 						style={{ marginBottom: "10px" }}
-						label='User Name'
+						label='Nom d\utilisateur'
 						name='userName'
 						rules={[
 							{
@@ -217,7 +217,7 @@ const ProfileEditPopup = ({ data }) => {
 					</Form.Item>
 					<Form.Item
 						style={{ marginBottom: "10px" }}
-						label='Password'
+						label='Mot de passe'
 						name='password'
 						rules={[
 							{
@@ -225,7 +225,7 @@ const ProfileEditPopup = ({ data }) => {
 								message: "Please input your password !",
 							},
 						]}>
-						<Input placeholder='Strong Password' />
+						<Input placeholder='Mot de passe fort' />
 					</Form.Item>
 					<Form.Item
 						style={{ marginBottom: "10px" }}
@@ -242,7 +242,7 @@ const ProfileEditPopup = ({ data }) => {
 
 					<Form.Item
 						style={{ marginBottom: "10px" }}
-						label='Phone'
+						label='Téléphone'
 						name='phone'
 						rules={[
 							{
@@ -258,7 +258,7 @@ const ProfileEditPopup = ({ data }) => {
 					</h2>
 					<Form.Item
 						style={{ marginBottom: "10px" }}
-						label='Street'
+						label='Rue'
 						name='street'
 						rules={[
 							{
@@ -270,28 +270,28 @@ const ProfileEditPopup = ({ data }) => {
 					</Form.Item>
 					<Form.Item
 						style={{ marginBottom: "10px" }}
-						label='City'
+						label='Ville'
 						name='city'
 						rules={[{ required: true, message: "Please input city!" }]}>
 						<Input placeholder='Los Angeles' />
 					</Form.Item>
 					<Form.Item
 						style={{ marginBottom: "10px" }}
-						label='State'
+						label='État'
 						name='state'
 						rules={[{ required: true, message: "Please input state!" }]}>
 						<Input placeholder='CA' />
 					</Form.Item>
 					<Form.Item
 						style={{ marginBottom: "10px" }}
-						label='Zip Code'
+						label='Code postal'
 						name='zipCode'
 						rules={[{ required: true, message: "Please input Zip Code!" }]}>
 						<Input placeholder='90211' />
 					</Form.Item>
 					<Form.Item
 						style={{ marginBottom: "10px" }}
-						label='Country'
+						label='Pays'
 						name='country'
 						rules={[{ required: true, message: "Please input Country!" }]}>
 						<Input placeholder='USA' />
@@ -303,7 +303,7 @@ const ProfileEditPopup = ({ data }) => {
 					</h2>
 					<Form.Item
 						style={{ marginBottom: "10px" }}
-						label='Joining Date'
+						label='Date d/inscription'
 						name='joinDate'
 						valuePropName='date'
 						rules={[
@@ -319,7 +319,7 @@ const ProfileEditPopup = ({ data }) => {
 					</Form.Item>
 					<Form.Item
 						style={{ marginBottom: "10px" }}
-						label='Leave Date'
+						label='Date de conges'
 						name='leaveDate'
 						valuePropName='leaveDate'>
 						<DatePicker
@@ -329,7 +329,7 @@ const ProfileEditPopup = ({ data }) => {
 					</Form.Item>
 					<Form.Item
 						style={{ marginBottom: "10px" }}
-						label='Employee ID'
+						label='ID de l\Employee ID'
 						name='employeeId'
 						rules={[
 							{
@@ -341,7 +341,7 @@ const ProfileEditPopup = ({ data }) => {
 					</Form.Item>
 					<Form.Item
 						style={{ marginBottom: "10px" }}
-						label='Blood Group'
+						label='Groupe sanguin'
 						name='bloodGroup'
 						rules={[
 							{
@@ -350,7 +350,7 @@ const ProfileEditPopup = ({ data }) => {
 							},
 						]}>
 						<Select
-							placeholder='Select Blood Group'
+							placeholder='Selectionnez votre Groupe sanguin'
 							allowClear
 							defaultValue={initialValues.bloodGroup}
 							mode='single'
@@ -370,11 +370,11 @@ const ProfileEditPopup = ({ data }) => {
 					<Form.Item
 						name={"departmentId"}
 						style={{ marginBottom: "10px" }}
-						label='Department'
+						label='Departement'
 						rules={[{ required: true, message: "Please input Department!" }]}>
 						<Select
 							onChange={(value) => setDepartmentId(value)}
-							placeholder='Select Department'
+							placeholder='Selectionez votre Department'
 							allowClear
 							size={"middle"}
 							defaultValue={initialValues.departmentId}>
@@ -406,7 +406,7 @@ const ProfileEditPopup = ({ data }) => {
 							style={{
 								width: "100%",
 							}}
-							placeholder='Please select Role'>
+							placeholder='Veuillez sélectionner un Rôle'>
 							{list &&
 								list.map((role) => (
 									<Option key={role.id} value={role.id}>
@@ -436,7 +436,7 @@ const ProfileEditPopup = ({ data }) => {
 							style={{
 								width: "100%",
 							}}
-							placeholder='Please select shift'>
+							placeholder='Veuillez sélectionner un quart de travail'>
 							{shift &&
 								shift.map((shift) => (
 									<Option key={shift.id} value={shift.id}>
@@ -453,7 +453,7 @@ const ProfileEditPopup = ({ data }) => {
 								message: "Pleases Select Type!",
 							},
 						]}
-						label='Leave Policy'
+						label='Police de conges'
 						name={"leavePolicyId"}
 						style={{ marginBottom: "10px" }}>
 						<Select
@@ -466,7 +466,7 @@ const ProfileEditPopup = ({ data }) => {
 							style={{
 								width: "100%",
 							}}
-							placeholder='Please select leavePolicy'>
+							placeholder='Veuillez sélectionner la politique de congé'>
 							{leavePolicy &&
 								leavePolicy.map((leavePolicy) => (
 									<Option key={leavePolicy.id} value={leavePolicy.id}>
@@ -483,7 +483,7 @@ const ProfileEditPopup = ({ data }) => {
 								message: "Pleases Select Type!",
 							},
 						]}
-						label='Weekly Holiday'
+						label='Vacances hebdomadaires'
 						name={"weeklyHolidayId"}
 						style={{ marginBottom: "10px" }}>
 						<Select
@@ -496,7 +496,7 @@ const ProfileEditPopup = ({ data }) => {
 							style={{
 								width: "100%",
 							}}
-							placeholder='Please select weeklyHoliday'>
+							placeholder='Veuillez sélectionner les jours fériés hebdomadaires'>
 							{weeklyHoliday &&
 								weeklyHoliday.map((weeklyHoliday) => (
 									<Option key={weeklyHoliday.id} value={weeklyHoliday.id}>

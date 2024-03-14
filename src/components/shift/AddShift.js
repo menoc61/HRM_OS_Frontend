@@ -37,14 +37,14 @@ function CustomTable({ list }) {
 		},
 		{
 			id: 2,
-			title: "Name",
+			title: "Nom",
 			dataIndex: "name",
 			key: "name",
 		},
 
 		{
 			id: 3,
-			title: "Start Time",
+			title: "Heure de debut",
 			dataIndex: "startTime",
 			key: "startTime",
 			render: (startTime) => dayjs(startTime).format("hh:mm A"),
@@ -52,7 +52,7 @@ function CustomTable({ list }) {
 
 		{
 			id: 4,
-			title: "End Time",
+			title: "Heure de fin",
 			dataIndex: "endTime",
 			key: "endTime",
 			render: (endTime) => dayjs(endTime).format("hh:mm A"),
@@ -163,7 +163,7 @@ const AddShift = ({ drawer }) => {
 						xl={drawer ? 22 : 12}
 						className='column-design border rounded card-custom'>
 						<Title level={4} className='m-2 mt-5 mb-5 text-center'>
-							Add shift
+						   Ajouter un quart de travail
 						</Title>
 						<Form
 							form={form}
@@ -182,12 +182,12 @@ const AddShift = ({ drawer }) => {
 							<div>
 								<Form.Item
 									style={{ marginBottom: "10px" }}
-									label='Name'
+									label='Nom'
 									name='name'
 									rules={[
 										{
 											required: true,
-											message: "Please input your shift!",
+											message: "Veuillez saisir votre quart de travail!",
 										},
 									]}>
 									<Input />
@@ -195,12 +195,12 @@ const AddShift = ({ drawer }) => {
 
 								<Form.Item
 									style={{ marginBottom: "10px" }}
-									label='Start Time'
+									label='Heure de debut'
 									name='startTime'
 									rules={[
 										{
 											required: true,
-											message: "Please input your shift!",
+											message: "Veuillez saisir votre quart de travail !",
 										},
 									]}>
 									<TimePicker />
@@ -208,12 +208,12 @@ const AddShift = ({ drawer }) => {
 
 								<Form.Item
 									style={{ marginBottom: "20px" }}
-									label='End Time'
+									label='Heure de fin'
 									name='endTime'
 									rules={[
 										{
 											required: true,
-											message: "Please input your shift!",
+											message: "Veuillez saisir votre quart de travail !",
 										},
 									]}>
 									<TimePicker />

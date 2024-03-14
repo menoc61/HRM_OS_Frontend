@@ -31,7 +31,7 @@ export const addSalaryHistory = async (values) => {
 			message: "success",
 		};
 	} catch (error) {
-		toast.error("Error in adding salary history again");
+		toast.error("ErroErreur lors de l'ajout à nouveau de l'historique des salaires");
 		console.log(error.message);
 		return {
 			message: "error",
@@ -79,7 +79,7 @@ export const updateSalaryHistory = async (id, values) => {
 			message: "success",
 		};
 	} catch (error) {
-		toast.error("Error in updating salary history again");
+		toast.error("Erreur lors de la mise à jour à nouveau de l'historique des salaires");
 		console.log(error.message);
 
 		return {
@@ -108,7 +108,7 @@ export const deleteSalaryHistory = async (id) => {
 			message: "success",
 		};
 	} catch (error) {
-		toast.error("Error in deleting salary history again");
+		toast.error("Erreur lors de la suppression à nouveau de l'historique des salaires");
 		console.log(error.message);
 		return {
 			message: "error",

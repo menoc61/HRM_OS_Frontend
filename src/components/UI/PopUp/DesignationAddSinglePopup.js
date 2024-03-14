@@ -109,12 +109,12 @@ const DesignationAddSinglePopup = ({ list, setLoading }) => {
 							rules={[
 								{
 									required: true,
-									message: "Please input your Designation!",
+									message: "Veuillez saisir votre désignation!",
 								},
 							]}>
 							<Select
 								loading={!list}
-								placeholder='Select Designation'
+								placeholder='Selectionnez une Designation'
 								onChange={(value) => setDesignationId(value)}>
 								{list?.map((item) => (
 									<Select.Option key={item.id} value={item.id}>
@@ -126,13 +126,13 @@ const DesignationAddSinglePopup = ({ list, setLoading }) => {
 
 						<Form.Item
 							style={{ marginBottom: "10px" }}
-							label='Start Date'
+							label='Date de debut'
 							name='designationStartDate'
 							valuePropName='designationStartDate'
 							rules={[
 								{
 									required: true,
-									message: "Please input your start date!",
+									message: "Veuillez saisir votre date de début !",
 								},
 							]}>
 							<DatePicker onChange={(date) => setdesignationStartDate(date)} />
@@ -140,7 +140,7 @@ const DesignationAddSinglePopup = ({ list, setLoading }) => {
 
 						<Form.Item
 							style={{ marginBottom: "10px" }}
-							label='End Date'
+							label='Date de fin'
 							name='designationEndDate'
 							valuePropName='designationEndDate'>
 							<DatePicker onChange={(date) => setdesignationEndDate(date)} />
@@ -148,9 +148,9 @@ const DesignationAddSinglePopup = ({ list, setLoading }) => {
 
 						<Form.Item
 							style={{ marginBottom: "10px" }}
-							label='Comment'
+							label='Commentaire'
 							name='designationComment'>
-							<Input placeholder='Comment' />
+							<Input placeholder='Commentaire' />
 						</Form.Item>
 
 						<Form.Item

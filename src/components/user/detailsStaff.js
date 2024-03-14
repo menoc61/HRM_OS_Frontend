@@ -93,7 +93,7 @@ const DetailStaff = () => {
 	return (
 		<div>
 			<UserPrivateComponent permission={"readSingle-user"}>
-				<PageTitle title=' Back  ' />
+				<PageTitle title=' Retour  ' />
 
 				{user ? (
 					<div className='mr-top'>

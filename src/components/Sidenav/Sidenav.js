@@ -41,7 +41,7 @@ const Sidenav = ({ color, sideNavOpenKeys }) => {
 		{
 			label: (
 				<NavLink to='/admin/dashboard'>
-					<span>Dashboard</span>
+					<span>Tableau de bord</span>
 				</NavLink>
 			),
 			key: "dashboard",
@@ -53,7 +53,7 @@ const Sidenav = ({ color, sideNavOpenKeys }) => {
 			hasPermission("readAll-role") ||
 			hasPermission("readAll-designation") ||
 			hasPermission("readAll-department")) && {
-			label: "HR",
+			label: "RH",
 			key: "hr",
 			icon: <UserOutlined />,
 			children: [
@@ -108,7 +108,7 @@ const Sidenav = ({ color, sideNavOpenKeys }) => {
 
 		(hasPermission("create-attendance") ||
 			hasPermission("readAll-attendance")) && {
-			label: "ATTENDANCE",
+			label: "PRÉSENCE",
 			key: "attendance",
 			icon: <ClockCircleOutlined />,
 			children: [
@@ -134,7 +134,7 @@ const Sidenav = ({ color, sideNavOpenKeys }) => {
 		},
 
 		(hasPermission("create-payroll") || hasPermission("readAll-payroll")) && {
-			label: "PAYROLL",
+			label: "PAIE",
 			key: "payroll",
 			icon: <WalletOutlined />,
 			children: [
@@ -160,7 +160,7 @@ const Sidenav = ({ color, sideNavOpenKeys }) => {
 		},
 
 		hasPermission("readAll-shift") && {
-			label: "Changement",
+			label: "CHANGEMENT",
 			key: "shift",
 			icon: <ClockCircleOutlined />,
 			children: [
@@ -177,14 +177,14 @@ const Sidenav = ({ color, sideNavOpenKeys }) => {
 		},
 
 		hasPermission("readAll-employmentStatus") && {
-			label: "EMPLOYEMENT",
+			label: "EMPLOI",
 			key: "employementStatus",
 			icon: <RocketOutlined />,
 			children: [
 				hasPermission("readAll-employmentStatus") && {
 					label: (
 						<NavLink to='/admin/employment-status'>
-							<span>Status</span>
+							<span>Statut</span>
 						</NavLink>
 					),
 					key: "employementStatus",
@@ -196,7 +196,7 @@ const Sidenav = ({ color, sideNavOpenKeys }) => {
 		(hasPermission("create-leaveApplication") ||
 			hasPermission("readAll-leaveApplication") ||
 			hasPermission("readSingle-leaveApplication")) && {
-			label: "LEAVE ",
+			label: "CONGÉS",
 			key: "leave",
 			icon: <UsergroupDeleteOutlined />,
 			children: [
@@ -232,7 +232,7 @@ const Sidenav = ({ color, sideNavOpenKeys }) => {
 
 		(hasPermission("readAll-weeklyHoliday") ||
 			hasPermission("readAll-publicHoliday")) && {
-			label: "HOLIDAY",
+			label: "VACANCES",
 			key: "holiday",
 			icon: <CalendarOutlined />,
 			children: [
@@ -258,7 +258,7 @@ const Sidenav = ({ color, sideNavOpenKeys }) => {
 		},
 
 		hasPermission("readAll-leavePolicy") && {
-			label: "LEAVE POLICY",
+			label: "POLITIQUE DE CONGÉ",
 			key: "leavePolicy",
 			icon: <CalendarOutlined />,
 			children: [
@@ -275,7 +275,7 @@ const Sidenav = ({ color, sideNavOpenKeys }) => {
 		},
 
 		hasPermission("readAll-announcement") && {
-			label: "ANNOUNCEMENT",
+			label: "ANNONCE",
 			key: "announcement",
 			icon: <NotificationFilled />,
 			children: [
@@ -294,7 +294,7 @@ const Sidenav = ({ color, sideNavOpenKeys }) => {
 		(hasPermission("readAll-account") ||
 			hasPermission("readAll-transaction") ||
 			hasPermission("create-transaction")) && {
-			label: "ACCOUNTS",
+			label: "COMPTE",
 			key: "accounts",
 			icon: <WalletOutlined />,
 			children: [
@@ -319,7 +319,7 @@ const Sidenav = ({ color, sideNavOpenKeys }) => {
 				hasPermission("readAll-transaction") && {
 					label: (
 						<NavLink to='/admin/transaction/'>
-							<span>Transaction List</span>
+							<span>Liste des transactions</span>
 						</NavLink>
 					),
 					key: "transactionList",
@@ -329,7 +329,7 @@ const Sidenav = ({ color, sideNavOpenKeys }) => {
 		},
 
 		hasPermission("readAll-account") && {
-			label: "FINANCE REPORT",
+			label: "RAPPORT FINANCIER",
 			key: "report",
 			icon: <FlagOutlined />,
 			children: [
@@ -364,7 +364,7 @@ const Sidenav = ({ color, sideNavOpenKeys }) => {
 		},
 
 		(hasPermission("crate-award") || hasPermission("readAll-award")) && {
-			label: "AWARDS",
+			label: "PRIX",
 			key: "award",
 			icon: <TrophyFilled />,
 			children: [
@@ -396,7 +396,7 @@ const Sidenav = ({ color, sideNavOpenKeys }) => {
 			hasPermission("create-milestone") ||
 			hasPermission("readAll-priority") ||
 			hasPermission("create-task-Status")) && {
-			label: "PROJECT",
+			label: "PROJET",
 			key: "project",
 			icon: <SettingOutlined />,
 			children: [
@@ -412,7 +412,7 @@ const Sidenav = ({ color, sideNavOpenKeys }) => {
 				hasPermission("readAll-project") && {
 					label: (
 						<NavLink to='/admin/project'>
-							<span>Ajouter un projet</span>
+							<span>Liste des projets</span>
 						</NavLink>
 					),
 					key: "allProject",
@@ -460,7 +460,7 @@ const Sidenav = ({ color, sideNavOpenKeys }) => {
 		},
 
 		hasPermission("readAll-setting") && {
-			label: "SETTINGS",
+			label: "PARAMÈTRES",
 			key: "settings",
 			icon: <SettingOutlined />,
 			children: [
