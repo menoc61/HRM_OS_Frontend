@@ -131,7 +131,7 @@ const Attendance = ({ drawer }) => {
 
 								<Form.Item
 									style={{ marginBottom: "10px" }}
-									label='Heure de debut'
+									label="Heure d'arrivee"
 									rules={[
 										{
 											required: true,
@@ -157,7 +157,7 @@ const Attendance = ({ drawer }) => {
 
 								<Form.Item
 									style={{ marginBottom: "10px" }}
-									label='Heure de fin'
+									label='Heure de depart'
 									rules={[
 										{
 											required: true,

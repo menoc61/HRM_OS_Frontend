@@ -272,7 +272,7 @@ const AddUser = () => {
 								</h2>
 								<Form.Item
 									style={{ marginBottom: "10px" }}
-									label='Date d/inscription'
+									label="Date d'engagement"
 									name='joinDate'
 									rules={[
 										{
@@ -335,7 +335,7 @@ const AddUser = () => {
 											message: "Please input Employment Status!",
 										},
 									]}
-									label='Statut de l\employé'>
+									label="Statut de l'employé">
 									<Select
 										placeholder='Selectionnez un Statut'
 										allowClear

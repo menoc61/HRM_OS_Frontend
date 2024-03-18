@@ -53,14 +53,14 @@ function CustomTable({ list, total, status, setStatus, loading }) {
 		},
 		{
 			id: 2,
-			title: "À l'heure",
+			title:"Heure d'arrivée",
 			dataIndex: "inTime",
 			key: "inTime",
 			render: (inTime) => dayjs(inTime).format("DD-MM-YYYY, h:mm A") || "NONE",
 		},
 		{
 			id: 3,
-			title: "Temps d'arrêt ",
+			title: "Heure de depart",
 			dataIndex: `outTime`,
 			key: "outTime",
 			render: (outTime) =>
@@ -68,7 +68,7 @@ function CustomTable({ list, total, status, setStatus, loading }) {
 		},
 		{
 			id: 4,
-			title: "En statut",
+			title: "statut d'arrivée",
 			dataIndex: "inTimeStatus",
 			key: "inTimeStatus",
 			render: (inTimeStatus) => {
@@ -86,7 +86,7 @@ function CustomTable({ list, total, status, setStatus, loading }) {
 		},
 		{
 			id: 5,
-			title: "Statut de sortie",
+			title: "Statut de départ",
 			dataIndex: "outTimeStatus",
 			key: "outTimeStatus",
 			render: (outTimeStatus) => {
@@ -112,7 +112,7 @@ function CustomTable({ list, total, status, setStatus, loading }) {
 
 		{
 			id: 7,
-			title: "Punch By",
+			title: "Enregistré Par",
 			dataIndex: "punchBy",
 			key: "punchBy",
 			render: (punchBy) => (
