@@ -21,13 +21,13 @@ export const addSingleAward = createAsyncThunk(
 					...values,
 				},
 			});
-			toast.success("Award Added");
+			toast.success("Recompense Ajoutée");
 			return {
 				data,
 				message: "success",
 			};
 		} catch (error) {
-			toast.error("Error in adding award try again");
+			toast.error("Erreur lors de l'ajout de la recompense, réessayez");
 			console.log(error.message);
 			return {
 				message: "error",
@@ -53,13 +53,13 @@ export const deleteAward = createAsyncThunk(
 				},
 			});
 
-			toast.success("Award Deleted");
+			toast.success("Prix Supprimée");
 			return {
 				data: resp.data.id,
 				message: "success",
 			};
 		} catch (error) {
-			toast.error("Error in deleting award try again");
+			toast.error("Erreur lors de la suppression, réessayez");
 			console.log(error.message);
 		}
 	}
@@ -100,13 +100,13 @@ export const updateAward = createAsyncThunk(
 					...values,
 				},
 			});
-			toast.success("Award Updated");
+			toast.success("Award Mis a jour");
 			return {
 				data,
 				message: "success",
 			};
 		} catch (error) {
-			toast.error("Error in updating Award try again");
+			toast.error("Erreur lors de ls mise a jour, Réessayez");
 			console.log(error.message);
 			return {
 				message: "error",

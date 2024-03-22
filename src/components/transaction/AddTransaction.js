@@ -147,7 +147,7 @@ const AddTransaction = () => {
 											}
 											loading={!accounts}
 											showSearch
-											placeholder='Sélectionnez l/ID de débit'
+											placeholder="Sélectionnez l'ID de débit"
 											optionFilterProp='children'
 											filterOption={(input, option) =>
 												option.children.includes(input)
@@ -183,7 +183,7 @@ const AddTransaction = () => {
 											}
 											loading={!accounts}
 											showSearch
-											placeholder='Sélectionnez l\ID de crédit'
+											placeholder="Sélectionnez l'ID de crédit"
 											optionFilterProp='children'
 											filterOption={(input, option) =>
 												option.children.includes(input)

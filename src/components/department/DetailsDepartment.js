@@ -94,7 +94,7 @@ const CustomTable = ({ list }) => {
 				{list && (
 					<div>
 						<CsvLinkBtn>
-							<CSVLink data={list} filename='user_department'>
+							<CSVLink data={list} filename='département_utilisateur'>
 							Télécharger CSV
 							</CSVLink>
 						</CsvLinkBtn>

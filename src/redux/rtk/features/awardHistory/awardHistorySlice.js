@@ -25,7 +25,7 @@ export const addAwardHistory = createAsyncThunk(
 					...values,
 				},
 			});
-			toast.success("AwardHistory  Added");
+			toast.success("Historique des récompenses ajouté");
 			return {
 				data,
 				message: "success",
@@ -54,7 +54,7 @@ export const deleteAwardHistory = createAsyncThunk(
 				url: `awardHistory/${id}`,
 			});
 
-			toast.success("AwardHistory  Deleted");
+			toast.success("Historique des récompenses supprimé");
 			return {
 				data: resp.data.id,
 				message: "success",

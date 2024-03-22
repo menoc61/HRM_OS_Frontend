@@ -86,7 +86,7 @@ const AddAward = ({ drawer }) => {
 											message: "Veuillez saisir le nom de votre récompense !",
 										},
 									]}>
-									<Input placeholder='L/employer du mois' />
+									<Input placeholder="L'employer du mois" />
 								</Form.Item>
 
 								<Form.Item
@@ -99,7 +99,7 @@ const AddAward = ({ drawer }) => {
 											message: "Veuillez saisir la description de votre récompense !",
 										},
 									]}>
-									<Input placeholder='L/employé qui a bien performé' />
+									<Input placeholder="L'employé qui a bien performé" />
 								</Form.Item>
 
 								<Form.Item

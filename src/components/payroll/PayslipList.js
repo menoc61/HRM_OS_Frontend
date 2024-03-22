@@ -124,7 +124,7 @@ function CustomTable({ list, loading, month, year, paymentStatus }) {
 				return (
 					<div flex justify-between>
 						<Link to={`/admin/payroll/${id}`}>
-							<Tooltip title='View'>
+							<Tooltip title='Voir'>
 								<Button
 									icon={<EyeFilled />}
 									type='primary'
@@ -134,7 +134,7 @@ function CustomTable({ list, loading, month, year, paymentStatus }) {
 						</Link>
 
 						<UserPrivateComponent permission='create-transaction'>
-							<Tooltip title='Payment'>
+							<Tooltip title='Paiement'>
 								<Button
 									loading={loadingButton[id]}
 									icon={<DollarCircleFilled />}
@@ -224,15 +224,15 @@ const PayslipList = () => {
 
 	const options = [
 		{
-			label: "ALL",
+			label: "TOUS",
 			value: "ALL",
 		},
 		{
-			label: "PAID",
+			label: "PAYÉ",
 			value: "PAID",
 		},
 		{
-			label: "UNPAID",
+			label: "NON PAYÉ",
 			value: "UNPAID",
 		},
 	];
@@ -257,7 +257,7 @@ const PayslipList = () => {
 
 	return (
 		<div>
-			<PageTitle title='Back' />
+			<PageTitle title='Retour' />
 			<UserPrivateComponent permission='readAll-payroll'>
 				<Card className='mt-5'>
 					<div className='flex justify-end'>

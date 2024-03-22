@@ -21,7 +21,7 @@ import {
 	FileSyncOutlined,
 	FlagOutlined,
 } from "@ant-design/icons";
-import { Menu } from "antd";
+import { Menu, Tooltip } from "antd";
 import React from "react";
 import { useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
@@ -29,6 +29,7 @@ import { disable } from "workbox-navigation-preload";
 import getPermissions from "../../utils/getPermissions";
 import getUserFromToken from "../../utils/getUserFromToken";
 import styles from "./Sidenav.module.css";
+
 
 const Sidenav = ({ color, sideNavOpenKeys }) => {
 	const user = getUserFromToken();
@@ -69,9 +70,13 @@ const Sidenav = ({ color, sideNavOpenKeys }) => {
 				},
 				hasPermission("readAll-user") && {
 					label: (
+					<Tooltip title="Liste des employés" >
 						<NavLink to='/admin/hr/staffs'>
+							
 							<span>Liste des employés</span>
+							
 						</NavLink>
+					</Tooltip>
 					),
 					key: "users",
 					icon: <UsergroupAddOutlined />,
@@ -149,9 +154,11 @@ const Sidenav = ({ color, sideNavOpenKeys }) => {
 				},
 				hasPermission("readAll-payroll") && {
 					label: (
+					<Tooltip title="Liste des fiches de paie" >
 						<NavLink to='/admin/payroll/list'>
 							<span>Liste des fiches de paie</span>
 						</NavLink>
+					</Tooltip>
 					),
 					key: "payslipList",
 					icon: <FileOutlined />,
@@ -238,9 +245,11 @@ const Sidenav = ({ color, sideNavOpenKeys }) => {
 			children: [
 				hasPermission("readAll-weeklyHoliday") && {
 					label: (
+					<Tooltip title="Vacances hebdomadaires">
 						<NavLink to='/admin/holiday/week'>
 							<span>Vacances hebdomadaires</span>
 						</NavLink>
+					</Tooltip>
 					),
 					key: "weeklyHoliday",
 					icon: <PieChartFilled />,
@@ -258,7 +267,13 @@ const Sidenav = ({ color, sideNavOpenKeys }) => {
 		},
 
 		hasPermission("readAll-leavePolicy") && {
-			label: "POLITIQUE DE CONGÉ",
+			label: (
+				<Tooltip title="POLITIQUES DE CONGES">
+					
+						<span>POLITIQUES DE CONGES</span>
+					
+				</Tooltip>
+				),
 			key: "leavePolicy",
 			icon: <CalendarOutlined />,
 			children: [
@@ -318,9 +333,11 @@ const Sidenav = ({ color, sideNavOpenKeys }) => {
 				},
 				hasPermission("readAll-transaction") && {
 					label: (
+						<Tooltip title="Liste des transactions">
 						<NavLink to='/admin/transaction/'>
 							<span>Liste des transactions</span>
 						</NavLink>
+						</Tooltip>
 					),
 					key: "transactionList",
 					icon: <UnorderedListOutlined />,
@@ -335,9 +352,11 @@ const Sidenav = ({ color, sideNavOpenKeys }) => {
 			children: [
 				hasPermission("readAll-account") && {
 					label: (
+						<Tooltip title="Balance de vérification">
 						<NavLink to='/admin/account/trial-balance'>
 							<span>Balance de vérification</span>
 						</NavLink>
+						</Tooltip>
 					),
 					key: "trialBalance",
 					icon: <FileDoneOutlined />,
@@ -449,9 +468,11 @@ const Sidenav = ({ color, sideNavOpenKeys }) => {
 
 				hasPermission("create-taskStatus") && {
 					label: (
+						<Tooltip title="Ajouter le statut d'une tâche">
 						<NavLink to='/admin/task-status'>
 							<span>Ajouter le statut d'une tâche</span>
 						</NavLink>
+						</Tooltip>
 					),
 					key: "taskStatus",
 					icon: <SettingOutlined />,
@@ -466,9 +487,11 @@ const Sidenav = ({ color, sideNavOpenKeys }) => {
 			children: [
 				hasPermission("readAll-setting") && {
 					label: (
+						<Tooltip title="Paramètres de l'entreprise">
 						<NavLink to='/admin/company-setting'>
 							<span>Paramètres de l'entreprise</span>
 						</NavLink>
+						</Tooltip>
 					),
 					key: "invoiceSetting",
 					icon: <SettingOutlined />,

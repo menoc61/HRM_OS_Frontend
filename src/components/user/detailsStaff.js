@@ -142,12 +142,12 @@ const DetailStaff = () => {
 												</span>
 											</h3>
 											<h3 className='text-base font-medium txt-color-secondary'>
-											Pris :{" "}
+											Prix :{" "}
 												<span className='text-base font-medium txt-color-2'>
 												Payé -{" "}
 													{user?.leavePolicy.paidLeaveCount -
 														user?.leftPaidLeaveDays}{" "}
-													| U.Paid -{" "}
+													| Impayé -{" "}
 													{user?.leavePolicy.unpaidLeaveCount -
 														user?.leftUnpaidLeaveDays}
 												</span>
@@ -155,7 +155,7 @@ const DetailStaff = () => {
 											<h3 className='text-base font-medium txt-color-secondary'>
 											Équilibre:{" "}
 												<span className='text-base font-medium txt-color-2'>
-												Payé - {user?.leftPaidLeaveDays} | U.Paid -{" "}
+												Payé - {user?.leftPaidLeaveDays} | Impayé -{" "}
 													{user?.leftUnpaidLeaveDays}
 												</span>
 											</h3>
@@ -260,7 +260,7 @@ const DetailStaff = () => {
 												style={{ fontSize: "15px" }}
 											/>
 											<span className='txt-color-2 font-medium'>
-												Join Date :
+												Date d'engagement :
 											</span>
 											<p className='txt-color-secondary ml-2'>
 												{dayjs(user?.joinDate).format("DD/MM/YYYY")}
@@ -273,7 +273,7 @@ const DetailStaff = () => {
 												style={{ fontSize: "15px" }}
 											/>
 											<span className='txt-color-2 font-medium'>
-											Date de départ :
+											Date de naissance :
 											</span>
 											<p className='txt-color-secondary ml-2'>
 												{user?.leaveDate
@@ -363,7 +363,7 @@ const DetailStaff = () => {
 												className='mr-3'
 												style={{ fontSize: "15px" }}
 											/>
-											<span className='txt-color-2 font-medium'>Phone:</span>
+											<span className='txt-color-2 font-medium'>Telephone:</span>
 											<p className='txt-color-secondary ml-2'>
 												{user?.phone || "No Phone"}
 											</p>
@@ -378,24 +378,24 @@ const DetailStaff = () => {
 											<div className=''>
 												<li className='txt-color-secondary ml-2'>
 													{" "}
-													Street : {user?.street || "No Address"}
+													Rue : {user?.street || "No Address"}
 												</li>
 												<li className='txt-color-secondary ml-2'>
 													{" "}
-													City : {user?.city || "No Address"}
+													Ville : {user?.city || "No Address"}
 												</li>
 												<li className='txt-color-secondary ml-2'>
 													{" "}
-													State : {user?.state || "No Address"}
+													Region : {user?.state || "No Address"}
 												</li>
 												<li className='txt-color-secondary ml-2'>
 													{" "}
-													Country : {user?.country || "No Address"}
+													Pays : {user?.country || "No Address"}
 												</li>
 
 												<li className='txt-color-secondary ml-2'>
 													{" "}
-													Zip Code : {user?.zipCode || "No Address"}
+													Boite postale : {user?.zipCode || "No Address"}
 												</li>
 											</div>
 										</li>

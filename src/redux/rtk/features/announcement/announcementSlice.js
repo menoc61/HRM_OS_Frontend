@@ -25,13 +25,13 @@ export const addAnnouncement = createAsyncThunk(
 					...values,
 				},
 			});
-			toast.success("Announcement Added");
+			toast.success("Annonce ajoutée");
 			return {
 				data,
 				message: "success",
 			};
 		} catch (error) {
-			toast.error("Error in adding announcement try again");
+			toast.error("Erreur lors de l'ajout d'une annonce, réessayez");
 			console.log(error.message);
 			return {
 				message: "error",
@@ -57,13 +57,13 @@ export const deleteAnnouncement = createAsyncThunk(
 				},
 			});
 
-			toast.success("Announcement Deleted");
+			toast.success("Annonce supprimée");
 			return {
 				data: resp.data.id,
 				message: "success",
 			};
 		} catch (error) {
-			toast.error("Error in deleting announcement try again");
+			toast.error("Erreur lors de la suppression d'une annonce, réessayez");
 			console.log(error.message);
 		}
 	}
@@ -107,13 +107,13 @@ export const updateAnnouncement = createAsyncThunk(
 					...values,
 				},
 			});
-			toast.success("Announcement Updated");
+			toast.success("Annonce mise à jour");
 			return {
 				data,
 				message: "success",
 			};
 		} catch (error) {
-			toast.error("Error in updating announcement try again");
+			toast.error("Erreur lors de la mise à jour de l'annonce, réessayez");
 			console.log(error.message);
 			return {
 				message: "error",
