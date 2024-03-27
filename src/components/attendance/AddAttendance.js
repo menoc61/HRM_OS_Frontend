@@ -214,7 +214,7 @@ const Attendance = ({ drawer }) => {
 										htmlType='submit'
 										block
 										loading={loader}>
-										Ajouter une participation
+										Enregistrer
 									</Button>
 								</Form.Item>
 							</div>
