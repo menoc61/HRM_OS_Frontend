@@ -25,6 +25,9 @@ function Header({ onPress, collapsed, handleCollapsed }) {
 
 	const isLogged = localStorage.getItem("isLogged");
 	const user = localStorage.getItem("user");
+	const redirectToHome = () => {
+		window.location.href = "https://youtube.com";
+	};
 
 	const items = [
 		{
@@ -126,6 +129,19 @@ function Header({ onPress, collapsed, handleCollapsed }) {
 							</Dropdown>
 						</div>
 					)}
+					{isLogged && (
+                        <div>
+                         {/* ... */}
+                            <Button
+                               type="primary"
+                               className={styles.footButton} // Ajoutez la classe CSS appropriée pour le style du bouton
+                               onClick={redirectToHome}
+                            >
+                              Acceuil
+                            </Button>
+                        {/* ... */}
+                        </div>
+                    )}
 				</Col>
 			</Row>
 		</>
