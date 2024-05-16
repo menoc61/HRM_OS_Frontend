@@ -33,34 +33,34 @@ function CustomTable({ list, total }) {
 
 		{
 			id: 2,
-			title: " Name",
+			title: " Nom",
 			key: "name",
 			dataIndex: "user",
 			render: ({ firstName, lastName }) => firstName + " " + lastName,
 		},
 		{
 			id: 3,
-			title: "Leave Type",
+			title: "Type de congé",
 			dataIndex: "leaveType",
 			key: "leaveType",
 		},
 		{
 			id: 4,
-			title: "Leave From",
+			title: "Partir de",
 			dataIndex: "leaveFrom",
 			key: "leaveFrom",
 			render: (leaveFrom) => dayjs(leaveFrom).format("DD-MM-YYYY"),
 		},
 		{
 			id: 5,
-			title: "Leave To",
+			title: "Laisser à",
 			dataIndex: "leaveTo",
 			key: "leaveTo",
 			render: (leaveTo) => dayjs(leaveTo).format("DD-MM-YYYY"),
 		},
 		{
 			id: 6,
-			title: "Leave Duration",
+			title: "Durée du congé",
 			dataIndex: "leaveDuration",
 			key: "leaveDuration",
 			render: (leaveDuration) => {

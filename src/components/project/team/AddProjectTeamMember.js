@@ -58,7 +58,7 @@ const AddProjectTeamMember = ({ id, projectId, teamName }) => {
 					xl={12}
 					className='column-design border rounded card-custom'>
 					<Title level={4} className='m-2 mt-5 mb-5 text-center'>
-						{`Add New Team Member :  ${teamName} `}
+						{`Ajouter un nouveau membre de l'équipe :  ${teamName} `}
 					</Title>
 					<Form
 						form={form}
@@ -77,18 +77,18 @@ const AddProjectTeamMember = ({ id, projectId, teamName }) => {
 						<div>
 							<Form.Item
 								style={{ marginBottom: "20px" }}
-								label='Member'
+								label='Membre'
 								name='projectTeamMember'
 								rules={[
 									{
 										required: true,
-										message: "Select Member",
+										message: "Selectionnez un Membre",
 									},
 								]}>
 								<Select
 									mode='multiple'
 									loading={loading}
-									placeholder='Select Member'
+									placeholder='Selectionnez un Membre'
 									optionFilterProp='children'>
 									{list.map((item) => (
 										<Select.Option key={item.id} value={item.id}>

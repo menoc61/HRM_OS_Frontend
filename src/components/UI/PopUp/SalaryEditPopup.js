@@ -24,7 +24,7 @@ const SalaryEditPopup = ({ data }) => {
 				<BtnEditSvg size={25} />
 			</button>
 			<Modal
-				title='Edit Salary'
+				title='Modifier les Salaires'
 				open={isModalOpen}
 				onOk={handleOk}
 				onCancel={handleCancel}>

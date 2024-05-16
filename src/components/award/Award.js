@@ -11,7 +11,7 @@ const Award = (props) => {
 	}
 	return (
 		<div>
-			<PageTitle title='Back' />
+			<PageTitle title='Retour' />
 
 			<AddAward />
 		</div>

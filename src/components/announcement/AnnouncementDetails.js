@@ -30,7 +30,7 @@ const DetailAnnouncement = () => {
 
 	return (
 		<div>
-			<PageTitle title=' Back  ' />
+			<PageTitle title=' Retour  ' />
 
 			<Card className='mr-top mt-5'>
 				{employmentStatus ? (

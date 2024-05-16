@@ -110,7 +110,7 @@ function UpdateSup() {
 											<Form.Item
 												style={{ marginBottom: "10px" }}
 												fields={[{ name: "Name" }]}
-												label='Name'
+												label='Nom'
 												name='name'
 												rules={[
 													{
@@ -123,12 +123,12 @@ function UpdateSup() {
 
 											<Form.Item
 												style={{ marginBottom: "10px" }}
-												label='Phone'
+												label='Numero de téléphone'
 												name='phone'
 												rules={[
 													{
 														required: true,
-														message: "Please input supplier Phone!",
+														message: "Veuillez saisir le téléphone du fournisseur !",
 													},
 												]}>
 												<Input />
@@ -136,7 +136,7 @@ function UpdateSup() {
 
 											<Form.Item
 												style={{ marginBottom: "10px" }}
-												label='Address'
+												label='Addresse'
 												name='address'
 												rules={[
 													{
@@ -149,13 +149,13 @@ function UpdateSup() {
 
 											<Form.Item
 												style={{ marginBottom: "10px" }}
-												label='Due Amount'
+												label='Montant dû'
 												name='due_amount'
 												rules={[
 													{
 														type: Number,
 														required: true,
-														message: "Please input supplier amount!",
+														message: "Veuillez saisir le montant du fournisseur !",
 													},
 												]}>
 												<Input type='number' />

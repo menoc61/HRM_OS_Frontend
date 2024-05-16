@@ -106,12 +106,12 @@ const AwardEditSinglePopup = ({ data, setLoading }) => {
 					<div>
 						<Form.Item
 							style={{ marginBottom: "10px" }}
-							label='Award'
+							label='Prix'
 							name='awardId'
 							rules={[
 								{
 									required: true,
-									message: "Please input your salary!",
+									message: "Veuillez entrer votre salaire!",
 								},
 							]}>
 							<Select
@@ -128,12 +128,12 @@ const AwardEditSinglePopup = ({ data, setLoading }) => {
 
 						<Form.Item
 							style={{ marginBottom: "10px" }}
-							label='Start Date'
+							label='Date de debut'
 							name='awardedDate'
 							rules={[
 								{
 									required: true,
-									message: "Please input your start date!",
+									message: "Veuillez entrer la date de debut!",
 								},
 							]}>
 							<DatePicker
@@ -144,7 +144,7 @@ const AwardEditSinglePopup = ({ data, setLoading }) => {
 
 						<Form.Item
 							style={{ marginBottom: "10px" }}
-							label='Comment'
+							label='Commentaire'
 							name='salaryComment'>
 							<Input name='salaryComment' />
 						</Form.Item>

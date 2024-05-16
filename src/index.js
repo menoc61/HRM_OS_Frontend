@@ -32,7 +32,7 @@ const configuration = {
   onUpdate: (registration) => {
     if (registration && registration.waiting) {
       if (
-        window.confirm("New version available!  refresh to update your app?")
+        window.confirm("Nouvelle version disponible! actualiser pour mettre à jour votre application ?")
       ) {
         registration.waiting.postMessage({ type: "SKIP_WAITING" });
         window.location.reload();

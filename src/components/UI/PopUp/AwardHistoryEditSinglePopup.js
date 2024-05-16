@@ -122,7 +122,7 @@ const AwardHistoryEditSinglePopup = ({ data, setLoading }) => {
 								},
 							]}>
 							<Select
-								placeholder='Select Designation'
+								placeholder='Selectionnez une Designation'
 								onChange={(value) => setawardId(value)}>
 								{designations?.map((item) => (
 									<Select.Option key={item.id} value={item.id}>
@@ -134,12 +134,12 @@ const AwardHistoryEditSinglePopup = ({ data, setLoading }) => {
 
 						<Form.Item
 							style={{ marginBottom: "10px" }}
-							label='Start Date'
+							label='Date de debut'
 							name='awardedDate'
 							rules={[
 								{
 									required: true,
-									message: "Please input your start date!",
+									message: "Veuillez saisir votre date de début !",
 								},
 							]}>
 							<DatePicker
@@ -151,7 +151,7 @@ const AwardHistoryEditSinglePopup = ({ data, setLoading }) => {
 
 						<Form.Item
 							style={{ marginBottom: "10px" }}
-							label='Comment'
+							label='Commentaire'
 							name='comment'>
 							<Input name='comment' />
 						</Form.Item>

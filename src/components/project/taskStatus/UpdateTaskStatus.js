@@ -64,13 +64,13 @@ const UpdateTaskStatus = () => {
 	};
 
 	const onFinishFailed = (errorInfo) => {
-		toast.warning("Failed at adding TaskStatus");
+		toast.warning("Échec de l'ajout du statut de la tâche");
 		setLoader(false);
 	};
 	return (
 		<Fragment bordered={false}>
 			{/* <UserPrivateComponent permission={"create-leaveApplication"}> */}
-			<PageTitle title='Back' />
+			<PageTitle title='Retour' />
 			<Row className='mr-top'>
 				<Col
 					xs={24}
@@ -101,15 +101,15 @@ const UpdateTaskStatus = () => {
 							<div>
 								<Form.Item
 									style={{ marginBottom: "20px" }}
-									label='Task Status Name'
+									label='Nom de l/état de la tâche'
 									name='name'
 									rules={[
 										{
 											required: true,
-											message: "Enter Task Status Name",
+											message: "Entrez le nom de l'état de la tâche",
 										},
 									]}>
-									<Input placeholder='Enter Task Status Name' />
+									<Input placeholder='Entrez le nom de l/état de la tâche' />
 								</Form.Item>
 
 								<Form.Item

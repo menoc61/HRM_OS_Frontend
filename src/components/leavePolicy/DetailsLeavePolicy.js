@@ -37,7 +37,7 @@ const CustomTable = ({ list, data }) => {
 
 		{
 			id: 2,
-			title: " Name",
+			title: " Nom",
 			key: "name",
 
 			render: ({ firstName, lastName }) => firstName + " " + lastName,
@@ -45,14 +45,14 @@ const CustomTable = ({ list, data }) => {
 
 		{
 			id: 6,
-			title: "Paid Leave",
+			title: "Congés payés",
 			key: "paidLeaveCount",
 			render: () => data?.paidLeaveCount,
 		},
 
 		{
 			id: 6,
-			title: "Unpaid Leave",
+			title: "Congés impayés",
 			key: "unpaidLeaveCount",
 			render: () => data?.unpaidLeaveCount,
 		},
@@ -153,7 +153,7 @@ const DetailLeavePolicy = () => {
 
 	return (
 		<div>
-			<PageTitle title=' Back  ' />
+			<PageTitle title=' Retour  ' />
 
 			<UserPrivateComponent permission={"readSingle-leavePolicy"}>
 				<Card className='mr-top mt-5'>

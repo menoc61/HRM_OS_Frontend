@@ -21,10 +21,10 @@ const EmployeeEducationForm = ({ key, restField, remove, name }) => {
 					rules={[
 						{
 							required: true,
-							message: "Missing  degree",
+							message: "Niveau manquant",
 						},
 					]}>
-					<Input placeholder='Degree' />
+					<Input placeholder='Niveau' />
 				</Form.Item>
 				<Form.Item
 					{...restField}
@@ -32,7 +32,7 @@ const EmployeeEducationForm = ({ key, restField, remove, name }) => {
 					rules={[
 						{
 							required: true,
-							message: "Missing institution",
+							message: "Etablissement manquant",
 						},
 					]}>
 					<Input placeholder='Institution' />
@@ -41,28 +41,28 @@ const EmployeeEducationForm = ({ key, restField, remove, name }) => {
 					{...restField}
 					name={[name, "result"]}
 					rules={[{ required: true, message: "Missing result" }]}>
-					<Input placeholder='Result' />
+					<Input placeholder='Resultat Obtenue' />
 				</Form.Item>
 
 				<Form.Item
 					{...restField}
 					name={[name, "studyStartDate"]}
 					rules={[{ required: true, message: "Missing studyStartDate" }]}>
-					<DatePicker placeholder='studyStartDate' />
+					<DatePicker placeholder='Date de Début des Études' />
 				</Form.Item>
 
 				<Form.Item
 					{...restField}
 					name={[name, "studyEndDate"]}
 					rules={[{ required: true, message: "Missing studyEndDate" }]}>
-					<DatePicker placeholder='studyEndDate' />
+					<DatePicker placeholder='Date de Fin des Études' />
 				</Form.Item>
 
 				<Form.Item
 					{...restField}
 					name={[name, "fieldOfStudy"]}
-					rules={[{ required: true, message: "Missing fieldOfStudy" }]}>
-					<Input placeholder='Field Of Study; Computer' />
+					rules={[{ required: true, message: "Domaine d'études Manquant" }]}>
+					<Input placeholder="Domaine d'études; Ordinateur" />
 				</Form.Item>
 				<MinusCircleOutlined
 					className='txt-color'

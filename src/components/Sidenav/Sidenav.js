@@ -28,8 +28,7 @@ import { NavLink } from "react-router-dom";
 import { disable } from "workbox-navigation-preload";
 import getPermissions from "../../utils/getPermissions";
 import getUserFromToken from "../../utils/getUserFromToken";
-import styles from "./Sidenav.module.css";
-import logo from "../../assets/images/sai-i-lama-logo.png";
+// import styles from "./Sidenav.module.css";
 
 const Sidenav = ({ color, sideNavOpenKeys }) => {
 	const user = getUserFromToken();
@@ -178,13 +177,7 @@ const Sidenav = ({ color, sideNavOpenKeys }) => {
 		},
 
 		hasPermission("readAll-shift") && {
-			label: (
-				<Tooltip title="PERIODE DE TRAVAIL">
-					
-						<span>PERIODE DE TRAVAIL</span>
-					
-				</Tooltip>
-				),
+			label: "SHIFT",
 			key: "shift",
 			icon: <ClockCircleOutlined />,
 			children: [
@@ -201,24 +194,16 @@ const Sidenav = ({ color, sideNavOpenKeys }) => {
 		},
 
 		hasPermission("readAll-employmentStatus") && {
-			label: (
-				<Tooltip title="STATUT DE L'EMPLOI">
-					
-						<span>STATUT DE L'EMPLOI</span>
-					
-				</Tooltip>
-				),
+			label: "EMPLOYEMENT",
 			key: "employementStatus",
 			
 			icon: <RocketOutlined />,
 			children: [
 				hasPermission("readAll-employmentStatus") && {
 					label: (
-						<Tooltip title="Statut d'emploi">
-						  <NavLink to='/admin/employment-status'>
-							<span>Statut d'emploi</span>
-						  </NavLink>
-					</Tooltip>
+						<NavLink to='/admin/employment-status'>
+							<span>Status</span>
+						</NavLink>
 					),
 					key: "employementStatus",
 					icon: <FileDoneOutlined />,

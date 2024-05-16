@@ -116,18 +116,18 @@ const UpdateMilestone = () => {
 							<div>
 								<Form.Item
 									style={{ marginBottom: "10px" }}
-									label='Project'
+									label='Projet'
 									name='projectId'
 									rules={[
 										{
 											required: true,
-											message: "Select Project",
+											message: "Selectionnez un Projet",
 										},
 									]}>
 									<Select
 										mode='single'
 										loading={loading}
-										placeholder='Select Project'
+										placeholder='Selectionnez un Projet'
 										optionFilterProp='children'>
 										{list.map((item) => (
 											<Select.Option key={item.id} value={item.id}>
@@ -151,12 +151,12 @@ const UpdateMilestone = () => {
 
 								<Form.Item
 									style={{ marginBottom: "10px" }}
-									label='Start Date'
+									label='Date de debut'
 									name='startDate'
 									rules={[
 										{
 											required: true,
-											message: "Please input Project Start Date!",
+											message: "Veuillez saisir la date de début du projet !",
 										},
 									]}>
 									<DatePicker />
@@ -164,12 +164,12 @@ const UpdateMilestone = () => {
 
 								<Form.Item
 									style={{ marginBottom: "20px" }}
-									label='End Date'
+									label='Date de fin'
 									name='endDate'
 									rules={[
 										{
 											required: true,
-											message: "Please input Project End Date!",
+											message: "Veuillez saisir la date de fin du projet !",
 										},
 									]}>
 									<DatePicker />
@@ -182,10 +182,10 @@ const UpdateMilestone = () => {
 									rules={[
 										{
 											required: true,
-											message: "Enter Milestone Description",
+											message: "Entrez la description du jalon",
 										},
 									]}>
-									<Input placeholder='Enter Milestone Description' />
+									<Input placeholder='Entrez la description du jalon' />
 								</Form.Item>
 
 								<Form.Item

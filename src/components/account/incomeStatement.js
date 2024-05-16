@@ -25,7 +25,7 @@ const IncomeStatement = () => {
 						<div className='card-title  flex  justify-between'>
 							<h5 className='text-xl mb-2'>
 								<span className='ml-2 report-section-card-title'>
-								releve de revenue{" "}
+								relevé de revenue{" "}
 								</span>
 							</h5>
 						</div>

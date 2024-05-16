@@ -18,7 +18,7 @@ const AddProductDrawer = ({ children, btnTitle, title }) => {
         <span style={{ textAlign: "center" }}>+</span>
       </Button>
       <Drawer
-        title={`Create a ${title}`}
+        title={`Créer un ${title}`}
         width={"50%"}
         onClose={onClose}
         open={open}

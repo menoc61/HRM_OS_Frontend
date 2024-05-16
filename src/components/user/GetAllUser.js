@@ -32,7 +32,7 @@ function CustomTable({ list }) {
 		},
 		{
 			id: 2,
-			title: "Name",
+			title: "Nom",
 
 			key: "fullName",
 			render: ({ firstName, lastName }) =>
@@ -40,7 +40,7 @@ function CustomTable({ list }) {
 		},
 		{
 			id: 3,
-			title: "Usr Name",
+			title: "Nom d'utilisateur",
 			dataIndex: "userName",
 			key: "userName",
 		},
@@ -65,14 +65,14 @@ function CustomTable({ list }) {
 
 		{
 			id: 6,
-			title: "E-Status",
+			title: "E-Statut",
 			dataIndex: "employmentStatus",
 			key: "employmentStatus",
 			render: (record) => (record?.name ? record?.name : "N/A"),
 		},
 		{
 			id: 8,
-			title: "Department",
+			title: "Departement",
 			dataIndex: "department",
 			key: "department",
 			render: (record) => (record?.name ? record?.name : "N/A"),

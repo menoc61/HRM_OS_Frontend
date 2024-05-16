@@ -35,27 +35,27 @@ const CustomTable = ({ list }) => {
 
 		{
 			id: 2,
-			title: " Name",
+			title: " Nom",
 			key: "firstName",
 			render: ({ firstName, lastName }) => firstName + " " + lastName,
 		},
 
 		{
 			id: 6,
-			title: "User Name",
+			title: "Nom d'utilisateur",
 			dataIndex: "userName",
 			key: "userName",
 		},
 		{
 			id: 7,
-			title: "Start Time",
+			title: "Heure de début",
 			dataIndex: "startTime",
 			key: "startTime",
 			render: (startTime) => dayjs(startTime).format("hh:mm A"),
 		},
 		{
 			id: 8,
-			title: "End Time",
+			title: "Heure de fin",
 			dataIndex: "endTime",
 			key: "endTime",
 			render: (endTime) => dayjs(endTime).format("hh:mm A"),
@@ -142,7 +142,7 @@ const DetailEmploymentStatus = () => {
 
 	return (
 		<div>
-			<PageTitle title=' Back  ' />
+			<PageTitle title=' Retour ' />
 			<UserPrivateComponent permission={"readSingle-employmentStatus"}>
 				<Card className='mr-top mt-5'>
 					{employmentStatus ? (

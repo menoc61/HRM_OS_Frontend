@@ -150,7 +150,7 @@ function KanbanBoard2() {
 		} else {
 			setBtnLoading(false);
 			setBtnId(0);
-			console.log("Error in deleting task");
+			console.log("Erreur lors de la suppression de la tâche");
 		}
 	};
 

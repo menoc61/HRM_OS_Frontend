@@ -10,7 +10,7 @@ const Department = (props) => {
 	}
 	return (
 		<div>
-			<PageTitle title='Back' />
+			<PageTitle title='Retour' />
 			<AddDepartment />
 		</div>
 	);

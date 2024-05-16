@@ -114,7 +114,7 @@ const SalaryEditSinglePopup = ({ data, setLoading }) => {
 					<div>
 						<Form.Item
 							style={{ marginBottom: "10px" }}
-							label='Salary'
+							label='Salaire'
 							name='salary'
 							rules={[
 								{
@@ -127,7 +127,7 @@ const SalaryEditSinglePopup = ({ data, setLoading }) => {
 
 						<Form.Item
 							style={{ marginBottom: "10px" }}
-							label='Start Date'
+							label='Date de debut'
 							name='salaryStartDate'
 							rules={[
 								{
@@ -143,7 +143,7 @@ const SalaryEditSinglePopup = ({ data, setLoading }) => {
 
 						<Form.Item
 							style={{ marginBottom: "10px" }}
-							label='End Date'
+							label='Date de fin'
 							name='salaryEndDate'>
 							<DatePicker
 								defaultValue={initialValues.salaryEndDate}
@@ -153,7 +153,7 @@ const SalaryEditSinglePopup = ({ data, setLoading }) => {
 
 						<Form.Item
 							style={{ marginBottom: "10px" }}
-							label='Comment'
+							label='Commentaire'
 							name='salaryComment'>
 							<Input name='salaryComment' />
 						</Form.Item>

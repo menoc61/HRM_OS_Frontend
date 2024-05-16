@@ -79,7 +79,7 @@ const PublicHolidayEdit = ({ data }) => {
 					<div>
 						<Form.Item
 							style={{ marginBottom: "10px" }}
-							label='Name'
+							label='Nom'
 							name='name'
 							rules={[
 								{

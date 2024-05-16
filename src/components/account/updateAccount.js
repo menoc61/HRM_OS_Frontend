@@ -35,12 +35,12 @@ const UpdateAccount = ({ account, id }) => {
         setOpen(false);
         navigate(`/admin/account`);
       }
-      toast.success("Account Updated");
+      toast.success("Compte mis à jour");
       form.resetFields();
       setInitValues({});
       setLoading(false);
     } catch (error) {
-      toast.error("Error in adding account");
+      toast.error("Erreur lors de l'ajout du compte");
       console.log(error.message);
       setLoading(false);
     }
@@ -70,11 +70,11 @@ const UpdateAccount = ({ account, id }) => {
   return (
     <>
       <Button onClick={showModal} size="small">
-        Update Account
+      Compte mis à jour
       </Button>
       <Modal
         open={open}
-        title="Update Account"
+        title="Compte mis à jour"
         onOk={handleOk}
         onCancel={handleCancel}
         footer={[
@@ -101,11 +101,11 @@ const UpdateAccount = ({ account, id }) => {
           <Form.Item
             style={{ marginBottom: "10px" }}
             name="name"
-            label="Name"
+            label="Nom"
             rules={[
               {
                 required: true,
-                message: "Please input debit account!",
+                message: "Veuillez saisir un compte débiteur!",
               },
             ]}>
             <Input />
@@ -114,11 +114,11 @@ const UpdateAccount = ({ account, id }) => {
           <Form.Item
             style={{ marginBottom: "10px" }}
             name="account_id"
-            label="Account Type"
+            label="Type de compte"
             rules={[
               {
                 required: true,
-                message: "Please input debit account!",
+                message: "Veuillez saisir un compte débiteur!",
               },
             ]}>
             <Select
@@ -127,7 +127,7 @@ const UpdateAccount = ({ account, id }) => {
               style={{
                 width: 200,
               }}
-              placeholder="Select Account Type"
+              placeholder="Sélectionnez le type de compte"
               optionFilterProp="children"
               filterOption={(input, option) => option.children.includes(input)}
               filterSort={(optionA, optionB) =>

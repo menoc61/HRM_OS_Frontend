@@ -15,7 +15,7 @@ const columns = [
   },
   {
     id: 2,
-    title: "Name",
+    title: "Nom",
     key: "name",
     render: ({ name }) => name.toUpperCase(),
   },
@@ -49,7 +49,7 @@ const Task = (props) => {
   }
   return (
     <div>
-      <PageTitle title="Back" />
+      <PageTitle title="Retour" />
       {/* <AddTask list={list} loading={loading} /> */}
       <Table
         scroll={{ x: true }}

@@ -83,7 +83,7 @@ const SalaryAddSinglePopup = ({ data, setLoading }) => {
 				</Button>
 			</div>
 			<Modal
-				title={`Add Salary`}
+				title={`Ajouter un Salaire`}
 				open={isModalOpen}
 				onOk={handleOk}
 				onCancel={handleCancel}>
@@ -104,14 +104,14 @@ const SalaryAddSinglePopup = ({ data, setLoading }) => {
 					<div>
 						<Form.Item
 							style={{ marginBottom: "10px" }}
-							label='Salary'
+							label='Salaire'
 							name='salary'>
 							<Input placeholder='Salary' />
 						</Form.Item>
 
 						<Form.Item
 							style={{ marginBottom: "10px" }}
-							label='Start Date'
+							label='Date de debut'
 							name='salaryStartDate'
 							valuePropName='salaryStartDate'
 							rules={[
@@ -125,7 +125,7 @@ const SalaryAddSinglePopup = ({ data, setLoading }) => {
 
 						<Form.Item
 							style={{ marginBottom: "10px" }}
-							label='End Date'
+							label='Date de fin'
 							name='salaryEndDate'
 							valuePropName='salaryEndDate'>
 							<DatePicker onChange={(date) => setsalaryEndDate(date)} />
@@ -133,9 +133,9 @@ const SalaryAddSinglePopup = ({ data, setLoading }) => {
 
 						<Form.Item
 							style={{ marginBottom: "10px" }}
-							label='Comment'
+							label='Commentaire'
 							name='salaryComment'>
-							<Input placeholder='Comment' />
+							<Input placeholder='Commentaire' />
 						</Form.Item>
 
 						<Form.Item

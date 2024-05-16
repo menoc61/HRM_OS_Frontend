@@ -101,18 +101,18 @@ const ProjectTeamStatusUpdatePopup = ({ projectId, teamName, status }) => {
 								<div>
 									<Form.Item
 										style={{ marginBottom: "20px" }}
-										label='Team Status'
+										label='Statut de l/équipe'
 										name='status'
 										rules={[
 											{
 												required: true,
-												message: "Select Team Status",
+												message: "Sélectionnez le statut de l'équipe",
 											},
 										]}>
 										<Select
 											mode='single'
 											loading={loading}
-											placeholder='Select Team Status'
+											placeholder='Sélectionnez le statut de l/équipe'
 											optionFilterProp='children'>
 											<Select.Option value={true}>Active</Select.Option>
 											<Select.Option value={false}>Inactive</Select.Option>

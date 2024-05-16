@@ -36,7 +36,7 @@ function CustomTable({ list, loading }) {
 		},
 		{
 			id: 2,
-			title: "Name",
+			title: "Nom",
 			dataIndex: "name",
 			key: "name",
 		},
@@ -51,7 +51,7 @@ function CustomTable({ list, loading }) {
 
 		{
 			id: 3,
-			title: "Created At",
+			title: "Créé à",
 			dataIndex: "createdAt",
 			key: "createdAt",
 			render: (createdAt) => dayjs(createdAt).format("DD/MM/YYYY"),
@@ -83,7 +83,7 @@ function CustomTable({ list, loading }) {
 		<Card>
 			<div className='text-center my-2 flex justify-between'>
 				<h5 className='department-list-title text-color-2 text-xl mb-2'>
-					Public Holiday List
+				Liste des jours fériés
 				</h5>
 				{list && (
 					<div>
@@ -179,7 +179,7 @@ const AddPublicHoliday = ({ drawer }) => {
 							<div>
 								<Form.Item
 									style={{ marginBottom: "10px" }}
-									label='Name'
+									label='Nom'
 									name='name'
 									rules={[
 										{
@@ -187,7 +187,7 @@ const AddPublicHoliday = ({ drawer }) => {
 											message: "Please input name!",
 										},
 									]}>
-									<Input placeholder='New Year' />
+									<Input placeholder='Nouvelle année' />
 								</Form.Item>
 
 								<Form.Item
@@ -197,10 +197,10 @@ const AddPublicHoliday = ({ drawer }) => {
 									rules={[
 										{
 											required: true,
-											message: "Please input date!",
+											message: "Veuillez saisir la date ! ",
 										},
 									]}>
-									<DatePicker placeholder='Select Date' />
+									<DatePicker placeholder='Selectionnez une Date' />
 								</Form.Item>
 
 								<Form.Item

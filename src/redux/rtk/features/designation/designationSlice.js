@@ -26,13 +26,13 @@ export const addDesignation = createAsyncThunk(
 					...values,
 				},
 			});
-			toast.success("designation Added");
+			toast.success("designation Ajoutée");
 			return {
 				data,
 				message: "success",
 			};
 		} catch (error) {
-			toast.error("Error in adding designation try again");
+			toast.error("Erreur lors de l'ajout de la désignation, réessayez");
 			console.log(error.message);
 			return {
 				message: "error",
@@ -53,7 +53,7 @@ export const deleteDesignation = createAsyncThunk(
 					"Content-Type": "application/json;charset=UTF-8",
 				},
 				url: `designation/${id}`,
-				data: {
+				 data: {
 					status: false,
 				},
 			});

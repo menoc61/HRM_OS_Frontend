@@ -68,7 +68,7 @@ const ShiftEditPopup = ({ data }) => {
 					<div>
 						<Form.Item
 							style={{ marginBottom: "10px" }}
-							label='Name'
+							label='Nom'
 							name='name'
 							rules={[
 								{
@@ -81,7 +81,7 @@ const ShiftEditPopup = ({ data }) => {
 
 						<Form.Item
 							style={{ marginBottom: "10px" }}
-							label='Start Time'
+							label='Heure de debut'
 							name='startTime'
 							rules={[
 								{
@@ -94,7 +94,7 @@ const ShiftEditPopup = ({ data }) => {
 
 						<Form.Item
 							style={{ marginBottom: "20px" }}
-							label='End Time'
+							label='Heure de fin'
 							name='endTime'
 							rules={[
 								{

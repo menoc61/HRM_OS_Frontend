@@ -52,7 +52,7 @@ const AddLeave = ({ drawer }) => {
 	};
 
 	const onFinishFailed = (errorInfo) => {
-		toast.warning("Failed at adding shift");
+		toast.warning("Échec de l'ajout du quart de travail");
 		setLoader(false);
 	};
 	return (
@@ -91,12 +91,12 @@ const AddLeave = ({ drawer }) => {
 									rules={[
 										{
 											required: true,
-											message: "Please input your shift!",
+											message: "Veuillez saisir votre quart de travail !",
 										},
 									]}>
 									<Select
 										mode='single'
-										placeholder='Select leave type'
+										placeholder='Sélectionnez le type de congé'
 										optionFilterProp='children'>
 										<Select.Option value='PAID'>PAYÉ</Select.Option>
 										<Select.Option value='UNPAID'>NON PAYÉ</Select.Option>
@@ -105,12 +105,12 @@ const AddLeave = ({ drawer }) => {
 
 								<Form.Item
 									style={{ marginBottom: "10px" }}
-									label='Start Date'
+									label='Date de début'
 									name='leaveFrom'
 									rules={[
 										{
 											required: true,
-											message: "Please input your shift!",
+											message: "Veuillez saisir votre quart de travail !",
 										},
 									]}>
 									<DatePicker />
@@ -118,12 +118,12 @@ const AddLeave = ({ drawer }) => {
 
 								<Form.Item
 									style={{ marginBottom: "20px" }}
-									label='End Date'
+									label='Date de fin'
 									name='leaveTo'
 									rules={[
 										{
 											required: true,
-											message: "Please input your shift!",
+											message: "Veuillez saisir votre quart de travail !",
 										},
 									]}>
 									<DatePicker />

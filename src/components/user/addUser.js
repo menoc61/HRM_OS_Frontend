@@ -169,19 +169,7 @@ const AddUser = () => {
 								</Form.Item>
 								<Form.Item
 									style={{ marginBottom: "10px" }}
-									label='Date de naissance'
-									name='leaveDate'
-									rules={[
-										{
-											required: true,
-											message: "Veuillez saisir votre date de naissance!",
-										},
-									]}>
-									<DatePicker className='date-picker hr-staffs-date-picker' />
-								</Form.Item>
-								<Form.Item
-									style={{ marginBottom: "10px" }}
-									label="Nom d'utilisateur"
+									label='User Name'
 									name='userName'
 									rules={[
 										{
@@ -283,12 +271,9 @@ const AddUser = () => {
 									{" "}
 									Informations sur les employés{" "}
 								</h2>
-
-                                
-
 								<Form.Item
 									style={{ marginBottom: "10px" }}
-									label="Date d'embauche"
+									label='Joining Date'
 									name='joinDate'
 									rules={[
 										{
@@ -298,10 +283,15 @@ const AddUser = () => {
 									]}>
 									<DatePicker className='date-picker hr-staffs-date-picker' />
 								</Form.Item>
-								
 								<Form.Item
 									style={{ marginBottom: "10px" }}
-									label="ID de l'Employé "
+									label='Leave Date'
+									name='leaveDate'>
+									<DatePicker className='date-picker hr-staffs-date-picker' />
+								</Form.Item>
+								<Form.Item
+									style={{ marginBottom: "10px" }}
+									label='Employee ID'
 									name='employeeId'
 									rules={[
 										{
@@ -346,7 +336,7 @@ const AddUser = () => {
 											message: "Veuillez saisir votre Statut d'emploi!",
 										},
 									]}
-									label="Statut de l'emploie">
+									label='Employee Status'>
 									<Select
 										placeholder='Selectionnez un Statut'
 										allowClear
@@ -528,8 +518,8 @@ const AddUser = () => {
 
 								<Form.Item
 									style={{ marginBottom: "10px" }}
-									label='Date de prise de service'
-									rules={[{ required: true, message: "Veuillez saisir votre date!" }]}
+									label='Designation Start Date'
+									rules={[{ required: true, message: "Please input date!" }]}
 									name='designationStartDate'>
 									<DatePicker className='date-picker hr-staffs-date-picker' />
 								</Form.Item>

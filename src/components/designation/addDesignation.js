@@ -76,7 +76,7 @@ const AddDesignation = () => {
 									rules={[
 										{
 											required: true,
-											message: "Please input designation name!",
+											message: "Veuillez saisir le nom de la désignation !",
 										},
 									]}>
 									<Input />

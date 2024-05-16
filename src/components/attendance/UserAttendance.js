@@ -28,7 +28,7 @@ function CustomTable({ list, loading }) {
 		},
 		{
 			id: 2,
-			title: "Name",
+			title: "Nom",
 			dataIndex: "user",
 			key: "user",
 			render: ({ firstName, lastName }) => firstName + " " + lastName,
@@ -36,7 +36,7 @@ function CustomTable({ list, loading }) {
 
 		{
 			id: 3,
-			title: "inTime",
+			title: "heure d'arrivée",
 			dataIndex: "inTime",
 			key: "inTime",
 			render: (inTime) => dayjs(inTime).format("DD-MM-YYYY, h:mm A"),
@@ -44,14 +44,14 @@ function CustomTable({ list, loading }) {
 
 		{
 			id: 4,
-			title: "Out Time",
+			title: "Heure de depart",
 			dataIndex: "outTime",
 			key: "outTime",
 			render: (outTime) => dayjs(outTime).format("DD-MM-YYYY, h:mm A"),
 		},
 		{
 			id: 4,
-			title: "In Status",
+			title: "Status à l'arrivée",
 			dataIndex: "inTimeStatus",
 			key: "inTimeStatus",
 			render: (inTimeStatus) => {
@@ -69,7 +69,7 @@ function CustomTable({ list, loading }) {
 		},
 		{
 			id: 5,
-			title: "Out Status",
+			title: "Statut au depart",
 			dataIndex: "outTimeStatus",
 			key: "outTimeStatus",
 			render: (outTimeStatus) => {
@@ -87,7 +87,7 @@ function CustomTable({ list, loading }) {
 		},
 		{
 			id: 7,
-			title: "Punch By",
+			title: "Enregistré par",
 			dataIndex: "punchBy",
 			key: "punchBy",
 			render: (punchBy) => (
@@ -98,7 +98,7 @@ function CustomTable({ list, loading }) {
 		},
 		{
 			id: 6,
-			title: "Total Hour",
+			title: "Heure Total",
 			dataIndex: "totalHour",
 			key: "totalHour",
 			render: (totalHour) => totalHour || "Not Checked",
@@ -186,7 +186,7 @@ const UserAttendance = () => {
 	return (
 		<UserPrivateComponent permission='readSingle-attendance'>
 			<div>
-				<PageTitle title='Back' />
+				<PageTitle title='Retour' />
 				{!loading ? <CustomTable list={list} loading={loading} /> : <Loader />}
 			</div>
 		</UserPrivateComponent>

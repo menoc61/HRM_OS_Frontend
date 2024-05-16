@@ -32,14 +32,14 @@ const CustomTable = ({ list }) => {
 
 		{
 			id: 2,
-			title: " Name",
+			title: " Nom",
 			key: "firstName",
 			render: ({ firstName, lastName }) => firstName + " " + lastName,
 		},
 
 		{
 			id: 6,
-			title: "User Name",
+			title: "Nom d'utilisateur",
 			dataIndex: "userName",
 			key: "userName",
 		},
@@ -54,7 +54,7 @@ const CustomTable = ({ list }) => {
 
 		{
 			id: 6,
-			title: "Designation",
+			title: "Désignation",
 			dataIndex: "designationHistory",
 			key: "designationHistory",
 			render: (designationHistory) =>
@@ -94,7 +94,7 @@ const CustomTable = ({ list }) => {
 				{list && (
 					<div>
 						<CsvLinkBtn>
-							<CSVLink data={list} filename='user_department'>
+							<CSVLink data={list} filename='département_utilisateur'>
 							Télécharger CSV
 							</CSVLink>
 						</CsvLinkBtn>
@@ -157,7 +157,7 @@ const DetailDepartment = () => {
 
 	return (
 		<div>
-			<PageTitle title=' Back  ' />
+			<PageTitle title=' Retour  ' />
 
 			<UserPrivateComponent permission={"readSingle-department"}>
 				<Card className='mr-top mt-5'>
@@ -180,7 +180,7 @@ const DetailDepartment = () => {
 														</Button>
 													</a>
 												}
-												title='Are you sure you want to delete ?'
+												title='Etes-vous sûr que vous voulez supprimer ?'
 												trigger='click'
 												visible={visible}
 												onVisibleChange={handleVisibleChange}>

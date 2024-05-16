@@ -24,13 +24,13 @@ export const addClockIn = createAsyncThunk("attendance", async (values) => {
 				...values,
 			},
 		});
-		toast.success("Attendance Added");
+		toast.success("Présence ajoutée");
 		return {
 			data,
 			message: "success",
 		};
 	} catch (error) {
-		toast.error("Error in adding Attendance try again");
+		toast.error("Erreur lors de l'ajout de la présence, réessayez");
 		console.log(error.message);
 		return {
 			message: "error",
@@ -66,13 +66,13 @@ export const addManualAttendance = createAsyncThunk(
 					...values,
 				},
 			});
-			toast.success("Attendance Added");
+			toast.success("Presence Ajoutée");
 			return {
 				data,
 				message: "success",
 			};
 		} catch (error) {
-			toast.error("Error in adding Attendance try again");
+			toast.error("Erreur lors de l'ajout de la présence, réessayez");
 			console.log(error.message);
 			return {
 				message: "error",
@@ -145,7 +145,7 @@ export const loadSingleAttendance = createAsyncThunk(
 
 			return data;
 		} catch (error) {
-			toast.error("Error in getting Attendance list try again");
+			toast.error("Erreur lors de l'obtention de la liste de présence, réessayez");
 			console.log(error.message);
 			return {
 				message: "error",
@@ -170,7 +170,7 @@ export const loadAttendanceByUserId = createAsyncThunk(
 
 			return data;
 		} catch (error) {
-			toast.error("Error in getting Attendance list try again");
+			toast.error("Erreur lors de l'obtention de la liste de présence, réessayez");
 			console.log(error.message);
 			return {
 				message: "error",

@@ -36,21 +36,21 @@ function CustomTable({ list, loading }) {
 		},
 		{
 			id: 2,
-			title: "Name",
+			title: "Nom",
 			dataIndex: "name",
 			key: "name",
 		},
 
 		{
 			id: 3,
-			title: "Total Paid Leave",
+			title: "Congés payés totaux",
 			dataIndex: "paidLeaveCount",
 			key: "paidLeaveCount",
 		},
 
 		{
 			id: 3,
-			title: "Total Unpaid Leave",
+			title: "Total des congés sans solde",
 			dataIndex: "unpaidLeaveCount",
 			key: "unpaidLeaveCount",
 		},
@@ -148,7 +148,7 @@ const AddLeavePolicy = ({ drawer }) => {
 	};
 
 	const onFinishFailed = (errorInfo) => {
-		toast.warning("Failed at adding department");
+		toast.warning("Échec de l'ajout du département");
 		setLoader(false);
 	};
 	return (
@@ -182,12 +182,12 @@ const AddLeavePolicy = ({ drawer }) => {
 							<div>
 								<Form.Item
 									style={{ marginBottom: "10px" }}
-									label='Name'
+									label='Nom'
 									name='name'
 									rules={[
 										{
 											required: true,
-											message: "Please input your leave-policy name!",
+											message: "Veuillez saisir le nom de votre politique de congé !",
 										},
 									]}>
 									<Input placeholder='Policy 10-12' />
@@ -195,12 +195,12 @@ const AddLeavePolicy = ({ drawer }) => {
 
 								<Form.Item
 									style={{ marginBottom: "10px" }}
-									label='Paid Leave '
+									label='Congés payés '
 									name='paidLeaveCount'
 									rules={[
 										{
 											required: true,
-											message: "Please input your paid leave!",
+											message: "Veuillez saisir vos congés payés !",
 										},
 									]}>
 									<Input placeholder='20' />
@@ -208,12 +208,12 @@ const AddLeavePolicy = ({ drawer }) => {
 
 								<Form.Item
 									style={{ marginBottom: "10px" }}
-									label='Unpaid Leave '
+									label='Congés impayés '
 									name='unpaidLeaveCount'
 									rules={[
 										{
 											required: true,
-											message: "Please input your unpaid Leave !",
+											message: "Veuillez saisir votre congé sans solde !",
 										},
 									]}>
 									<Input placeholder='10' />

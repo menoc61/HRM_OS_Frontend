@@ -34,11 +34,11 @@ const AddAccount = ({ drawer }) => {
 				setLoader(false);
 			}
 
-			toast.success("Account Added");
+			toast.success("Compte ajouté");
 			form.resetFields();
 			setLoader(false);
 		} catch (error) {
-			toast.error("Error in adding account");
+			toast.error("Erreur lors de l'ajout du compte");
 			console.log(error.message);
 			setLoader(false);
 		}
@@ -88,30 +88,30 @@ const AddAccount = ({ drawer }) => {
 							<Form.Item
 								style={{ marginBottom: "10px" }}
 								name='name'
-								label='Name'
+								label='Nom'
 								rules={[
 									{
 										required: true,
-										message: "Please input debit account!",
+										message: "Veuillez saisir un compte débiteur !",
 									},
 								]}>
-								<Input placeholder='Name' />
+								<Input placeholder='Nom' />
 							</Form.Item>
 
 							<Form.Item
 								style={{ marginBottom: "10px" }}
 								name='account_id'
-								label='Account Type'
+								label='Type de compte'
 								rules={[
 									{
 										required: true,
-										message: "Please input debit account!",
+										message: "Veuillez saisir un compte débiteur !",
 									},
 								]}>
 								<Select
 									loading={!accounts}
 									showSearch
-									placeholder='Select Account Type'
+									placeholder='Sélectionnez le type de compte'
 									optionFilterProp='children'
 									filterOption={(input, option) =>
 										option.children.includes(input)

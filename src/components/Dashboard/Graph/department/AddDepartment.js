@@ -23,14 +23,14 @@ function CustomTable({ list }) {
 		},
 		{
 			id: 2,
-			title: "Name",
+			title: "Nom",
 			dataIndex: "name",
 			key: "name",
 		},
 
 		{
 			id: 3,
-			title: "Created at",
+			title: "Créé à",
 			dataIndex: "createdAt",
 			key: "addrcreatedAtess",
 			render: (createdAt) => dayjs(createdAt).format("YYYY-MM-DD"),
@@ -58,7 +58,7 @@ function CustomTable({ list }) {
 		<Card>
 			<div className='text-center my-2 flex justify-between'>
 				<h5 className='department-list-title text-color-2 text-xl mb-2'>
-					Department List
+					Liste des Departments
 				</h5>
 				{list && (
 					<div>

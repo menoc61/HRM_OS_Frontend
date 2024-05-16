@@ -66,7 +66,7 @@ const Attendance = ({ drawer }) => {
 		}
 	};
 	const onFinishFailed = (errorInfo) => {
-		toast.warning("Failed at adding shift");
+		toast.warning("Échec de l'ajout du quart de travail");
 		setLoader(false);
 	};
 
@@ -112,15 +112,15 @@ const Attendance = ({ drawer }) => {
 							<div>
 								<Form.Item
 									style={{ marginBottom: "10px" }}
-									label='User'
+									label='Utilisateur'
 									name='userId'
 									rules={[
 										{
 											required: true,
-											message: "Please input your user!",
+											message: "Veuillez saisir votre utilisateur !",
 										},
 									]}>
-									<Select placeholder='Select User'>
+									<Select placeholder='Selectionnez un utilisateur'>
 										{users?.map((user) => (
 											<Select.Option key={user.id} value={user.id}>
 												{user.userName}
@@ -131,11 +131,11 @@ const Attendance = ({ drawer }) => {
 
 								<Form.Item
 									style={{ marginBottom: "10px" }}
-									label='Start Time'
+									label="Heure d'arrivee"
 									rules={[
 										{
 											required: true,
-											message: "Please input your start time!",
+											message: "Veuillez saisir votre heure de debut",
 										},
 									]}>
 									<div className='flex justify-between'>
@@ -157,11 +157,11 @@ const Attendance = ({ drawer }) => {
 
 								<Form.Item
 									style={{ marginBottom: "10px" }}
-									label='End Time'
+									label='Heure de depart'
 									rules={[
 										{
 											required: true,
-											message: "Please input your start time!",
+											message: "Veuillez saisir votre heure de debut!",
 										},
 									]}>
 									<div className='flex justify-between'>
@@ -183,14 +183,14 @@ const Attendance = ({ drawer }) => {
 
 								<Form.Item
 									style={{ marginBottom: "10px" }}
-									label='Comment'
+									label='Commentaire'
 									name='comment'>
-									<Input placeholder='Comment' />
+									<Input placeholder='Commentaire' />
 								</Form.Item>
 
 								<Form.Item
 									style={{ marginBottom: "10px" }}
-									label='IP Address'
+									label='Addresse IP'
 									name='ip'>
 									<Input placeholder='127.0.0.1' />
 								</Form.Item>
@@ -214,7 +214,7 @@ const Attendance = ({ drawer }) => {
 										htmlType='submit'
 										block
 										loading={loader}>
-										Ajouter une participation
+										Enregistrer
 									</Button>
 								</Form.Item>
 							</div>

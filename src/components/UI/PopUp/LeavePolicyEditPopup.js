@@ -62,7 +62,7 @@ const LeavePolicyEdit = ({ data }) => {
 				<BtnEditSvg size={30} />
 			</button>
 			<Modal
-				title='Leave Policy Edit'
+				title='Modifier la Politique de congé'
 				open={isModalOpen}
 				onOk={handleOk}
 				onCancel={handleCancel}>
@@ -83,7 +83,7 @@ const LeavePolicyEdit = ({ data }) => {
 					<div>
 						<Form.Item
 							style={{ marginBottom: "10px" }}
-							label='Name'
+							label='Nom'
 							name='name'
 							rules={[
 								{
@@ -96,7 +96,7 @@ const LeavePolicyEdit = ({ data }) => {
 
 						<Form.Item
 							style={{ marginBottom: "10px" }}
-							label='Paid Leave'
+							label='Conges payes'
 							name='paidLeaveCount'
 							rules={[
 								{
@@ -109,7 +109,7 @@ const LeavePolicyEdit = ({ data }) => {
 
 						<Form.Item
 							style={{ marginBottom: "10px" }}
-							label='Unpaid Leave'
+							label='Conges impayes'
 							name='unpaidLeaveCount'
 							rules={[
 								{

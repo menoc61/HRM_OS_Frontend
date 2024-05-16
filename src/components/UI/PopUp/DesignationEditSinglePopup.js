@@ -129,7 +129,7 @@ const DesignationEditSinglePopup = ({ data, setLoading }) => {
 								},
 							]}>
 							<Select
-								placeholder='Select Designation'
+								placeholder='Selectionnez une Designation'
 								onChange={(value) => setDesignationId(value)}>
 								{designations?.map((item) => (
 									<Select.Option key={item.id} value={item.id}>
@@ -141,7 +141,7 @@ const DesignationEditSinglePopup = ({ data, setLoading }) => {
 
 						<Form.Item
 							style={{ marginBottom: "10px" }}
-							label='Start Date'
+							label='Date de debut'
 							name='designationStartDate'
 							rules={[
 								{
@@ -158,7 +158,7 @@ const DesignationEditSinglePopup = ({ data, setLoading }) => {
 
 						<Form.Item
 							style={{ marginBottom: "10px" }}
-							label='End Date'
+							label='Date de fin'
 							name='designationEndDate'>
 							<DatePicker
 								defaultValue={initialValues.designationEndDate}
@@ -168,7 +168,7 @@ const DesignationEditSinglePopup = ({ data, setLoading }) => {
 
 						<Form.Item
 							style={{ marginBottom: "10px" }}
-							label='Comment'
+							label='Commentaire'
 							name='designationComment'>
 							<Input name='designationComment' />
 						</Form.Item>

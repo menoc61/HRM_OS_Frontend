@@ -25,7 +25,7 @@ const AddColumn = ({ projectId }) => {
 				</button>
 			</Tooltip>
 			<Modal
-				title='Add Column'
+				title='Ajouter une colonne'
 				open={isModalOpen}
 				onOk={handleOk}
 				onCancel={handleCancel}>

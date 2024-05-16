@@ -10,7 +10,7 @@ const Shift = (props) => {
 	}
 	return (
 		<div>
-			<PageTitle title='Back' />
+			<PageTitle title='Retour' />
 			<AddShift />
 		</div>
 	);

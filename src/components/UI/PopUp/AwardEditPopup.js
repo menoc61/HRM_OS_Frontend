@@ -76,12 +76,12 @@ const AwardEditPopup = ({ data }) => {
 					<div>
 						<Form.Item
 							style={{ marginBottom: "10px" }}
-							label='Name'
+							label='Nom'
 							name='name'
 							rules={[
 								{
 									required: true,
-									message: "Please input your award name!",
+									message: "Veuillez saisir le nom de votre récompense!",
 								},
 							]}>
 							<Input />
@@ -94,7 +94,7 @@ const AwardEditPopup = ({ data }) => {
 							rules={[
 								{
 									required: true,
-									message: "Please input your award description!",
+									message: "Veuillez saisir le description de votre récompense!",
 								},
 							]}>
 							<Input />

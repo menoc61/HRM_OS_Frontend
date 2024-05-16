@@ -34,29 +34,29 @@ function CustomTable({ list, loading, month, year, paymentStatus }) {
 			key: "id",
 		},
 		{
-			title: "Name",
+			title: "Nom",
 			key: "name",
 			dataIndex: "user",
 			render: (user) => `${user?.firstName} ${user?.lastName}`,
 		},
 
 		{
-			title: "Salary",
+			title: "Salaire",
 			dataIndex: "salary",
 			key: "salary",
 		},
 		{
-			title: "Salary Payable",
+			title: "Salaire Payable",
 			dataIndex: "salaryPayable",
 			key: "salaryPayable",
 		},
 		{
-			title: "Month ",
+			title: "Mois ",
 			key: "month",
 			render: ({ salaryMonth }) => `${dayjs(salaryMonth, "M").format("MMM")}`,
 		},
 		{
-			title: "Year",
+			title: "Annee",
 			key: "year",
 			render: ({ salaryYear }) => `${salaryYear}`,
 		},
@@ -68,7 +68,7 @@ function CustomTable({ list, loading, month, year, paymentStatus }) {
 		},
 
 		{
-			title: "bonusComment",
+			title: "Commentaire bonus",
 			dataIndex: "bonusComment",
 			key: "bonusComment",
 		},
@@ -80,7 +80,7 @@ function CustomTable({ list, loading, month, year, paymentStatus }) {
 		},
 
 		{
-			title: "deductionComment",
+			title: "Commentaire de deduction",
 			dataIndex: "deductionComment",
 			key: "deductionComment",
 		},
@@ -92,13 +92,13 @@ function CustomTable({ list, loading, month, year, paymentStatus }) {
 		},
 
 		{
-			title: "W Hours",
+			title: "W Heures",
 			dataIndex: "workingHour",
 			key: "workingHour",
 			render: (workingHour) => `${workingHour?.toFixed(2)} hours`,
 		},
 		{
-			title: "Status",
+			title: "Statut",
 			dataIndex: "paymentStatus",
 			key: "paymentStatus",
 		},
@@ -124,7 +124,7 @@ function CustomTable({ list, loading, month, year, paymentStatus }) {
 				return (
 					<div flex justify-between>
 						<Link to={`/admin/payroll/${id}`}>
-							<Tooltip title='View'>
+							<Tooltip title='Voir'>
 								<Button
 									icon={<EyeFilled />}
 									type='primary'
@@ -134,7 +134,7 @@ function CustomTable({ list, loading, month, year, paymentStatus }) {
 						</Link>
 
 						<UserPrivateComponent permission='create-transaction'>
-							<Tooltip title='Payment'>
+							<Tooltip title='Paiement'>
 								<Button
 									loading={loadingButton[id]}
 									icon={<DollarCircleFilled />}
@@ -224,15 +224,15 @@ const PayslipList = () => {
 
 	const options = [
 		{
-			label: "ALL",
+			label: "TOUS",
 			value: "ALL",
 		},
 		{
-			label: "PAID",
+			label: "PAYÉ",
 			value: "PAID",
 		},
 		{
-			label: "UNPAID",
+			label: "NON PAYÉ",
 			value: "UNPAID",
 		},
 	];
@@ -257,7 +257,7 @@ const PayslipList = () => {
 
 	return (
 		<div>
-			<PageTitle title='Back' />
+			<PageTitle title='Retour' />
 			<UserPrivateComponent permission='readAll-payroll'>
 				<Card className='mt-5'>
 					<div className='flex justify-end'>

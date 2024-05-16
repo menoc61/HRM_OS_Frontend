@@ -48,7 +48,7 @@ function EChart() {
         />
       </div>
       <div className="chart-vistior">
-        <Title level={5}>Active Users</Title>
+        <Title level={5}>Utilisateurs actifs</Title>
         <Paragraph className="lastweek">
         que la semaine dernière <span className="bnb2">+30%</span>
         </Paragraph>

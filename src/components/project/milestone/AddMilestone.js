@@ -69,7 +69,7 @@ const AddMilestone = ({ isFixed, projectId }) => {
 	};
 
 	const onFinishFailed = (errorInfo) => {
-		toast.warning("Failed at adding Milestone");
+		toast.warning("Échec de l'ajout du jalon");
 		setLoader(false);
 	};
 	return (
@@ -104,19 +104,19 @@ const AddMilestone = ({ isFixed, projectId }) => {
 							{!isFixed ? (
 								<Form.Item
 									style={{ marginBottom: "10px" }}
-									label='Project'
+									label='Projet'
 									name='projectId'
 									rules={[
 										{
 											required: true,
-											message: "Select Project",
+											message: "Sélectionnez un projet",
 										},
 									]}>
 									<Select
 										mode='single'
 										disabled={isFixed}
 										loading={loading}
-										placeholder='Select Project'
+										placeholder='Sélectionnez un projet'
 										optionFilterProp='children'>
 										{list.map((item) => (
 											<Select.Option key={item.id} value={item.id}>
@@ -130,8 +130,8 @@ const AddMilestone = ({ isFixed, projectId }) => {
 									{!projectId && (
 										<Form.Item
 											style={{ marginBottom: "10px" }}
-											label='Project'
-											tooltip='Your Project is already selected'
+											label='Projet'
+											tooltip='Votre projet est déjà sélectionné'
 											name='projectId'>
 											<Input defaultValue={id} disabled />
 										</Form.Item>
@@ -141,25 +141,25 @@ const AddMilestone = ({ isFixed, projectId }) => {
 
 							<Form.Item
 								style={{ marginBottom: "10px" }}
-								label='Milestone Name'
+								label='Nom du jalon'
 								name='name'
 								rules={[
 									{
 										required: true,
-										message: "Enter Milestone Name",
+										message: "Entrer le Nom du jalon",
 									},
 								]}>
-								<Input placeholder='Enter Milestone Name' />
+								<Input placeholder='Entrer le Nom du jalon' />
 							</Form.Item>
 
 							<Form.Item
 								style={{ marginBottom: "10px" }}
-								label='Start Date'
+								label='Date de debut'
 								name='startDate'
 								rules={[
 									{
 										required: true,
-										message: "Please input Project Start Date!",
+										message: "Veuillez saisir la date de début du projet !",
 									},
 								]}>
 								<DatePicker />
@@ -167,12 +167,12 @@ const AddMilestone = ({ isFixed, projectId }) => {
 
 							<Form.Item
 								style={{ marginBottom: "20px" }}
-								label='End Date'
+								label='Date de fin'
 								name='endDate'
 								rules={[
 									{
 										required: true,
-										message: "Please input Project End Date!",
+										message: "Veuillez saisir la date de fin du projet !",
 									},
 								]}>
 								<DatePicker />
@@ -180,15 +180,15 @@ const AddMilestone = ({ isFixed, projectId }) => {
 
 							<Form.Item
 								style={{ marginBottom: "10px" }}
-								label='Milestone Description'
+								label='Description du jalon'
 								name='description'
 								rules={[
 									{
 										required: true,
-										message: "Enter Milestone Description",
+										message: "Entrez la description du jalon",
 									},
 								]}>
-								<Input placeholder='Enter Milestone Description' />
+								<Input placeholder='Entrez la description du jalon' />
 							</Form.Item>
 
 							<Form.Item

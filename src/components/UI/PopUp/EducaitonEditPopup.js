@@ -23,7 +23,7 @@ const EducaitonEditPopup = ({ data }) => {
 				<BtnEditSvg size={25} />
 			</button>
 			<Modal
-				title='Edit Education'
+				title='Modifier l\éducation'
 				open={isModalOpen}
 				onOk={handleOk}
 				onCancel={handleCancel}>

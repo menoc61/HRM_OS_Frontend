@@ -6,26 +6,26 @@ import ViewBtn from "../../Buttons/ViewBtn";
 const SalaryHistoryTable = ({ list }) => {
 	const columns = [
 		{
-			title: "Salary",
+			title: "Salaire",
 			dataIndex: "salary",
 			key: "salary",
 		},
 		{
-			title: "Start Date",
+			title: "Date de debut",
 			dataIndex: "startDate",
 			defaultSortOrder: "descend",
 			sorter: (a, b) => a.startDate - b.startDate,
 			render: (date) => (date ? dayjs(date).format("DD/MM/YYYY") : "N/A"),
 		},
 		{
-			title: "End Date",
+			title: "Date de fin",
 			dataIndex: "endDate",
 			defaultSortOrder: "descend",
 			sorter: (a, b) => a.endDate - b.endDate,
 			render: (date) => (date ? dayjs(date).format("DD/MM/YYYY") : "N/A"),
 		},
 		{
-			title: "Comment",
+			title: "Commentaire",
 			dataIndex: "comment",
 			key: "comment",
 		},

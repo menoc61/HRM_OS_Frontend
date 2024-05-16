@@ -17,21 +17,21 @@ const CustomTable = ({ role }) => {
 		},
 		{
 			id: 2,
-			title: "Name",
+			title: "Nom",
 			dataIndex: "permission",
 			key: "permission",
 			render: ({ name } = {}) => name,
 		},
 		{
 			id: 3,
-			title: "Created At",
+			title: "Créé le",
 			dataIndex: "createdAt",
 			key: "createdAt",
 			render: (createdAt) => dayjs(createdAt).format("DD/MM/YYYY"),
 		},
 		{
 			id: 4,
-			title: "Updated At",
+			title: "Mis à jour le",
 			dataIndex: "updatedAt",
 			key: "updatedAt",
 			render: (updatedAt) => dayjs(updatedAt).format("DD/MM/YYYY"),
@@ -75,7 +75,7 @@ const CustomTable = ({ role }) => {
 				{keys && keys.length > 0 && (
 					<div className='text-start mb-1'>
 						<Button type='danger' onClick={onDelete} loading={loader}>
-							Delete
+							Supprimer
 						</Button>
 					</div>
 				)}

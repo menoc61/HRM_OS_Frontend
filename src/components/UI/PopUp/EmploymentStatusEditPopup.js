@@ -46,7 +46,7 @@ const EmploymentStatusEditPopup = ({ data }) => {
 				<BtnEditSvg size={30} />
 			</button>
 			<Modal
-				title='Edit Shift'
+				title='Modifier le décalage'
 				open={isModalOpen}
 				onOk={handleOk}
 				onCancel={handleCancel}>
@@ -68,12 +68,12 @@ const EmploymentStatusEditPopup = ({ data }) => {
 					<div>
 						<Form.Item
 							style={{ marginBottom: "10px" }}
-							label='Name'
+							label='Nom'
 							name='name'
 							rules={[
 								{
 									required: true,
-									message: "Please input your shift!",
+									message: "Veuillez saisir votre quart de travail !",
 								},
 							]}>
 							<Input placeholder='Parmanet' />
@@ -81,7 +81,7 @@ const EmploymentStatusEditPopup = ({ data }) => {
 
 						<Form.Item
 							style={{ marginBottom: "10px" }}
-							label='Color Code'
+							label='Code de couleur'
 							name='colourValue'
 							rules={[
 								{

@@ -5,7 +5,7 @@ function BtnLoader(props) {
 	return (
 		<div className='text-center'>
 			<div className='loading'>
-				<p> Loading </p>
+				<p> Chargement </p>
 				<Spin size={"default"} />
 			</div>
 		</div>

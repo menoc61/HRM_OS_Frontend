@@ -119,7 +119,7 @@ const AddPermission = () => {
 				setLoader(false);
 			}
 			if (resp.message === "error") {
-				toast.error("Error at giving permission, Try again");
+				toast.error("Erreur lors de l'octroi de l'autorisation, réessayez");
 				setLoader(false);
 				form.resetFields();
 			}
@@ -139,7 +139,7 @@ const AddPermission = () => {
 
 	return (
 		<>
-			<PageTitle title={"Back"} />
+			<PageTitle title={"Retour"} />
 			<UserPrivateComponent permission={"create-rolePermission"}>
 				<Row className='mr-top' justify={"center"}>
 					<Col

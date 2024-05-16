@@ -178,7 +178,7 @@ const TaskAddSinglePopup = ({ projectId, taskStatusId }) => {
 									<Select
 										className='mr-2'
 										loading={milestoneList?.length === 0}
-										placeholder='Select Milestone'
+										placeholder='Selectionnez un jalon'
 										mode='single'
 										style={{ width: "160px" }}>
 										{milestoneList.map((item) => (
@@ -209,7 +209,7 @@ const TaskAddSinglePopup = ({ projectId, taskStatusId }) => {
 									]}>
 									<Select
 										className='mr-2'
-										placeholder='Select Priority'
+										placeholder='Sélectionnez la priorité'
 										loading={taskPriority?.length === 0}
 										mode='single'
 										style={{ width: "160px" }}>
@@ -252,7 +252,7 @@ const TaskAddSinglePopup = ({ projectId, taskStatusId }) => {
 
 						<Form.Item
 							style={{ marginBottom: "10px" }}
-							label='Team Select'
+							label='Sélection d\équipe'
 							name='teamSelect'>
 							<div className='flex'>
 								<Select
@@ -291,11 +291,11 @@ const TaskAddSinglePopup = ({ projectId, taskStatusId }) => {
 
 						<Form.Item
 							style={{ marginBottom: "10px" }}
-							label='Team Member Select'
+							label='Sélection des membres de l\équipe'
 							rules={[
 								{
 									required: true,
-									message: "Please Select Team!",
+									message: "Veuillez sélectionner une équipe !",
 								},
 							]}
 							name='assignedTask'>
@@ -315,26 +315,26 @@ const TaskAddSinglePopup = ({ projectId, taskStatusId }) => {
 
 						<Form.Item
 							style={{ marginBottom: "10px" }}
-							label='Task Name'
+							label='Nom de la tâche'
 							rules={[
 								{
 									required: true,
-									message: "Please input task name!",
+									message: "Veuillez saisir le nom de la tâche !",
 								},
 							]}
 							name='name'>
-							<Input placeholder='Task Name' />
+							<Input placeholder='nom de la tâche' />
 						</Form.Item>
 
 						<Form.Item
 							style={{ marginBottom: "10px" }}
-							label='Start Date'
+							label='Date de debut'
 							name='startDate'
 							valuePropName='startDate'
 							rules={[
 								{
 									required: true,
-									message: "Please input your start date!",
+									message: "Veuillez saisir votre date de début !",
 								},
 							]}>
 							<DatePicker onChange={(date) => setstartDate(date)} />
@@ -342,11 +342,11 @@ const TaskAddSinglePopup = ({ projectId, taskStatusId }) => {
 
 						<Form.Item
 							style={{ marginBottom: "10px" }}
-							label='End Date'
+							label='Date de fin'
 							rules={[
 								{
 									required: true,
-									message: "Please input your end date!",
+									message: "Veuillez saisir votre date de fin!",
 								},
 							]}
 							name='endDate'
@@ -361,7 +361,7 @@ const TaskAddSinglePopup = ({ projectId, taskStatusId }) => {
 							rules={[
 								{
 									required: true,
-									message: "Please input your description!",
+									message: "Veuillez saisir votre description !",
 								},
 							]}>
 							<Input.TextArea placeholder='Description' />
@@ -369,13 +369,13 @@ const TaskAddSinglePopup = ({ projectId, taskStatusId }) => {
 
 						<Form.Item
 							style={{ marginBottom: "20px" }}
-							label='Completion Time'
+							label='Le temps d/achèvement'
 							name='completionTime'
 							required
 							rules={[
 								{
 									required: true,
-									message: "Please input your Completion Time!",
+									message: "Veuillez saisir votre heure de réalisation !",
 								},
 							]}>
 							<Input placeholder='20.00 in Hours' />
@@ -394,7 +394,7 @@ const TaskAddSinglePopup = ({ projectId, taskStatusId }) => {
 								size='middle'
 								htmlType='submit'
 								loading={loader}>
-								Add Now
+								Ajouter maintenant
 							</Button>
 						</Form.Item>
 					</div>

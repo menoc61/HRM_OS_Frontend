@@ -22,13 +22,13 @@ export const addPayslipPayment = createAsyncThunk(
 				},
 				url: `payroll/payment/${id}`,
 			});
-			toast.success("Payment Created Successfully");
+			toast.success("Paiement créé avec succès");
 			return {
 				data,
 				message: "success",
 			};
 		} catch (error) {
-			toast.error("Error in adding Payment try again");
+			toast.error("Erreur lors de l'ajout du paiement, réessayez");
 			console.log(error.message);
 			return {
 				message: "error",
