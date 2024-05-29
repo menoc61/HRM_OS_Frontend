@@ -100,7 +100,7 @@ function Main({ children }) {
 							""
 						) : (
 							<div>
-								<h2
+								{/* <h2
 									className='text-white text-center mt-2 mb-1 '
 									style={{ fontSize: "25px" }}>
 									HRM
@@ -108,7 +108,7 @@ function Main({ children }) {
 										{" "}
 										OS
 									</strong>
-								</h2>
+								</h2> */}
 							</div>
 						)}
 						{isLogged && (

@@ -28,7 +28,7 @@ function CustomTable({ list, loading }) {
 		},
 		{
 			id: 2,
-			title: "Name",
+			title: "Nom",
 			dataIndex: "user",
 			key: "user",
 			render: ({ firstName, lastName }) => firstName + " " + lastName,
@@ -36,7 +36,7 @@ function CustomTable({ list, loading }) {
 
 		{
 			id: 3,
-			title: "inTime",
+			title: "Date d'entrée",
 			dataIndex: "inTime",
 			key: "inTime",
 			render: (inTime) => dayjs(inTime).format("DD-MM-YYYY, h:mm A"),
@@ -44,7 +44,7 @@ function CustomTable({ list, loading }) {
 
 		{
 			id: 4,
-			title: "Out Time",
+			title: "Date de sortie",
 			dataIndex: "outTime",
 			key: "outTime",
 			render: (outTime) => dayjs(outTime).format("DD-MM-YYYY, h:mm A"),

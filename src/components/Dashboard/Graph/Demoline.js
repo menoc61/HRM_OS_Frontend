@@ -78,7 +78,7 @@ const DemoLine = () => {
 
 				<NewDashboardCard information={cardInformation} />
 
-				<Card title='WORK HOURS '>
+				<Card title='HEURES DE TRAVAIL'>
 					{data ? <Line {...config} /> : <Loader />}
 				</Card>
 			</UserPrivateComponent>
