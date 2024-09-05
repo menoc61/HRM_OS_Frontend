@@ -12,7 +12,7 @@ const Task = ({ taskS: task, btnLoading, btnId, handleDeleteTask }) => {
 					{task.priority.name}
 				</span>
 				<button class='task__options'>
-					<Tooltip title='Delete Task'>
+					<Tooltip title='Supprimer la tache'>
 						<button
 							className='text-sm text-red-500 ml-2 float-right'
 							onClick={() => handleDeleteTask(task.id)}>

@@ -28,7 +28,7 @@ const DetailLeave = () => {
 
 	return (
 		<div>
-			<PageTitle title='Back' />
+			<PageTitle title='Retour' />
 			<UserPrivateComponent permission={"readSingle-leaveApplication"}>
 				<Card className='mt-4'>
 					<div className='text-center mb-4'>
@@ -61,7 +61,7 @@ const DetailLeave = () => {
 								</ListItem>
 
 								<ListItem>
-								Laisser à :{" "}
+								Jusqu'au :{" "}
 									<TextInside>
 										{dayjs(leave.leaveTo).format("DD-MM-YYYY")}
 									</TextInside>
@@ -108,7 +108,7 @@ const DetailLeave = () => {
 								</ListItem>
 
 								<ListItem>
-								Laisser accepté à :{" "}
+								Laisser jusqu'au :{" "}
 									<TextInside>
 										{leave.acceptLeaveTo
 											? dayjs(leave.acceptLeaveTo).format("DD-MM-YYY")

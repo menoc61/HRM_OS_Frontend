@@ -23,7 +23,7 @@ const AddDesHistory = ({ drawer }) => {
 	};
 
 	const onFinishFailed = (errorInfo) => {
-		toast.warning("Failed at adding department");
+		toast.warning("Échec de l'ajout du département");
 		setLoader(false);
 	};
 	return (
@@ -56,12 +56,12 @@ const AddDesHistory = ({ drawer }) => {
 							<div>
 								<Form.Item
 									style={{ marginBottom: "20px" }}
-									label='Name'
+									label='Nom'
 									name='name'
 									rules={[
 										{
 											required: true,
-											message: "Please input your Designation!",
+											message: "Veuillez saisir votre désignation !",
 										},
 									]}>
 									<Input />

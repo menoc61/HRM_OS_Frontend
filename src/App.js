@@ -2,17 +2,17 @@ import React from "react";
 import { BrowserRouter, Route, Router, Routes } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import "./App.css";
-
-import Login from "./components/user/Login";
-import Logout from "./components/user/Logout";
-import UserList from "./components/user/user";
-
 import "./assets/styles/main.css";
 import "./assets/styles/responsive.css";
 
 import Page404 from "./components/404/404Page";
 import Dashboard from "./components/Dashboard/Graph/Dashboard";
+
+import Login from "./components/user/Login";
+import Logout from "./components/user/Logout";
+import UserList from "./components/user/user";
 import DetailStaff from "./components/user/detailsStaff";
+import GetAllUsers from "./components/user/GetAllUser";
 
 import Designation from "./components/designation/designation";
 import DetailDesignation from "./components/designation/detailDesignation";
@@ -23,24 +23,31 @@ import Main from "./components/layouts/Main";
 import AddPermission from "./components/role/AddPermission";
 import DetailRole from "./components/role/DetailsRole";
 import RoleList from "./components/role/role";
+
 import InvoiceSetting from "./components/settings/invoiceSetting";
 import WelcomePage from "./components/UI/welcomePage";
-import GetAllUsers from "./components/user/GetAllUser";
+
 import Department from "./components/department/Department.js";
 import DetailDepartment from "./components/department/DetailsDepartment";
-import CalculatePayroll from "./components/payroll/CalculatePayroll";
 
+import CalculatePayroll from "./components/payroll/CalculatePayroll";
 import PayslipList from "./components/payroll/PayslipList";
+import DetailPayslip from "./components/payroll/PayslipDetail";
+
 import Shift from "./components/shift/Shift";
 import DetailShift from "./components/shift/ShiftDetails";
+
 import EmploymentStatus from "./components/employmentStatus/EmploymentStatus";
 import DetailEmploymentStatus from "./components/employmentStatus/EmploymentStatusDetails";
+
 import Attendance from "./components/attendance/AddAttendance";
+import DetailAttendance from "./components/attendance/DetailAttendance";
+import UserAttendance from "./components/attendance/UserAttendance";
+
 import Leave from "./components/leave/Leave";
 import GetAllLeaves from "./components/leave/GetAllLeaves";
 import DetailLeave from "./components/leave/DetailLeave";
-import DetailAttendance from "./components/attendance/DetailAttendance";
-import UserAttendance from "./components/attendance/UserAttendance";
+import UserLeave from "./components/leave/UserLeave";
 
 import Account from "./components/account/account";
 import BalanceSheet from "./components/account/balanceSheet";
@@ -51,35 +58,47 @@ import TrialBalance from "./components/account/trialBalance";
 import AddTransaction from "./components/transaction/AddTransaction";
 import DetailTransaction from "./components/transaction/detailTransaction";
 import Transaction from "./components/transaction/transaction";
-import UserLeave from "./components/leave/UserLeave";
+
 import Announcement from "./components/announcement/Announcement";
 import DetailAnnouncement from "./components/announcement/AnnouncementDetails";
-import Award from "./components/award/Award";
-import DetailAward from "./components/award/DetailsAward";
+
 import LeavePolicy from "./components/leavePolicy/LeavePolicy";
 import DetailLeavePolicy from "./components/leavePolicy/DetailsLeavePolicy";
-import WeeklyHoliday from "./components/weeklyHoliday/WeeklyHoliday";
-import DetailWeeklyHoliday from "./components/weeklyHoliday/DetailsWeeklyHoliday";
-import PublicHoliday from "./components/publicHoliday/PublicHoliday";
-import DetailPublicHoliday from "./components/publicHoliday/DetailsPublicHoliday";
-import DetailPayslip from "./components/payroll/PayslipDetail";
-import UserPrivateRoute from "./components/PrivateRoutes/UserPrivateRoute";
+
+import Award from "./components/award/Award";
+import DetailAward from "./components/award/DetailsAward";
 import AddAward from "./components/award/AddAward";
 import GetAllAward from "./components/award/GetAllAward";
+
+import WeeklyHoliday from "./components/weeklyHoliday/WeeklyHoliday";
+import DetailWeeklyHoliday from "./components/weeklyHoliday/DetailsWeeklyHoliday";
+
+import PublicHoliday from "./components/publicHoliday/PublicHoliday";
+import DetailPublicHoliday from "./components/publicHoliday/DetailsPublicHoliday";
+
+import UserPrivateRoute from "./components/PrivateRoutes/UserPrivateRoute";
+
 import Project from "./components/project/project";
-import Milestone from "./components/project/milestone/milestone";
-import TaskStatus from "./components/project/taskStatus/taskStatus";
-import TaskPriority from "./components/project/taskPriority/taskPriority";
-import DetailProjectTeam from "./components/project/team/DetailProjectTeam";
 import AddProject from "./components/project/AddProject";
 import UpdateProject from "./components/project/UpdateProject";
+
+import Milestone from "./components/project/milestone/milestone";
 import UpdateMilestone from "./components/project/milestone/UpdateMilestone";
-import ProjectTeam from "./components/project/team/ProjectTeam";
+
+import TaskStatus from "./components/project/taskStatus/taskStatus";
 import UpdateTaskStatus from "./components/project/taskStatus/UpdateTaskStatus";
+
+import TaskPriority from "./components/project/taskPriority/taskPriority";
 import UpdateTaskPriority from "./components/project/taskPriority/UpdateTaskPriority";
+
+import DetailProjectTeam from "./components/project/team/DetailProjectTeam";
+import ProjectTeam from "./components/project/team/ProjectTeam";
+
 import Task from "./components/project/tasks/tasks";
+
 import UpdateStatus from "./components/project/UpdateStatus";
 import KanbanBoard2 from "./components/kanbanBoard/KanbanBoard2";
+// import Register from "./components/user/Register.js"
 
 function App() {
 	return (
@@ -108,7 +127,7 @@ function App() {
 
 						<Route path='/admin/auth/login' exact element={<Login />} />
 						<Route path='/admin/auth/logout' exact element={<Logout />} />
-						{/*         <Route path='/auth/register' exact element={<Register />} /> */}
+						{/* <Route path='/auth/register' exact element={<Register />} /> */}
 						<Route element={<UserPrivateRoute permission={"create-user"} />}>
 							<Route path='/admin/hr/staffs/new' exact element={<UserList />} />
 						</Route>

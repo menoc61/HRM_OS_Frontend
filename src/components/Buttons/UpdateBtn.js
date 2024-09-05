@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const UpdateBtn = ({ path }) => {
 	return (
 		<div>
-			<Tooltip title='Update'>
+			<Tooltip title='mise à jour'>
 				<Link to={path}>
 					<button className='bg-teal-500 hover:bg-teal-700 text-white font-bold  px-2 rounded mr-2'>
 						<i class='bi bi-pencil-square'></i>

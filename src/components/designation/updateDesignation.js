@@ -45,7 +45,7 @@ function UpdateDesignation() {
 		try {
 			updateDesignation(id, values);
 			setSuccess(true);
-			toast.success("Designation details is updated");
+			toast.success("Les détails de la désignation sont mis à jour");
 			setInitValues({});
 		} catch (error) {
 			console.log(error.message);
@@ -64,7 +64,7 @@ function UpdateDesignation() {
 
 	return (
 		<>
-			<PageTitle title={`back`} />
+			<PageTitle title={`Retour`} />
 			<div className='text-center'>
 				<Card className='mt-2'>
 					<Row className='mr-top'>
@@ -78,7 +78,7 @@ function UpdateDesignation() {
 							{success && (
 								<div>
 									<Alert
-										message={`Designation details updated successfully`}
+										message={`Les détails de la désignation ont été mis à jour avec succès`}
 										type='success'
 										closable={true}
 										showIcon
@@ -112,7 +112,7 @@ function UpdateDesignation() {
 									rules={[
 										{
 											required: true,
-											message: "Please input Designation name!",
+											message: "Veuillez saisir le nom de la désignation !",
 										},
 									]}>
 									<Input />
