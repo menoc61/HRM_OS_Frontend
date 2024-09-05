@@ -52,7 +52,7 @@ const AddDesignation = () => {
 						className='rounded column-design'>
 						<Card bordered={false}>
 							<Title level={4} className='m-2 mb-4 text-center'>
-							Ajouter une désignation
+							Ajouter un poste
 							</Title>
 							<Form
 								form={form}
@@ -76,7 +76,7 @@ const AddDesignation = () => {
 									rules={[
 										{
 											required: true,
-											message: "Please input designation name!",
+											message: "Veuillez saisir le nom du poste !",
 										},
 									]}>
 									<Input />
@@ -96,7 +96,7 @@ const AddDesignation = () => {
 										shape='round'
 										size='large'
 										loading={loader}>
-										Ajouter une désignation
+										Ajouter un poste
 									</Button>
 								</Form.Item>
 							</Form>

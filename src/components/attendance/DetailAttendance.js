@@ -31,7 +31,7 @@ const DetailAttendance = () => {
 
 	return (
 		<div>
-			<PageTitle title='Back' />
+			<PageTitle title='Retour' />
 			<Card className='mt-4'>
 				<div className='text-center mb-4'>
 					{" "}

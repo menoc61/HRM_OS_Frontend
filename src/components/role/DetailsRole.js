@@ -15,103 +15,107 @@ import UserPrivateComponent from "../PrivateRoutes/UserPrivateComponent";
 //PopUp
 
 const DetailRole = () => {
-	const { id } = useParams();
-	let navigate = useNavigate();
+  const { id } = useParams();
+  let navigate = useNavigate();
 
-	//dispatch
-	const dispatch = useDispatch();
-	const [role, setRole] = useState(null);
-	//Delete Supplier
-	const onDelete = () => {
-		try {
-			setVisible(false);
-			toast.warning(`role Name : ${role.rolename} is removed `);
-			return navigate("/admin/dashboard");
-		} catch (error) {
-			console.log(error.message);
-		}
-	};
-	// Delete Supplier PopUp
-	const [visible, setVisible] = useState(false);
+  //dispatch
+  const dispatch = useDispatch();
+  const [role, setRole] = useState(null);
+  //Delete Supplier
+  const onDelete = () => {
+    try {
+      setVisible(false);
+      toast.warning(`Nom du rôle : ${role.rolename} est supprimé `);
+      return navigate("/admin/dashboard");
+    } catch (error) {
+      console.log(error.message);
+    }
+  };
+  // Delete Supplier PopUp
+  const [visible, setVisible] = useState(false);
 
-	const handleVisibleChange = (newVisible) => {
-		setVisible(newVisible);
-	};
+  const handleVisibleChange = (newVisible) => {
+    setVisible(newVisible);
+  };
 
-	useEffect(() => {
-		loadSingleRole(id).then((d) => setRole(d.data));
-	}, [id]);
+  useEffect(() => {
+    loadSingleRole(id).then((d) => setRole(d.data));
+  }, [id]);
 
-	const isLogged = Boolean(localStorage.getItem("isLogged"));
+  const isLogged = Boolean(localStorage.getItem("isLogged"));
 
-	if (!isLogged) {
-		return <Navigate to={"/admin/auth/login"} replace={true} />;
-	}
+  if (!isLogged) {
+    return <Navigate to={"/admin/auth/login"} replace={true} />;
+  }
 
-	return (
-		<div>
-			<PageTitle title=' Back  ' />
+  return (
+    <div>
+      <PageTitle title=" Retour  " />
 
-			<UserPrivateComponent permission={"readSingle-role"}>
-				<div className='mr-top'>
-					{role ? (
-						<Fragment key={role.id}>
-							<Card bordered={false}>
-								<div className='flex justify-between mb-5'>
-									<h5>
-										<i className='bi bi-person-lines-fill'></i>
-										<span className='mr-left'>
-											ID : {role.id} | {role.name}
-										</span>
-									</h5>
-									<div className='text-end'>
-										<UserPrivateComponent permission={"update-role"}>
-											<Link
-												className='m-2'
-												to={`/admin/role/permit/${role.id}`}
-												state={{ data: role }}>
-												<Button
-													type='primary'
-													shape='round'
-													icon={<EditOutlined />}>
-													{" "}
-													Nouvelle autorisation{" "}
-												</Button>
-											</Link>
-										</UserPrivateComponent>
-										<UserPrivateComponent permission={"delete-role"}>
-											<Popover
-												className='m-2'
-												content={
-													<a onClick={onDelete}>
-														<Button disabled={true} type='primary' danger>
-														Oui s'il vous plait !
-														</Button>
-													</a>
-												}
-												title='Are you sure you want to delete ?'
-												trigger='click'
-												visible={visible}
-												onVisibleChange={handleVisibleChange}>
-												<Button
-													disabled={true}
-													type='danger'
-													shape='round'
-													icon={<DeleteOutlined />}></Button>
-											</Popover>
-										</UserPrivateComponent>
-									</div>
-								</div>
-								<CustomTable role={role?.rolePermission} />
-							</Card>
-						</Fragment>
-					) : (
-						<Loader />
-					)}
-				</div>
-			</UserPrivateComponent>
-		</div>
-	);
+      <UserPrivateComponent permission={"readSingle-role"}>
+        <div className="mr-top">
+          {role ? (
+            <Fragment key={role.id}>
+              <Card bordered={false}>
+                <div className="flex justify-between mb-5">
+                  <h5>
+                    <i className="bi bi-person-lines-fill"></i>
+                    <span className="mr-left">
+                      ID : {role.id} | {role.name}
+                    </span>
+                  </h5>
+                  <div className="text-end">
+                    <UserPrivateComponent permission={"update-role"}>
+                      <Link
+                        className="m-2"
+                        to={`/admin/role/permit/${role.id}`}
+                        state={{ data: role }}
+                      >
+                        <Button
+                          type="primary"
+                          shape="round"
+                          icon={<EditOutlined />}
+                        >
+                          {" "}
+                          Nouvelle autorisation{" "}
+                        </Button>
+                      </Link>
+                    </UserPrivateComponent>
+                    <UserPrivateComponent permission={"delete-role"}>
+                      <Popover
+                        //className='m-2'
+                        content={
+                          <a onClick={onDelete}>
+                            <Button disabled={true} type="primary" danger>
+                              Oui s'il vous plait !
+                            </Button>
+                          </a>
+                        }
+                        title="Etes-vous sûr que vous voulez supprimer ?"
+                        trigger="click"
+                        visible={visible}
+                        onVisibleChange={handleVisibleChange}
+                      >
+                        <Button
+                          disabled={true}
+                          type="danger"
+                          shape="round"
+                          icon={<DeleteOutlined />}
+                        ></Button>
+                      </Popover>
+                    </UserPrivateComponent>
+                  </div>
+                </div>
+                <CustomTable role={role?.rolePermission} />
+              </Card>
+            </Fragment>
+          ) : (
+            <Loader />
+          )}
+        </div>
+      </UserPrivateComponent>
+    </div>
+  );
 };
 
 export default DetailRole;

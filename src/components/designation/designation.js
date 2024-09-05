@@ -13,7 +13,7 @@ const Designation = (props) => {
 
 	return (
 		<div>
-			<PageTitle title='Back' />
+			<PageTitle title='Retour' />
 			<UserPrivateComponent permission={"create-designation"}>
 				<AddDesignation />
 			</UserPrivateComponent>

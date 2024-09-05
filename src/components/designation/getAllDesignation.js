@@ -28,7 +28,7 @@ function CustomTable({ list, loading }) {
 		},
 		{
 			id: 2,
-			title: "Name",
+			title: "Nom",
 			dataIndex: "name",
 			key: "name",
 			render: (name, { id }) => (

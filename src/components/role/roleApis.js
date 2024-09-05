@@ -15,25 +15,25 @@ export const addRole = async (values) => {
       method: "post",
       headers: {
         Accept: "application/json",
-        "Content-Type": "application/json;charset=UTF-8",
+        "Content-Type": "application/json;charset=UTF-8"
       },
       url: `role`,
       data: {
-        ...values,
-      },
+        ...values
+      }
     });
     //dispatching data
-    toast.success("Added successful");
+    toast.success("Ajout réussi");
 
     return {
       data,
-      message: "success",
+      message: "success"
     };
   } catch (error) {
-    toast.error("Error in adding Role try again");
+    toast.error("Erreur lors de l'ajout de l'autorisation, réessayez");
     console.log(error.message);
     return {
-      message: "error",
+      message: "error"
     };
   }
 };
@@ -47,7 +47,7 @@ export const loadSingleRole = async (id) => {
     const { data } = await axios.get(`role/${id}`);
     return {
       data,
-      message: "Success",
+      message: "Success"
     };
     //dispatching data
   } catch (error) {
@@ -63,25 +63,25 @@ export const addPermission = async (values) => {
       method: "post",
       headers: {
         Accept: "application/json",
-        "Content-Type": "application/json;charset=UTF-8",
+        "Content-Type": "application/json;charset=UTF-8"
       },
       url: `role-permission`,
       data: {
-        ...values,
-      },
+        ...values
+      }
     });
     //dispatching data
-    toast.success("Added successful");
+    toast.success("Ajout réussi");
 
     return {
       data,
-      message: "success",
+      message: "success"
     };
   } catch (error) {
-    toast.error("Error in adding Permission try again");
+    toast.error("Erreur lors de la mise a jour de l'autorisation, réessayez");
     console.log(error.message);
     return {
-      message: "error",
+      message: "error"
     };
   }
 };
@@ -99,23 +99,23 @@ export const deleteRolePermission = async (value) => {
       method: "post",
       headers: {
         Accept: "application/json",
-        "Content-Type": "application/json;charset=UTF-8",
+        "Content-Type": "application/json;charset=UTF-8"
       },
       url: `role-permission?query=deletemany`,
-      data: value,
+      data: value
     });
     //dispatching data
-    toast.success("Deleted successful");
+    toast.success("Suppression réussi");
 
     return {
       data,
-      message: "success",
+      message: "success"
     };
   } catch (error) {
-    toast.error("Error in deleting Permission try again");
+    toast.error("Erreur lors de la suppression de l'autorisation, réessayez");
     console.log(error.message);
     return {
-      message: "error",
+      message: "error"
     };
   }
 };

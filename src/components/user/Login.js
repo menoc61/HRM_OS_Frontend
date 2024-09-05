@@ -34,7 +34,7 @@ const Login = () => {
         <Col span={24}>
           <Card bordered={false} className={styles.card}>
             <Title level={3} className="m-3 text-center">
-              BIENVENU A SAI I LAMA
+              BIENVENUE A SAI I LAMA
             </Title>
             <div className={styles.logoContainer}>
               <img
@@ -61,12 +61,12 @@ const Login = () => {
             >
               <Form.Item
                 className="mb-5"
-                label="Utilisateur"
-                name="userName"
+                label="Email"
+                name="email"
                 rules={[
                   {
                     required: true,
-                    message: "Veuillez entrer votre nom d’utilisateur!",
+                    message: "Veuillez entrer votre email!",
                   },
                 ]}
               >
